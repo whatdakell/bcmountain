@@ -50,3 +50,8 @@
 [16-Sep-2022 12:59:17] NOTICE: exiting, bye-bye!
 [16-Sep-2022 12:59:21] NOTICE: fpm is running, pid 48777
 [16-Sep-2022 12:59:21] NOTICE: ready to handle connections
+[16-Sep-2022 14:08:00] NOTICE: Terminating ...
+[16-Sep-2022 14:08:00] NOTICE: Terminating ...
+[16-Sep-2022 14:08:00] NOTICE: exiting, bye-bye!
+[16-Sep-2022 14:08:02] NOTICE: fpm is running, pid 53459
+[16-Sep-2022 14:08:02] NOTICE: ready to handle connections

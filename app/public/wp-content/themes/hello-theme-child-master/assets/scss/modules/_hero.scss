@@ -1,259 +1,67 @@
-$right-space: 15px;
-$mobile: 72px;
-.home {
-	.hh-hero .elementor-column:first-child {
-		.elementor-widget-wrap {
-			padding-top: $desktop;
-			@include bp(M) {
-				padding-top: rem(40px);
-			}
-			@include bp(S) {
-				padding-top: 30px;
-			}
-		}
+.hero {
+	height: 659px;
+	position: relative;
+	@include bp(S) {
+		height: 100vh;
 	}
-}
-
-.hh-hero {
 	.elementor-container {
-		width: auto;
-		@include bp(M) {
-			flex-wrap: nowrap;
-		}
-		@include bp(S) {
-			flex-wrap: wrap;
-		}
+		position: absolute;
+		bottom: -1px;
+		width: 100%;
 	}
-	p:not(:last-child) {
-		margin-bottom: rem(20px);
-	}
-	&.opt-3 {
-		.elementor-container {
-			width: 90%;
-		}
-		.elementor-widget-image {
-			.elementor-widget-wrap & {
-				@include bp(M) {
-					margin-bottom: auto;
-				}
-			}
-		}
-		.elementor-column:last-child {
-			position: relative;
-			margin-right: $right-space;
-			padding-left: 5%;
-			@include bp(M) {
-				//kell you changed this and didn;t know if it was the best idea investigate
-				margin-left: 5%;
-			}
-			@include bp(S) {
-				@include container;
-				padding-left: 0%;
-			}
-			.elementor-widget-wrap {
-				// padding-bottom: rem(275px);
-				@include bp(M) {
-					padding-top: rem(40px);
-				}
-				@include bp(S) {
-					padding-top: 30px;
-					padding-bottom: 30px;
-				}
-			}
-			.eyebrow {
-				// padding-top: rem(173px);
-				@include bp(M) {
-					padding-top: 0;
-				}
-			}
-			.headline {
-				margin-top: rem(30px);
-				h1 {
-					margin-bottom: rem(30px);
-				}
-				@include bp(S) {
-					margin-top: 24px;
-					h1 {
-						margin-bottom: 26px;
-					}
-				}
-			}
-		}
-	}
-	&:not(.opt-3) .elementor-column:first-child {
-		position: relative;
-		margin-right: $right-space;
-		padding-left: 5%;
-		@include bp(M) {
-			//kell you changed this and didn;t know if it was the best idea investigate
+	.elementor-column.elementor-col-50 {
+		&:first-child .elementor-element {
+			max-width: 336px;
+			min-height: 105px;
+			opacity: 0.9;
+			background-color: $accent;
 			margin-left: 5%;
-		}
-		@include bp(S) {
-			@include container;
-			padding-left: 0%;
-		}
-		.elementor-widget-wrap {
-			// forget what this is for
-			// padding-bottom: rem(200px);
-			padding-bottom: rem(275px);
-			@include bp(M) {
-				padding-top: rem(40px);
-			}
+			bottom: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			z-index: 2;
 			@include bp(S) {
-				padding-top: 30px;
-				padding-bottom: 30px;
+				left: 50%;
+				transform: translateX(-50%);
+				margin: auto;
 			}
 		}
-		.eyebrow {
-			padding-top: rem(173px);
-			@include bp(M) {
-				padding-top: 0;
-			}
-		}
-		.headline {
-			margin-top: rem(30px);
-			h1 {
-				margin-bottom: rem(30px);
-			}
+		&:last-child {
+			// position: absolute;
+			// bottom: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			opacity: 0.85;
+			background-color: #3b434e;
+			min-height: 182px;
+			padding: rem(30px);
+			text-align: center;
 			@include bp(S) {
-				margin-top: 24px;
-				h1 {
-					margin-bottom: 26px;
-				}
-			}
-		}
-		.hero-block-quote {
-			@include bp(SM) {
 				position: absolute;
-				border: 1px solid $cta-accent;
-				width: 50%;
-				max-width: 392px;
-				height: rem(177px);
-				bottom: calc(#{rem(275px)} - #{$button-height});
-				right: 0%;
-				margin-bottom: calc(-#{rem(177px)} + #{$button-height});
-				margin-right: -$right-space;
+				bottom: 0;
+				padding-bottom: 128px;
+			}
+			h2 {
+				max-width: 639px;
+				margin-left: auto;
 			}
 		}
 	}
-	&:not(.opt-3) .elementor-column:last-child {
-		position: relative;
-		.elementor-widget:not(:last-child) {
-			margin-bottom: 0px;
-		}
-		&#hh-background-image {
-			.elementor-widget-wrap {
-				@include bp(S) {
-					background-image: none;
-				}
-			}
-		}
-		.elementor-widget-image img {
-			//   width: 375px;
-			@include bp(S) {
-				width: 100%;
-			}
-		}
-		.hero-block-quote {
-			@include bp(SM) {
-				height: 0;
-				display: none;
-			}
-		}
-		.elementor-widget-button {
-			@include bp(SM) {
-				bottom: calc(#{rem(275px)} - #{$button-height});
-				left: 0;
-				position: absolute;
-			}
-			@include bp(S) {
-				justify-content: center;
-				margin-bottom: 62px;
-				margin-top: 22px;
-				@include container;
-			}
-		}
-	}
-	.hero-block-quote {
-		@include bp(S) {
-			margin-top: 30px;
-			@include container;
-		}
-		p {
-			// width: 321px;
-			padding: rem(20px);
-			font-family: $libra;
-			font-size: rem(16px);
-			font-weight: normal;
+	.current-weather {
+		color: white;
+		.current-weather-wrapper {
+			font-family: $prox;
+			font-size: 12px;
+			font-weight: bold;
 			font-stretch: normal;
 			font-style: normal;
-			line-height: rem(25px);
-			letter-spacing: 0.08px;
-			text-align: left;
-			color: #252525;
+			letter-spacing: 0.75px;
 			@include bp(S) {
-				padding: 0;
 				text-align: center;
 			}
-		}
-	}
-	.block-cta {
-		margin-right: auto;
-		width: auto;
-	}
-}
-
-.hh-hero.opt-2 {
-	.elementor-container {
-		align-items: flex-start;
-		width: 90%;
-	}
-	.headline {
-		// margin-top: rem(20px);
-		h1 {
-			// margin-bottom: rem(85px);
-		}
-		// @include bp(S) {
-		//   margin-top: 24px;
-		//   h1 {
-		//     margin-bottom: 26px;
-		//   }
-		// }
-	}
-	b {
-		font-weight: 400;
-	}
-	.block-cta {
-		margin-top: rem(54px);
-	}
-	.elementor-column:first-child {
-		padding-left: 0;
-		margin-right: $right-space * 2;
-		.elementor-widget-wrap {
-			padding-bottom: rem(213px);
-			@include bp(S) {
-				padding-bottom: 30px;
-			}
-		}
-	}
-
-	.elementor-widget-image {
-		text-align: right;
-		@include bp(S) {
-			padding-bottom: rem(60px);
-		}
-	}
-	img {
-		margin-top: rem(225px);
-		max-height: 562px;
-		width: auto;
-		@include bp(M) {
-			// margin-top: rem(263px - 173px);
-			margin-top: rem(120px);
-		}
-		@include bp(S) {
-			// margin-top: rem(263px - 173px);
-			margin-top: 0px;
 		}
 	}
 }

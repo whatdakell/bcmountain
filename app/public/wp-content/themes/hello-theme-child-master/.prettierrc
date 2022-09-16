@@ -1,0 +1,11 @@
+{
+	"indent_size": 2,
+	"useTabs": true,
+	"indent_with_tabs": true,
+	"singleQuote": true,
+	"jsxSingleQuote": true,
+	"printWidth": 500,
+	"css": {
+		"indent_size": 2
+	}
+}
