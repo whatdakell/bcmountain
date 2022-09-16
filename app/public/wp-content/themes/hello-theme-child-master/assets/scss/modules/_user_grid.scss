@@ -1,0 +1,93 @@
+#user-grid.user-grid {
+	padding-top: rem(100px);
+	padding-bottom: rem(150px);
+	.home & {
+		padding-top: rem(183px);
+	}
+	&.multi {
+		padding-top: rem(50px);
+		padding-bottom: 0px;
+		.static-cta .elementor-button i {
+			transform: rotate(45deg);
+		}
+		+ .multi {
+			padding-top: rem(0px);
+		}
+		.elementor-container {
+			flex-wrap: wrap;
+			.user {
+				width: 31%;
+				margin-right: 0;
+			}
+			@include bp(M) {
+				flex-wrap: wrap;
+				flex-direction: row;
+			}
+			@include bp(S) {
+				.user {
+					width: 49%;
+					&:nth-child(even) {
+						margin-right: 0px;
+					}
+					&:nth-child(odd) {
+						margin-left: 0px;
+					}
+				}
+			}
+		}
+	}
+
+	@include inner-container;
+	.elementor-col-33 {
+		max-width: rem(398px);
+		@include bp(S) {
+			max-width: 90%;
+		}
+	}
+	.user {
+		max-width: rem(398px);
+
+		width: 31%;
+		&:not(:last-child) {
+			//   margin-right: rem(20px);
+			@include bp(S) {
+				margin: 0px auto 40px;
+			}
+		}
+		@include bp(S) {
+			max-width: 398px;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.elementor-widget-image {
+		max-width: rem(398px);
+		border-bottom: 10px solid $cta-accent;
+		margin-bottom: rem(30px);
+		@include bp(S) {
+			max-width: 398px;
+		}
+	}
+	.elementor-container {
+		justify-content: space-between;
+		@include bp(M) {
+			flex-wrap: nowrap;
+		}
+		@include bp(S) {
+			flex-direction: column;
+		}
+	}
+	.elementor-widget-text-editor {
+		margin-bottom: rem(30px);
+	}
+	.title-text {
+		margin-bottom: rem(12px);
+	}
+	.eyebrow.no-border {
+		font-weight: normal;
+		margin-top: rem(8px);
+		margin-bottom: rem(20px);
+		line-height: rem(32px);
+	}
+}

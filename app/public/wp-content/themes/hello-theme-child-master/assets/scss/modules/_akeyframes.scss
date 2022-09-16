@@ -1,0 +1,32 @@
+@keyframes gradientChange {
+	from {
+		transform: translate(-400px, -500px) scale(3);
+	}
+	to {
+		transform: translate(-400px, -500px) scale(5);
+	}
+}
+@keyframes opacityDownChange {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes upDown {
+	0% {
+		transform: translateY(30px);
+	}
+	25% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(30px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}

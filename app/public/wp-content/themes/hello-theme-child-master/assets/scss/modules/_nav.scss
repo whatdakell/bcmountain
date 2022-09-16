@@ -1,0 +1,125 @@
+#site-header.hh-header {
+	// .elementor-nav-menu--dropdown-tablet .elementor-menu-toggle,
+	// .elementor-nav-menu--dropdown-tablet .elementor-nav-menu--dropdown {
+	// 	@include bp(M) {
+	// 		display: flex !important;
+	// 	}
+	// }
+	// .elementor-nav-menu--dropdown-tablet .elementor-nav-menu--main {
+	// 	@include bp(M) {
+	// 		display: none;
+	// 	}
+	// }
+	background-color: transparent;
+	display: flex;
+	height: $desktop;
+	.home & {
+		@include bp(MD) {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	width: 100%;
+	z-index: 10;
+
+	@include bp(M) {
+		height: $mobile;
+		position: relative;
+	}
+	.elementor-container {
+		overflow: hidden;
+		width: 94%;
+		max-width: 1817px;
+		padding-left: 2vw;
+		padding-right: 2vw;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background: $black;
+			bottom: 0;
+		}
+		@include bp(M) {
+			&:after {
+				display: none;
+			}
+		}
+	}
+	.elementor-widget-nav-menu {
+		margin-left: auto;
+	}
+	.elementor-container {
+		padding-bottom: rem(37.5px);
+		padding-top: rem(109px);
+		align-items: start;
+		@include bp(M) {
+			padding-top: 0px;
+			padding-bottom: 0px;
+			align-items: center;
+		}
+	}
+	//   logo
+	img {
+		width: rem(219px);
+		height: auto;
+		@include bp(M) {
+			width: 122px;
+		}
+	}
+	.elementor-324 .elementor-element.elementor-element-36b1d9f {
+		margin-left: auto;
+	}
+	.elementor-menu-toggle {
+		width: 19px;
+		height: 11px;
+		background: transparent;
+		margin-top: rem(10px);
+		i {
+			color: $black;
+		}
+	}
+	.elementor-column {
+		@include bp(M) {
+			width: 50%;
+		}
+	}
+	.elementor-nav-menu--dropdown,
+	nav {
+		margin-left: auto;
+		a {
+			@extend .nav-button;
+			padding-left: rem(50px);
+			padding-right: 0px;
+			padding-top: rem(10px);
+			padding-bottom: 0;
+			color: $black;
+			font-size: rem(14px);
+			&:hover {
+				transform: $hover;
+				color: $cta-accent;
+				// font-weight: $med;
+			}
+		}
+		@include bp(M) {
+			position: fixed;
+			border-top: $black 1px solid;
+			top: $mobile;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background: white;
+			z-index: 10;
+			bottom: 0;
+			margin-top: 0;
+			a {
+				margin-top: 5vh;
+				background-color: white;
+			}
+		}
+	}
+}

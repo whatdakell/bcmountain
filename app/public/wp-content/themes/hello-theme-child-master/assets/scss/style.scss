@@ -1,0 +1,47 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 1.0.1
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+@import 'mixins';
+@import 'variables';
+@import 'typography';
+// @import "modules/hero";
+// @import "modules/cut_out";
+// @import "modules/slider";
+// @import "modules/extended_icongrid";
+@import 'modules/button';
+@import 'modules/hero';
+@import 'modules/user_grid';
+@import 'modules/counter_grid';
+@import 'modules/cta-block';
+@import 'modules/footer';
+@import 'modules/form';
+@import 'modules/copy-block';
+@import 'modules/inner-page';
+@import 'modules/faq';
+@import 'modules/copy-card';
+@import 'modules/search-box';
+// @import "modules/ss_tile_click";
+// @import "modules/donate";
+// @import "modules/owl_custom";
+// @import "modules/inner_page";
+// @import "modules/map";
+// @import "modules/icons";
+// @import "modules/tile_hover";
+@import 'modules/nav';
+@import 'modules/owl';
+
+@import 'modules/animations';
+@import 'global';
+
+// @import "modules/mobile_nav";
+// @import "modules/timeline";

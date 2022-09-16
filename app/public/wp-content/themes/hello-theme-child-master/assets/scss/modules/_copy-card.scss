@@ -1,0 +1,54 @@
+.copy-card {
+	min-height: rem(590px);
+	@include container;
+	border: solid 2px #b32e26;
+	margin-bottom: rem(200px);
+	@include bp(S) {
+		margin-top: rem(170px);
+	}
+
+	.background-image {
+		min-height: rem(590px);
+	}
+	.copy-column {
+		align-items: center;
+		padding: rem(50px);
+		p:not(:last-child) {
+			margin-bottom: rem(20px);
+		}
+		.headline-03 {
+			margin-bottom: rem(25px);
+		}
+		.static-cta {
+			margin-top: rem(60px);
+		}
+	}
+	&.caro {
+		// copy-card-caro
+		@include inner-container;
+		margin-bottom: rem(50px);
+		.copy-column {
+			margin-top: auto;
+		}
+		.headline-03 {
+			margin-bottom: rem(12px);
+			.elementor-heading-title {
+				color: #050303;
+			}
+		}
+		.eyebrow-med .elementor-heading-title {
+			font-weight: normal;
+			color: $cta-accent;
+		}
+		.elementor-widget-text-editor {
+			margin: rem(36px) auto rem(30px);
+		}
+		.static-cta {
+			margin-top: 0px;
+			margin-bottom: rem(70px);
+		}
+		.caro-next .elementor-widget-container {
+			margin-left: auto;
+		}
+	}
+}

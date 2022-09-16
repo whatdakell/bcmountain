@@ -1,0 +1,44 @@
+{
+	"name": "elevate",
+	"version": "1.0.0",
+	"description": "elevateUSA style",
+	"license": "GPL-2.0",
+	"author": "kelly",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/keli5466/ElevateUSA.git"
+	},
+	"dependencies": {
+		"fullpage.js": "^2.9.5",
+		"imagemin-optipng": "^5.2.1",
+		"jpegtran-bin": "^3.2.0",
+		"jquery-circle-progress": "^1.2.2",
+		"natives": "^1.1.6",
+		"notify-send": "^0.1.2",
+		"optipng": "^1.1.0",
+		"readable-stream": "^2.3.3"
+	},
+	"devDependencies": {
+		"browser-sync": "^2.27.7",
+		"gulp": "^3.9.1",
+		"gulp-autoprefixer": "^3.1.0",
+		"gulp-concat": "^2.5.2",
+		"gulp-filter": "^4.0.0",
+		"gulp-imagemin": "^2.4.0",
+		"gulp-line-ending-corrector": "^1.0.1",
+		"gulp-merge-media-queries": "^0.2.1",
+		"gulp-notify": "^3.0.0",
+		"gulp-plumber": "^1.1.0",
+		"gulp-rename": "^1.2.2",
+		"gulp-sass": "^2.3.2",
+		"gulp-sequence": "^0.4.6",
+		"gulp-shell": "^0.6.3",
+		"gulp-sort": "^2.0.0",
+		"gulp-sourcemaps": "^1.5.2",
+		"gulp-uglify": "^1.5.3",
+		"gulp-uglifycss": "^1.0.6",
+		"gulp-wp-pot": "^1.2.2",
+		"imagemin": "^5.3.1",
+		"stylelint-config-standard": "^18.0.0"
+	}
+}

@@ -1,0 +1,298 @@
+.search-filter-box {
+	@include inner-container;
+	width: 90%;
+	max-width: 1396px;
+	&.search {
+		max-width: 950px;
+	}
+	.search {
+		margin-bottom: rem(40px);
+		.asp_m.asp_m_1 {
+			background: white !important;
+			border: solid 1px #bebebe !important;
+			height: rem(62.4px) !important;
+			@extend .form-value;
+		}
+		.proclose {
+			display: none !important;
+		}
+		.probox {
+			position: relative;
+			height: rem(62.4px) !important;
+			color: black !important;
+		}
+		.promagnifier .innericon {
+			position: absolute;
+			left: 0;
+			top: 10px;
+			@include bp(S) {
+				top: 0;
+			}
+
+			svg {
+				fill: $cta-accent !important;
+			}
+		}
+		.proinput {
+			font-family: 'Lexend Exa', sans-serif !important;
+			font-size: 0.875rem !important;
+			font-weight: 300;
+			line-height: 1.5625rem;
+			letter-spacing: -0.28px;
+			padding-left: rem(46px) !important;
+		}
+		.asp_text_button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: rem(62.4px) !important;
+			text-align: center;
+			font-family: 'Lexend Exa', sans-serif !important;
+			font-size: rem(14px) !important;
+			font-weight: 300;
+			background: $cta-accent !important;
+			line-height: 1.71;
+			letter-spacing: 2.1px;
+			width: rem(226px) !important;
+			color: white !important;
+			text-transform: uppercase;
+		}
+		input {
+			@extend .form-value;
+			-moz-appearance: none; /* Firefox */
+			-webkit-appearance: none; /* Safari and Chrome */
+			appearance: none;
+			// border: solid 1px #bebebe;
+			font-family: 'Lexend Exa', sans-serif !important;
+			font-size: 0.875rem !important;
+			font-weight: 300;
+			line-height: 1.5625rem;
+			letter-spacing: -0.28px;
+			height: rem(62.4px) !important;
+			background-color: white;
+			position: relative;
+			color: black !important;
+			padding-left: 20px !important;
+			width: 100%;
+			padding: 0px rem(46px) !important;
+			position: relative;
+			width: 100%;
+			@include bp(S) {
+				margin: 10px auto 0;
+			}
+			// &:before {
+			// 	display: inline-block;
+			// 	font-family: 'Font Awesome 5 Free';
+			// 	font-weight: 900;
+			// 	color: #b32e26;
+			// 	font-size: 1rem;
+			// 	position: absolute;
+			// 	content: '\f107';
+			// 	z-index: 11;
+			// 	right: 20px;
+			// 	top: 50%;
+			// 	transform: translateY(-50%);
+			// }
+		}
+	}
+	.eyebrow {
+		width: auto;
+	}
+	.headline {
+		margin: rem(20px) auto rem(80px);
+		margin-bottom: rem(80px);
+	}
+	.search {
+		input,
+		select {
+			@extend .form-value;
+			-moz-appearance: none; /* Firefox */
+			-webkit-appearance: none; /* Safari and Chrome */
+			appearance: none;
+			border: solid 1px #bebebe;
+			height: rem(62.4px);
+			background-color: white;
+			position: relative;
+			width: 100%;
+			padding: 0px rem(46px) !important;
+			position: relative;
+			width: 100%;
+			@include bp(S) {
+				margin: 10px auto 0;
+			}
+		}
+	}
+	&.results {
+		margin-top: rem(180px);
+	}
+	.resdrg .item {
+		height: auto;
+		.asp_content {
+			height: auto !important;
+		}
+	}
+	.results {
+		margin-top: rem(80px);
+		border-top: 2px solid $cta-accent;
+		div.asp_r.asp_r_1.vertical .item {
+			border-bottom: 2px solid $cta-accent;
+			background-color: white !important;
+			// height: rem(300px);
+			height: auto !important;
+			font-family: $lEX;
+			padding: rem(70px) rem(20px);
+			// pointer-events: none !important;
+			.asp_res_url {
+				pointer-events: none !important;
+			}
+			a {
+				pointer-events: auto !important;
+			}
+			&:hover {
+				background-color: white !important;
+			}
+			.asp_content {
+				height: auto;
+			}
+			h3 .asp_res_url {
+				font-family: $lEX;
+				font-size: rem(28px) !important;
+				font-weight: bold;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 0.86 !important;
+				letter-spacing: 4.2px !important;
+				text-align: left;
+				color: #050303 !important;
+				text-transform: uppercase;
+				// text-decoration: underline;
+				.year {
+					position: absolute;
+					right: 0;
+					font-family: $lEX;
+					text-transform: uppercase;
+					font-size: rem(20px);
+					font-weight: bold;
+					font-stretch: normal;
+					font-style: normal;
+					line-height: 1.6;
+					letter-spacing: 3px;
+					text-align: right;
+					color: #b32e26;
+					text-decoration: none;
+					@include bp(S) {
+						top: 10px;
+					}
+				}
+				.title {
+					font-family: $lEX;
+					display: block;
+					margin-top: rem(18px);
+					font-size: rem(20px);
+					font-weight: normal;
+					font-stretch: normal;
+					font-style: normal;
+					line-height: 1.2;
+					letter-spacing: 3px;
+					text-align: left;
+					color: #b32e26;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+			}
+			.asp_res_text {
+				margin-top: rem(30px);
+				font-family: $lEX;
+				font-size: rem(18px);
+				font-weight: 300;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 1.61;
+				letter-spacing: -0.18px;
+				text-align: left;
+				color: #252525;
+				a {
+					color: $cta-accent;
+				}
+			}
+		}
+	}
+	.settings {
+		.asp-fss-flex {
+			flex-wrap: nowrap !important;
+			margin: 0 !important;
+			justify-content: space-between !important;
+			@include bp(S) {
+				flex-direction: column;
+				align-content: center;
+			}
+		}
+		.asp_s_btn_container {
+			width: 10% !important;
+		}
+		.asp_filter_tax_post_tag {
+			width: 58% !important;
+			margin-left: rem(24px) !important;
+			@include bp(S) {
+				margin-top: 30px;
+				width: 100% !important;
+			}
+		}
+		.asp_filter_tax_category {
+			width: 40% !important;
+			@include bp(S) {
+				margin-top: 30px;
+				width: 100% !important;
+			}
+		}
+		.asp_select_label {
+			padding: 0 !important;
+		}
+		fieldset.asp_filter_tax {
+			select {
+				@extend .form-value;
+				-moz-appearance: none; /* Firefox */
+				-webkit-appearance: none; /* Safari and Chrome */
+				appearance: none;
+				border: solid 1px #bebebe;
+				height: rem(62.4px);
+				background-color: white;
+				position: relative;
+				width: 100%;
+				padding: 0px rem(46px) !important;
+				position: relative;
+				width: 100%;
+				@include bp(S) {
+					margin: 10px auto 0;
+				}
+			}
+			&:before {
+				display: inline-block;
+				font-family: 'Font Awesome 5 Free';
+				font-weight: 900;
+				color: #b32e26;
+				font-size: 1rem;
+				position: absolute;
+				content: '\f107';
+				z-index: 11;
+				right: 20px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			legend {
+				position: absolute;
+				left: rem(36px);
+				min-width: 1px;
+				@extend .form-value;
+				text-align: left;
+				color: #7b7b7b !important;
+				background: white;
+				display: inline-block;
+				width: auto;
+				padding: 0px 10px;
+				top: -7px;
+				z-index: 1;
+			}
+		}
+	}
+}
