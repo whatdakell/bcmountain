@@ -26,6 +26,8 @@ body{font-family:proxima-nova,sans-serif;font-size:1rem;font-weight:normal;font-
 .hero .elementor-column.elementor-col-50:last-child h2{max-width:639px;margin-left:auto}
 .hero .current-weather{color:white}
 .hero .current-weather .current-weather-wrapper{font-family:proxima-nova,sans-serif;font-size:12px;font-weight:bold;font-stretch:normal;font-style:normal;letter-spacing:.75px}
+.booking-form{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}
+.booking-form .booking-inputs{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}
 body{margin:0}
 .site-branding .show-title{display:none}
 @media(max-width:1380px){html{font-size:.88rem}

@@ -1,36 +1,11 @@
-console.log('https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={2839f99fdb95e9a02d74e736787ba268}');
-
-// fetch(‘https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={2839f99fdb95e9a02d74e736787ba268}’)
-//   .then(response => response.json())
-//   .then(json => console.log(json));
-
-// const localSeedInterfaceCheck = () => {
-// 	return fetch('https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={2839f99fdb95e9a02d74e736787ba268}')
-// 		.then((response) => response.json())
-// 		.then((json) => console.log(json));
-// };
-
-// console.log(localSeedInterfaceCheck);
-
-function weatherBalloon(cityID) {
-	var key = '{2839f99fdb95e9a02d74e736787ba268}';
-	fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID + '&appid=' + key)
-		.then(function (resp) {
-			return resp.json();
-		}) // Convert data to json
-		.then(function (data) {
-			console.log(data);
-		})
-		.catch(function () {
-			// catch any errors
-		});
-}
-
-window.onload = function () {
-	weatherBalloon(6167865);
-};
-
 jQuery(function ($) {
+	$('#datein').datepicker({
+		dateFormat: 'mm/dd/yy',
+	});
+	$('#dateout').datepicker({
+		dateFormat: 'mm/dd/yy',
+	});
+
 	$.fn.isInViewport = function () {
 		var elementTop = $(this).offset().top + 150;
 		var elementBottom = elementTop + $(this).outerHeight();
@@ -49,43 +24,43 @@ jQuery(function ($) {
 		});
 	});
 
-	$(function () {
-		//OWL
-		// $(document).ready(function () {
-		// 	$('.hh-in-view').bind('inview', function (event, visible) {
-		// 		if (visible == true) {
-		// 			// element is now visible in the viewport
-		// 			$(this).addClass('addclass');
-		// 			$(this).removeClass('removeclass');
-		// 		} else {
-		// 			// element has gone out of viewport
-		// 			$(this).removeClass('addclass');
-		// 			$(this).addClass('removeclass');
-		// 		}
-		// 	});
-		// });
-		$('body').addClass('animate-ready');
-		// if ($('.e-page-transition--entered')) {
-		// 	$('body.home').addClass('animate-in').delay(1000);
-		// }
-		setTimeout(function () {
-			$('body').addClass('animate-in');
-		}, 500);
-		// if (window.location.pathname == '/') {
-		// 	console.log('hii');
-		// 	$('body.home').addClass('animate-ready');
-		// 	// if ($('.e-page-transition--entered')) {
-		// 	// 	$('body.home').addClass('animate-in').delay(1000);
-		// 	// }
-		// 	setTimeout(function () {
-		// 		$('body.home').addClass('animate-in-menu');
-		// 	}, 500);
-		// 	// $('e-page-transition').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
-		// 	// 	console.log('its done');
-		// 	// 	$('body.home').addClass('animate-in').delay(1000);
-		// 	// });
-		// }
-	});
+	// $(function () {
+	// 	//OWL
+	// 	// $(document).ready(function () {
+	// 	// 	$('.hh-in-view').bind('inview', function (event, visible) {
+	// 	// 		if (visible == true) {
+	// 	// 			// element is now visible in the viewport
+	// 	// 			$(this).addClass('addclass');
+	// 	// 			$(this).removeClass('removeclass');
+	// 	// 		} else {
+	// 	// 			// element has gone out of viewport
+	// 	// 			$(this).removeClass('addclass');
+	// 	// 			$(this).addClass('removeclass');
+	// 	// 		}
+	// 	// 	});
+	// 	// });
+	// 	$('body').addClass('animate-ready');
+	// 	// if ($('.e-page-transition--entered')) {
+	// 	// 	$('body.home').addClass('animate-in').delay(1000);
+	// 	// }
+	// 	setTimeout(function () {
+	// 		$('body').addClass('animate-in');
+	// 	}, 500);
+	// 	// if (window.location.pathname == '/') {
+	// 	// 	console.log('hii');
+	// 	// 	$('body.home').addClass('animate-ready');
+	// 	// 	// if ($('.e-page-transition--entered')) {
+	// 	// 	// 	$('body.home').addClass('animate-in').delay(1000);
+	// 	// 	// }
+	// 	// 	setTimeout(function () {
+	// 	// 		$('body.home').addClass('animate-in-menu');
+	// 	// 	}, 500);
+	// 	// 	// $('e-page-transition').one('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+	// 	// 	// 	console.log('its done');
+	// 	// 	// 	$('body.home').addClass('animate-in').delay(1000);
+	// 	// 	// });
+	// 	// }
+	// });
 });
 
 // document.addEventListener('DOMContentLoaded', function () {

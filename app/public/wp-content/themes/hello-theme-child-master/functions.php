@@ -12,12 +12,17 @@
  */
 
 function hello_elementor_child_enqueue_scripts() {
+	wp_register_style('jqueryUI', 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css');
+	wp_enqueue_style( 'jqueryUI' );
 	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600&display=swap', false );
+
 	wp_enqueue_style(
 		'hello-elementor-child-style', get_stylesheet_directory_uri() . '/style.css', false,'1.2'
 	);
 }
 function unhook_parent_style() {
+
+	https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css
 
 	wp_dequeue_style( 'hello-elementor-theme-style' );
 	wp_deregister_style( 'hello-elementor-theme-style' );
@@ -32,6 +37,8 @@ function scripts_and_styles()
 {
     wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js');
     wp_enqueue_script('jquery');
+    wp_register_script('jqueryUI', 'https://code.jquery.com/ui/1.13.2/jquery-ui.min.js');
+    wp_enqueue_script('jqueryUI');
 		wp_enqueue_style( 'style', get_stylesheet_uri() );
     wp_register_script('e-custom', get_stylesheet_directory_uri() . '/e-custom.js', false,'1.2');
     wp_enqueue_script('e-custom');
@@ -61,3 +68,11 @@ function switch_to_relative_url($html, $id, $caption, $title, $align, $url, $siz
 add_filter('image_send_to_editor','switch_to_relative_url',10,8);
 
 add_filter( 'hello_elementor_page_title', '__return_false' );
+
+// Shortcode to output custom PHP in Elementor
+function wpc_elementor_shortcode( $atts ) {
+	// echo "This is my custom PHP output in Elementor!";
+	include('test.html');
+}
+
+add_shortcode( 'my_elementor_php_output', 'wpc_elementor_shortcode');
