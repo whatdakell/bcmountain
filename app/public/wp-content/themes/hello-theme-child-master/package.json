@@ -19,9 +19,12 @@
 		"readable-stream": "^2.3.3"
 	},
 	"devDependencies": {
+		"@babel/core": "^7.19.1",
+		"@babel/preset-env": "^7.19.1",
 		"browser-sync": "^2.27.7",
 		"gulp": "^3.9.1",
 		"gulp-autoprefixer": "^3.1.0",
+		"gulp-babel": "^8.0.0",
 		"gulp-concat": "^2.5.2",
 		"gulp-filter": "^4.0.0",
 		"gulp-imagemin": "^2.4.0",

@@ -19,7 +19,7 @@ html {
 
 body {
 	font-family: $prox;
-	font-size: rem(16px);
+	font-size: 16px;
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
@@ -98,4 +98,77 @@ body {
 	text-align: left;
 	color: white;
 	text-transform: uppercase;
+}
+
+.booking-font {
+	font-family: $bitter;
+	font-size: 14px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 2.86;
+	letter-spacing: 0.7px;
+	text-align: left;
+	color: #7f7f7f;
+	text-transform: uppercase;
+}
+
+.static-cta {
+	font-family: $prox;
+	font-size: 14px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 0.86;
+	letter-spacing: 2.1px;
+	text-align: left;
+	color: white;
+	text-align: left;
+	text-transform: uppercase;
+	background-color: transparent;
+}
+#static-cta .elementor-button {
+	color: #9f3926;
+	// font-family: $lEX;
+	font-family: $prox;
+	font-size: 14px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 0.86;
+	letter-spacing: 2.1px;
+	text-align: left;
+	color: #9f3926;
+	text-align: left;
+	text-transform: uppercase;
+	background-color: transparent;
+	overflow: hidden;
+	.elementor-button-icon {
+		margin-left: 0px;
+	}
+	&:after {
+		content: '';
+		border-bottom: 1px solid #9f3926;
+		width: 100%;
+		display: block;
+		// border-bottom: 1px solid $cta-accent;
+		transition: $hover;
+	}
+	&:hover {
+		&:after {
+			transform: translateX(95%);
+		}
+	}
+	i {
+		// transform: rotate(-45deg);
+	}
+}
+
+.arrow-right {
+	width: 12px;
+	height: 12px;
+	background-size: contain;
+	display: inline-block;
+	// content: '';
+	background-image: url('/wp-content/uploads/2022/09/Arrow-Right.svg');
 }

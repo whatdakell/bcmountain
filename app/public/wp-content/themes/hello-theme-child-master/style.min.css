@@ -1,6 +1,13 @@
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+h3,h2,h1,p,h4,a{margin:0;padding:0}
+#icon-block{padding:100px 0}
+#icon-block .elementor-column .elementor-widget-wrap{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;margin-bottom:6.25rem}
+#icon-block .elementor-column .elementor-widget-html{width:auto;-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;margin-left:5%}
+#icon-block .elementor-column .elementor-widget-html p{margin-top:10px;margin-bottom:17px}
+#icon-block .elementor-column #icon{background-color:#83afba;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;width:3.75rem;height:3.75rem;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center}
+#icon-block .elementor-column #icon img{width:2.0875rem;height:100%}
 html{font-size:1rem}
-body{font-family:proxima-nova,sans-serif;font-size:1rem;font-weight:normal;font-stretch:normal;font-style:normal;line-height:1.44;letter-spacing:-0.08px;color:#3b434e}
+body{font-family:proxima-nova,sans-serif;font-size:16px;font-weight:normal;font-stretch:normal;font-style:normal;line-height:1.44;letter-spacing:-0.08px;color:#3b434e}
 .large-headline .elementor-heading-title{font-family:"Bitter",serif;font-size:3.25rem;font-weight:600;font-stretch:normal;font-style:normal;line-height:1.25;letter-spacing:.195rem;color:#3b434e;text-transform:uppercase}
 .header{font-family:"Bitter",serif;font-size:2.25rem;font-weight:bold;font-stretch:normal;font-style:normal;line-height:1.25;letter-spacing:.135rem;color:#3b434e;text-transform:uppercase}
 .subhead-1{font-family:"Bitter",serif;font-size:1.375rem;font-weight:600;font-stretch:normal;font-style:normal;line-height:1.27;letter-spacing:.0825rem;color:#3b434e;text-transform:uppercase}
@@ -8,6 +15,13 @@ body{font-family:proxima-nova,sans-serif;font-size:1rem;font-weight:normal;font-
 .overline{font-family:proxima-nova,sans-serif;font-size:.75rem;font-weight:500;font-stretch:normal;font-style:normal;line-height:2.5;letter-spacing:.075rem;color:#83afba}
 .white,.white .elementor-heading-title{color:white}
 .nav-font,#bc-nav .elementor-nav-menu--dropdown a,#bc-nav nav a{font-family:proxima-nova,sans-serif;font-size:12px;font-weight:bold;font-stretch:normal;font-style:normal;line-height:1;letter-spacing:1.8px;text-align:left;color:white;text-transform:uppercase}
+.booking-font{font-family:"Bitter",serif;font-size:14px;font-weight:500;font-stretch:normal;font-style:normal;line-height:2.86;letter-spacing:.7px;text-align:left;color:#7f7f7f;text-transform:uppercase}
+.static-cta{font-family:proxima-nova,sans-serif;font-size:14px;font-weight:bold;font-stretch:normal;font-style:normal;line-height:.86;letter-spacing:2.1px;text-align:left;color:white;text-align:left;text-transform:uppercase;background-color:transparent}
+#static-cta .elementor-button{color:#9f3926;font-family:proxima-nova,sans-serif;font-size:14px;font-weight:bold;font-stretch:normal;font-style:normal;line-height:.86;letter-spacing:2.1px;text-align:left;color:#9f3926;text-align:left;text-transform:uppercase;background-color:transparent;overflow:hidden}
+#static-cta .elementor-button .elementor-button-icon{margin-left:0}
+#static-cta .elementor-button:after{content:'';border-bottom:1px solid #9f3926;width:100%;display:block;-webkit-transition:all 300ms ease-in;-o-transition:all 300ms ease-in;-moz-transition:all 300ms ease-in;transition:all 300ms ease-in}
+#static-cta .elementor-button:hover:after{-webkit-transform:translateX(95%);-moz-transform:translateX(95%);-ms-transform:translateX(95%);-o-transform:translateX(95%);transform:translateX(95%)}
+.arrow-right{width:12px;height:12px;-moz-background-size:contain;-o-background-size:contain;background-size:contain;display:inline-block;background-image:url("/wp-content/uploads/2022/09/Arrow-Right.svg")}
 #bc-nav{background-color:transparent;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;position:absolute;top:0;left:50%;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);width:100%;z-index:10}
 #bc-nav .elementor-container{overflow:hidden;width:94%;max-width:1440px}
 #bc-nav .elementor-widget-nav-menu{margin-left:auto}
@@ -26,10 +40,39 @@ body{font-family:proxima-nova,sans-serif;font-size:1rem;font-weight:normal;font-
 .hero .elementor-column.elementor-col-50:last-child h2{max-width:639px;margin-left:auto}
 .hero .current-weather{color:white}
 .hero .current-weather .current-weather-wrapper{font-family:proxima-nova,sans-serif;font-size:12px;font-weight:bold;font-stretch:normal;font-style:normal;letter-spacing:.75px}
-.booking-form{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}
-.booking-form .booking-inputs{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}
+.booking-form{-webkit-box-shadow:0 15px 30px 0 rgba(0,0,0,0.1);-moz-box-shadow:0 15px 30px 0 rgba(0,0,0,0.1);box-shadow:0 15px 30px 0 rgba(0,0,0,0.1)}
+.booking-form .booking-inputs{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;width:100%;-webkit-box-align:end;-webkit-align-items:flex-end;-moz-box-align:end;-ms-flex-align:end;align-items:flex-end;padding-top:30px;padding-bottom:45px;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.booking-form .booking-inputs .booking-input{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-right:2%}
+.booking-form .booking-inputs .booking-input.date-input{max-width:278px;width:25%}
+.booking-form .booking-inputs .booking-input.date-input .datepicker{background-repeat:no-repeat;-moz-background-size:14px auto;-o-background-size:14px auto;background-size:14px auto;background-position:95% center}
+.booking-form .booking-inputs .booking-input.date-input:first-child .datepicker{background-image:url("/wp-content/uploads/2022/09/calander.svg")}
+.booking-form .booking-inputs .booking-input.date-input:not(:first-child) .datepicker{background-image:url("/wp-content/uploads/2022/09/calander-left.svg")}
+.booking-form .booking-inputs .booking-input.guest-input{max-width:100px;width:8%}
+.booking-form .booking-inputs .booking-input .guest-wrapper{position:relative}
+.booking-form .booking-inputs .booking-input .guest-wrapper span{width:9.4px;height:6px;position:absolute;background-image:url("/wp-content/uploads/2022/09/Arrow-Small-Down.svg");right:12px;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}
+.booking-form .booking-inputs .booking-input .guest-wrapper span:hover{cursor:pointer}
+.booking-form .booking-inputs .booking-input .guest-wrapper span.dec{margin-top:10px}
+.booking-form .booking-inputs .booking-input .guest-wrapper span.inc{-webkit-transform:rotate(-180deg);-moz-transform:rotate(-180deg);-ms-transform:rotate(-180deg);-o-transform:rotate(-180deg);transform:rotate(-180deg);margin-top:-10px}
+.booking-form .booking-inputs .booking-input input{height:50px;width:100%;padding:19px 12px 18px 12px;background-color:#eee;border:0}
+.booking-form .booking-inputs .booking-submit{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1}
+.booking-form .booking-inputs .booking-submit .button-style{max-width:277px;width:100%;height:50px;-webkit-border-radius:25px;-moz-border-radius:25px;border-radius:25px;-webkit-box-shadow:0 3px 6px 0 rgba(0,0,0,0.16);-moz-box-shadow:0 3px 6px 0 rgba(0,0,0,0.16);box-shadow:0 3px 6px 0 rgba(0,0,0,0.16);background-color:#9f3926;border:0;font-family:proxima-nova,sans-serif;font-size:14px;font-stretch:normal;font-style:normal;line-height:1.2;letter-spacing:2.1px;color:#fff;text-transform:uppercase;position:relative}
 body{margin:0}
 .site-branding .show-title{display:none}
+input:hover{cursor:pointer}
+#cta-block{margin:7.5rem auto}
+#cta-block .elementor-container{width:90%}
+#cta-block .elementor-container img{width:auto;height:35px;margin-right:auto;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;margin-bottom:15px}
+#cta-block .elementor-container #left .elementor-widget-wrap{max-width:436px;margin-left:auto;margin-right:2.875rem}
+#cta-block .elementor-container #right{margin-top:auto}
+#cta-block .elementor-container #right .elementor-widget-wrap{margin-top:3.125rem;max-width:483px}
+#cta-block .elementor-container #right .elementor-widget-wrap #static-cta{margin-top:1.75rem}
+.elementor-widget:not(:last-child){margin-bottom:0}
+.elementor-widget:not(:last-child){margin-bottom:unset}
+.elementor-column-gap-default>.elementor-column>.elementor-element-populated{padding:0}
+p{margin:0}
+.navy{background-color:#3b434e}
+#icon-block .elementor-column{padding-right:20px}
+.inner-max{max-width:1180px !important;width:95% !important;margin:auto}
 @media(max-width:1380px){html{font-size:.88rem}
 }@media(max-width:1200px){html{font-size:.8rem}
 }@media(max-width:1024px){html{font-size:.7rem}
@@ -42,4 +85,15 @@ body{margin:0}
 .hero .elementor-column.elementor-col-50:first-child .elementor-element{left:50%;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);margin:auto}
 .hero .elementor-column.elementor-col-50:last-child{position:absolute;bottom:0;padding-bottom:128px}
 .hero .current-weather .current-weather-wrapper{text-align:center}
+.booking-form .booking-inputs{-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+.booking-form .booking-inputs .booking-input{margin:5px auto}
+.booking-form .booking-inputs .booking-input.date-input{max-width:100%;width:100%}
+.booking-form .booking-inputs .booking-input.guest-input{width:49%;margin:0;max-width:49%}
+.booking-form .booking-inputs .booking-submit{margin:30px auto 0;text-align:center}
+#cta-block .elementor-container img{margin-left:auto}
+#cta-block .elementor-container #left .elementor-widget-wrap{margin-right:auto}
+#cta-block .elementor-container #right .elementor-widget-wrap{margin-top:20px}
+#cta-block .elementor-container #right .elementor-widget-wrap #static-cta{margin-top:25px}
+#cta-block .elementor-container{width:95%;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}
+#cta-block .elementor-container .elementor-widget-wrap{width:100%;max-width:100%;text-align:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-left:auto;margin-right:auto}
 }

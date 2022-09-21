@@ -14,3 +14,45 @@ $html-font-size: 16px;
 
 $prox: proxima-nova, sans-serif;
 $bitter: 'Bitter', serif;
+
+h3,
+h2,
+h1,
+p,
+h4,
+a {
+	margin: 0;
+	padding: 0;
+}
+
+#icon-block {
+	padding: 100px 0px;
+	.elementor-column {
+		.elementor-widget-wrap {
+			display: flex;
+			margin-bottom: rem(100px);
+		}
+		.elementor-widget-html {
+			width: auto;
+			flex: 1;
+			margin-left: 5%;
+			p {
+				margin-top: 10px;
+				margin-bottom: 17px;
+			}
+		}
+		#icon {
+			background-color: #83afba;
+			border-radius: 50%;
+			width: rem(60px);
+			height: rem(60px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img {
+				width: rem(33.4px);
+				height: 100%;
+			}
+		}
+	}
+}

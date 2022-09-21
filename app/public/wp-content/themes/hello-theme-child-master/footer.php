@@ -20,6 +20,7 @@
 								<p class="terms">©2017 Elevate, USA all right reserved. Contact Us with questions.</p>
 						</div>
 						<div class="col-1-3">
+							
 							<img class="footer_logo" src="/wp-content/uploads/2018/01/elevate-logo-and-tag@3x.png">
 
 						</div>
