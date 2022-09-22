@@ -1,0 +1,45 @@
+#vertical-tile-grid {
+	margin: rem(100px) auto;
+	max-width: 1440px;
+	width: 97%;
+	.elementor-container {
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.elementor-column {
+		border-radius: 28px;
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+		border: solid 2px #83afba;
+		background-color: #fff;
+		overflow: hidden;
+		text-align: center;
+		border-top: 0px;
+		.static-cta {
+			// text-align: center;
+		}
+		.subhead-1 {
+			font-size: 22px;
+		}
+		&.elementor-col-25 {
+			width: 23%;
+			@include bp(M) {
+				width: 49%;
+				margin-bottom: 80px;
+			}
+			@include bp(S) {
+				width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		.elementor-widget-html {
+			padding: 30px 22px;
+			p {
+				margin: 10px auto 25px;
+				@include bp(S) {
+					margin: 4px auto 20px;
+				}
+			}
+		}
+	}
+}

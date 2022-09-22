@@ -22,12 +22,27 @@ function hello_elementor_child_enqueue_scripts() {
 }
 function unhook_parent_style() {
 
-	https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css
+	// wp_dequeue_style( 'hello-elementor-theme-style' );
+	// wp_deregister_style( 'hello-elementor-theme-style' );
+
+	// wp_register_style( 'hello-elementor-child-style', get_stylesheet_directory_uri() . '/style.css', false, '1.0.0' ); 
+	// wp_enqueue_style( 'hello-elementor-child-style' );
+
+	// wp_enqueue_style( 'hello-elementor', get_parent_theme_file_uri( '/style.css' ) );
 
 	wp_dequeue_style( 'hello-elementor-theme-style' );
 	wp_deregister_style( 'hello-elementor-theme-style' );
 	wp_dequeue_style( 'hello-elementor' );
 	wp_deregister_style( 'hello-elementor' );
+	// wp_dequeue_style( 'elementor' );
+	// wp_deregister_style( 'elementor' );
+
+  wp_dequeue_style('elementor-global');
+  wp_deregister_style('elementor-global');
+
+
+	// wp_enqueue_style('hello-elementor', get_template_directory_uri() . '/style.css');
+	// wp_enqueue_style('hello-elementor', get_stylesheet_directory_uri() . '/style.css', array( 'hello-elementor' ));
 	
 	// hello-elementor
 }
@@ -70,9 +85,18 @@ add_filter('image_send_to_editor','switch_to_relative_url',10,8);
 add_filter( 'hello_elementor_page_title', '__return_false' );
 
 // Shortcode to output custom PHP in Elementor
-function wpc_elementor_shortcode( $atts ) {
+function wpc_elementor_shortcode(  ) {
 	// echo "This is my custom PHP output in Elementor!";
+	ob_start(); // SOLUTION
 	include('test.html');
+	return ob_get_clean(); // SOLUTION
 }
+
+// function daily_profit() {
+//   ob_start(); // SOLUTION
+//   include( locate_template( './daily_profit-layout.php', false, false ) );
+//   return ob_get_clean(); // SOLUTION
+// }
+// add_shortcode('daily_profit', 'daily_profit');
 
 add_shortcode( 'my_elementor_php_output', 'wpc_elementor_shortcode');

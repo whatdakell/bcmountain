@@ -10,64 +10,6 @@ input {
 		cursor: pointer;
 	}
 }
-$img-height: 35px;
-#cta-block {
-	margin: rem(120px) auto;
-	.elementor-container {
-		width: 90%;
-		img {
-			width: auto;
-			height: $img-height;
-			margin-right: auto;
-			display: flex;
-			margin-bottom: 15px;
-			@include bp(S) {
-				margin-left: auto;
-			}
-		}
-		#left {
-			.elementor-widget-wrap {
-				max-width: 436px;
-				margin-left: auto;
-				margin-right: rem(46px);
-				@include bp(S) {
-					margin-right: auto;
-				}
-			}
-		}
-		#right {
-			margin-top: auto;
-			.elementor-widget-wrap {
-				margin-top: rem($img-height + 15px);
-				max-width: 483px;
-				#static-cta {
-					margin-top: rem(28px);
-				}
-				@include bp(S) {
-					margin-top: 20px;
-					#static-cta {
-						margin-top: 25px;
-					}
-				}
-			}
-		}
-		@include bp(S) {
-			width: 95%;
-
-			justify-content: center;
-			text-align: center;
-			.elementor-widget-wrap {
-				width: 100%;
-				max-width: 100%;
-				text-align: center;
-				align-items: center;
-				justify-content: center;
-				margin-left: auto;
-				margin-right: auto;
-			}
-		}
-	}
-}
 
 .elementor-widget:not(:last-child) {
 	margin-bottom: 0px;
@@ -87,14 +29,84 @@ p {
 	background-color: #3b434e;
 }
 
-#icon-block {
-	.elementor-column {
-		padding-right: 20px;
-	}
-}
-
 .inner-max {
 	max-width: 1180px !important;
 	width: 95% !important;
 	margin: auto;
+	@include bp(M) {
+		width: 90% !important;
+	}
+	@include bp(S) {
+		width: 85% !important;
+	}
+}
+
+$divheight: rem(130px);
+.logo-divider {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	height: $divheight;
+	align-items: center;
+	max-width: 1180px;
+	width: 95%;
+	margin: auto;
+	@include bp(M) {
+		width: 90%;
+	}
+	@include bp(S) {
+		width: 100%;
+	}
+	&:before,
+	&:after {
+		content: '';
+		width: 50%;
+		height: 4px;
+		background-color: #3d434d;
+		// border-bottom: solid 4px #3d434d;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: -2;
+	}
+	&:before {
+		left: 0;
+	}
+	&:after {
+		right: 0;
+	}
+	.logo {
+		width: 170px;
+		display: inline-block;
+		height: 51px;
+		// height: 51.9px;
+		box-sizing: content-box;
+		background-color: white;
+		background-position: center center;
+		background-repeat: no-repeat;
+		padding: 0 rem(64px);
+		background-size: contain;
+		position: relative;
+		background-image: url('/wp-content/uploads/2022/09/BearCreek-Icon-darkblue-1.png');
+		&:after {
+			border-radius: 100%;
+			content: '';
+			width: 100%;
+			height: 100%;
+			width: $divheight;
+			height: $divheight;
+			display: block;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			z-index: -1;
+			border: solid 4px #3d434d;
+		}
+		@include bp(S) {
+			padding: 0 22px;
+			width: 150.8px;
+			height: 45.6px;
+		}
+	}
 }

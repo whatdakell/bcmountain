@@ -1,0 +1,130 @@
+$offset: rem(25px);
+#card-section {
+	margin: rem(200px) auto rem(300px);
+	> .elementor-widget-wrap {
+		flex-direction: column;
+		// justify-content: center;
+		align-content: center;
+	}
+
+	@include bp(S) {
+		margin: 100px auto;
+	}
+	#card {
+		// margin-bottom: rem(225px);
+		&:not(:last-child) {
+			margin-bottom: rem(225px);
+			@include bp(S) {
+				margin-bottom: 100px;
+			}
+		}
+		@include bp(S) {
+			padding-right: $offset;
+		}
+		.elementor-inner-column {
+			&.elementor-col-66 {
+				width: 57%;
+				@include bp(S) {
+					width: 100%;
+				}
+			}
+			@include bp(M) {
+				width: 50%;
+			}
+			@include bp(S) {
+				width: 100%;
+			}
+		}
+		.elementor-widget-image {
+			text-align: right;
+		}
+		#copy {
+			max-width: 35%;
+			margin-right: auto;
+			@include bp(S) {
+				max-width: 100%;
+				margin-left: auto;
+				order: 2;
+			}
+		}
+		#shadow-pic {
+			.elementor-widget-container {
+				position: relative;
+				&:after {
+					position: absolute;
+					content: '';
+					background-color: blue;
+					height: 100%;
+					width: 100%;
+					z-index: -1;
+					top: $offset;
+					right: $offset;
+					box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+					background-color: #83afba;
+					max-width: 670px;
+					@include bp(S) {
+						top: $offset;
+						left: $offset;
+					}
+				}
+			}
+		}
+		&:nth-child(even) {
+			.elementor-widget-image {
+				text-align: left;
+			}
+			#copy {
+				margin-left: auto;
+				@include bp(S) {
+					margin-right: auto;
+				}
+			}
+		}
+	}
+	.elementor-container {
+		align-items: center;
+	}
+	.elementor-widget-html {
+		.eyebrow {
+			margin-bottom: 20px;
+			font-family: $prox;
+			font-size: 12px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 2.5;
+			letter-spacing: 1.2px;
+			text-align: left;
+			color: #83afba;
+			text-transform: uppercase;
+			display: block;
+			position: relative;
+			span {
+				background-color: white;
+			}
+			&:after {
+				content: '';
+				background-color: #83afba;
+				height: 1px;
+				width: 100%;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				z-index: -1;
+			}
+			@include bp(S) {
+				display: none;
+			}
+		}
+		p {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.header {
+			@include bp(S) {
+				margin-top: 40px;
+				margin-bottom: 25px;
+			}
+		}
+	}
+}
