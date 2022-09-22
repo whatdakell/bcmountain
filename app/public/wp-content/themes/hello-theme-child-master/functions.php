@@ -37,8 +37,8 @@ function unhook_parent_style() {
 	// wp_dequeue_style( 'elementor' );
 	// wp_deregister_style( 'elementor' );
 
-  wp_dequeue_style('elementor-global');
-  wp_deregister_style('elementor-global');
+  // wp_dequeue_style('elementor-global');
+  // wp_deregister_style('elementor-global');
 
 
 	// wp_enqueue_style('hello-elementor', get_template_directory_uri() . '/style.css');

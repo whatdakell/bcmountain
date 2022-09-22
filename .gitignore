@@ -2,3 +2,4 @@ app/public/wp-content/themes/hello-theme-child-master/node_modules/
 
 # Dependency directories
 node_modules/
+app/public/wp-content/
