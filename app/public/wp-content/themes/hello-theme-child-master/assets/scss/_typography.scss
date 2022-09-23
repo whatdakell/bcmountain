@@ -219,6 +219,15 @@ body {
 		line-height: 1.2;
 		letter-spacing: 1.5px;
 	}
+	transition: all 0.5s ease-in-out;
+	&:hover {
+		background-color: white;
+		// transition: all 0.5s ease-in-out;
+		// box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+		border: solid 1px #9f3926;
+		color: #9f3926;
+		cursor: pointer;
+	}
 }
 .arrow-right {
 	// width: 12px;
@@ -227,6 +236,7 @@ body {
 	display: inline-block;
 	// content: '';
 	// background-image: url('/wp-content/uploads/2022/09/Arrow-Right.svg');
+	margin-left: 4px;
 	&:after {
 		font-family: 'Font Awesome 5 Free';
 		font-weight: 100;
