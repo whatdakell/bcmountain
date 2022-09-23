@@ -4,14 +4,23 @@
 	@include bp(S) {
 		height: 100vh;
 	}
+	.elementor-inner-section {
+		max-width: 1440px;
+		margin: auto;
+	}
 	.elementor-container {
 		position: absolute;
 		bottom: -1px;
 		width: 100%;
+		right: 0%;
 	}
 	.elementor-column.elementor-col-50 {
+		@include bp(M) {
+			width: 100%;
+		}
+
 		&:first-child .elementor-element {
-			max-width: 336px;
+			max-width: rem(336px);
 			min-height: 105px;
 			opacity: 0.9;
 			background-color: $accent;
@@ -22,10 +31,13 @@
 			justify-content: center;
 			position: absolute;
 			z-index: 2;
-			@include bp(S) {
+			@include bp(M) {
 				left: 50%;
 				transform: translateX(-50%);
 				margin: auto;
+			}
+			@include bp(S) {
+				max-width: 90%;
 			}
 		}
 		&:last-child {
@@ -39,14 +51,22 @@
 			min-height: 182px;
 			padding: rem(30px);
 			text-align: center;
-			@include bp(S) {
+			min-width: rem(700px);
+			@include bp(M) {
 				position: absolute;
 				bottom: 0;
 				padding-bottom: 128px;
 			}
+			@include bp(S) {
+				min-width: auto;
+				padding-top: 27px;
+			}
 			h2 {
 				max-width: 639px;
 				margin-left: auto;
+				@include bp(M) {
+					margin-right: auto;
+				}
 			}
 		}
 	}

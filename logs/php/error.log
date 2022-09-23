@@ -1,0 +1,7 @@
+[23-Sep-2022 02:02:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function update_meta() on null in /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php:294
+Stack trace:
+#0 /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php(167): ElementorPro\Modules\ThemeBuilder\Classes\Conditions_Manager->save_conditions(5, Array)
+#1 [internal function]: ElementorPro\Modules\ThemeBuilder\Classes\Conditions_Manager->ajax_save_theme_template_conditions(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#2 /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/elementor/core/common/modules/ajax/module.php(171): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#3 /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php(307): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#4 /Users/k in /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/elementor-pro/modules/theme-builder/classes/conditions-manager.php on line 294

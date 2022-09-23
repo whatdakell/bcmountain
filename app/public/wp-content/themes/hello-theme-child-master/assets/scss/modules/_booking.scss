@@ -93,9 +93,9 @@
 		}
 		.booking-submit {
 			flex: 1;
+			text-align: center;
 			@include bp(S) {
 				margin: 30px auto 0px;
-				text-align: center;
 			}
 			.button-style {
 				max-width: 277px;

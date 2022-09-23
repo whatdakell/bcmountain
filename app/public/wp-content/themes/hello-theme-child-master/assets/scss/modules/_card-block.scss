@@ -53,7 +53,7 @@ $offset: rem(25px);
 				&:after {
 					position: absolute;
 					content: '';
-					background-color: blue;
+					// background-color: blue;
 					height: 100%;
 					width: 100%;
 					z-index: -1;
@@ -66,6 +66,11 @@ $offset: rem(25px);
 						top: $offset;
 						left: $offset;
 					}
+				}
+			}
+			&.red {
+				.elementor-widget-container:after {
+					background-color: #9f3926;
 				}
 			}
 		}

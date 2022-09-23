@@ -109,11 +109,11 @@
 	// }
 	.elementor-nav-menu--dropdown,
 	nav {
-		opacity: 0;
-		transition: 300ms ease;
+		// opacity: 0;
+		// transition: 300ms ease;
 		&[aria-hidden='false'] {
 			// color: red;
-			opacity: 1;
+			// opacity: 1;
 		}
 		margin-left: auto;
 		a {

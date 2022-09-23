@@ -1,7 +1,7 @@
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 h3,h2,h1,p,h4,a{margin:0;padding:0}
 html{font-size:1rem}
-body{font-family:proxima-nova,sans-serif;font-size:16px;font-weight:normal;font-stretch:normal;font-style:normal;line-height:1.44;letter-spacing:-0.08px;color:#3b434e}
+body{font-family:proxima-nova,sans-serif;font-size:1rem;font-weight:normal;font-stretch:normal;font-style:normal;line-height:1.44;letter-spacing:-0.08px;color:#3b434e}
 .large-headline .elementor-heading-title{font-family:"Bitter",serif;font-size:3.25rem;font-weight:600;font-stretch:normal;font-style:normal;line-height:1.25;letter-spacing:3.12px;color:#3b434e;text-transform:uppercase}
 .header{font-family:"Bitter",serif;font-size:2.25rem;font-weight:bold;font-stretch:normal;font-style:normal;line-height:1.25;letter-spacing:2.16px;color:#3b434e;text-transform:uppercase}
 .subhead-1{font-family:"Bitter",serif;font-size:1.375rem;font-weight:500;font-stretch:normal;font-style:normal;line-height:1.27;letter-spacing:1.32px;color:#3b434e;text-transform:uppercase}
@@ -30,13 +30,13 @@ body{font-family:proxima-nova,sans-serif;font-size:16px;font-weight:normal;font-
 #bc-nav img{width:121px;height:45px}
 #bc-nav .elementor-324 .elementor-element.elementor-element-36b1d9f{margin-left:auto}
 #bc-nav i{color:white}
-#bc-nav .elementor-nav-menu--dropdown,#bc-nav nav{opacity:0;-webkit-transition:300ms ease;-o-transition:300ms ease;-moz-transition:300ms ease;transition:300ms ease;margin-left:auto}
-#bc-nav .elementor-nav-menu--dropdown[aria-hidden='false'],#bc-nav nav[aria-hidden='false']{opacity:1}
+#bc-nav .elementor-nav-menu--dropdown,#bc-nav nav{margin-left:auto}
 #bc-nav .elementor-nav-menu--dropdown a:hover,#bc-nav nav a:hover{-webkit-transform:all 300ms ease-in;-moz-transform:all 300ms ease-in;-ms-transform:all 300ms ease-in;-o-transform:all 300ms ease-in;transform:all 300ms ease-in}
 .hero{height:659px;position:relative}
-.hero .elementor-container{position:absolute;bottom:-1px;width:100%}
-.hero .elementor-column.elementor-col-50:first-child .elementor-element{max-width:336px;min-height:105px;opacity:.9;background-color:#83afba;margin-left:5%;bottom:0;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;position:absolute;z-index:2}
-.hero .elementor-column.elementor-col-50:last-child{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;opacity:.85;background-color:#3b434e;min-height:182px;padding:1.875rem;text-align:center}
+.hero .elementor-inner-section{max-width:1440px;margin:auto}
+.hero .elementor-container{position:absolute;bottom:-1px;width:100%;right:0}
+.hero .elementor-column.elementor-col-50:first-child .elementor-element{max-width:21rem;min-height:105px;opacity:.9;background-color:#83afba;margin-left:5%;bottom:0;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;position:absolute;z-index:2}
+.hero .elementor-column.elementor-col-50:last-child{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;opacity:.85;background-color:#3b434e;min-height:182px;padding:1.875rem;text-align:center;min-width:43.75rem}
 .hero .elementor-column.elementor-col-50:last-child h2{max-width:639px;margin-left:auto}
 .hero .current-weather{color:white}
 .hero .current-weather .current-weather-wrapper{font-family:proxima-nova,sans-serif;font-size:12px;font-weight:bold;font-stretch:normal;font-style:normal;letter-spacing:.75px}
@@ -54,7 +54,7 @@ body{font-family:proxima-nova,sans-serif;font-size:16px;font-weight:normal;font-
 .booking-form .booking-inputs .booking-input .guest-wrapper span.dec{bottom:5px;background-position:center right}
 .booking-form .booking-inputs .booking-input .guest-wrapper span.inc{-webkit-transform:rotate(-180deg);-moz-transform:rotate(-180deg);-ms-transform:rotate(-180deg);-o-transform:rotate(-180deg);transform:rotate(-180deg);top:5px;height:50%}
 .booking-form .booking-inputs .booking-input input{height:50px;width:100%;padding:19px 12px 18px 12px;background-color:#eee;border:0}
-.booking-form .booking-inputs .booking-submit{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1}
+.booking-form .booking-inputs .booking-submit{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;text-align:center}
 .booking-form .booking-inputs .booking-submit .button-style,.booking-form .booking-inputs .booking-submit #button-style .elementor-button,#button-style .booking-form .booking-inputs .booking-submit .elementor-button{max-width:277px;width:100%}
 #icon-block{padding:6.25rem 0 0}
 #icon-block .elementor-container{width:100%;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}
@@ -78,7 +78,8 @@ body{font-family:proxima-nova,sans-serif;font-size:16px;font-weight:normal;font-
 #card-section #card .elementor-widget-image{text-align:right}
 #card-section #card #copy{max-width:35%;margin-right:auto}
 #card-section #card #shadow-pic .elementor-widget-container{position:relative}
-#card-section #card #shadow-pic .elementor-widget-container:after{position:absolute;content:'';background-color:blue;height:100%;width:100%;z-index:-1;top:1.5625rem;right:1.5625rem;-webkit-box-shadow:0 3px 6px 0 rgba(0,0,0,0.16);-moz-box-shadow:0 3px 6px 0 rgba(0,0,0,0.16);box-shadow:0 3px 6px 0 rgba(0,0,0,0.16);background-color:#83afba;max-width:670px}
+#card-section #card #shadow-pic .elementor-widget-container:after{position:absolute;content:'';height:100%;width:100%;z-index:-1;top:1.5625rem;right:1.5625rem;-webkit-box-shadow:0 3px 6px 0 rgba(0,0,0,0.16);-moz-box-shadow:0 3px 6px 0 rgba(0,0,0,0.16);box-shadow:0 3px 6px 0 rgba(0,0,0,0.16);background-color:#83afba;max-width:670px}
+#card-section #card #shadow-pic.red .elementor-widget-container:after{background-color:#9f3926}
 #card-section #card:nth-child(even) .elementor-widget-image{text-align:left}
 #card-section #card:nth-child(even) #copy{margin-left:auto}
 #card-section .elementor-container{-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}
@@ -112,27 +113,36 @@ p{margin:0}
 .logo-divider:after{right:0}
 .logo-divider .logo{width:170px;display:inline-block;height:51px;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;background-color:white;background-position:center center;background-repeat:no-repeat;padding:0 4rem;-moz-background-size:contain;-o-background-size:contain;background-size:contain;position:relative;background-image:url("/wp-content/uploads/2022/09/BearCreek-Icon-darkblue-1.png")}
 .logo-divider .logo:after{-webkit-border-radius:100%;-moz-border-radius:100%;border-radius:100%;content:'';width:100%;height:100%;width:8.125rem;height:8.125rem;display:block;position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%);z-index:-1;border:solid 4px #3d434d}
-@media(max-width:1024px){html{font-size:.9rem}
+@media(max-width:1170px){html{font-size:.9rem}
+}@media(max-width:1024px){html{font-size:.8rem}
 #bc-nav .elementor-container:after{display:none}
 #bc-nav .elementor-container{padding-top:0;padding-bottom:0;height:10vh}
 #bc-nav .elementor-nav-menu--dropdown,#bc-nav nav{position:fixed;left:0;right:0;width:100%;height:90vh;margin-top:0 !important;z-index:10;bottom:0;top:10vh !important;background:-webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(50%,white));background:-webkit-linear-gradient(transparent 0,white 50%);background:-moz-linear-gradient(transparent 0,white 50%);background:-o-linear-gradient(transparent 0,white 50%);background:linear-gradient(transparent 0,white 50%)}
 #bc-nav .elementor-nav-menu--dropdown a,#bc-nav nav a{margin-top:5vh;color:#3b434e;background-color:transparent}
+.hero .elementor-column.elementor-col-50{width:100%}
+.hero .elementor-column.elementor-col-50:first-child .elementor-element{left:50%;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);margin:auto}
+.hero .elementor-column.elementor-col-50:last-child{position:absolute;bottom:0;padding-bottom:128px}
+.hero .elementor-column.elementor-col-50:last-child h2{margin-right:auto}
 #card-section #card .elementor-inner-column{width:50%}
 #vertical-tile-grid .elementor-column.elementor-col-25{width:49%;margin-bottom:80px}
 .inner-max{width:90% !important}
 .logo-divider{width:90%}
-}@media(max-width:767px){html{font-size:.8rem}
+}@media(max-width:767px){html{font-size:.7rem}
+body{font-size:12px;line-height:1.33;letter-spacing:-0.06px}
 .large-headline .elementor-heading-title{font-size:24px;font-weight:600;font-stretch:normal;font-style:normal;line-height:1.46;letter-spacing:1.44px}
-.button-style,#button-style .elementor-button{height:39px}
+.subhead-1{font-size:18px;letter-spacing:.9px}
+.body-copy-small,#icon-block p{font-size:12px;line-height:1.33;letter-spacing:-0.06px}
+.static-cta,#static-cta .elementor-button{font-size:10px;line-height:1.2;letter-spacing:1.5px}
+.button-style,#button-style .elementor-button{height:39px;font-size:10px;line-height:1.2;letter-spacing:1.5px}
 .hero{height:100vh}
-.hero .elementor-column.elementor-col-50:first-child .elementor-element{left:50%;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);margin:auto}
-.hero .elementor-column.elementor-col-50:last-child{position:absolute;bottom:0;padding-bottom:128px}
+.hero .elementor-column.elementor-col-50:first-child .elementor-element{max-width:90%}
+.hero .elementor-column.elementor-col-50:last-child{min-width:auto;padding-top:27px}
 .hero .current-weather .current-weather-wrapper{text-align:center}
 .booking-form .booking-inputs{-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .booking-form .booking-inputs .booking-input{margin:5px auto}
 .booking-form .booking-inputs .booking-input.date-input{max-width:100%;width:100%}
 .booking-form .booking-inputs .booking-input.guest-input{width:49%;margin:0;max-width:49%}
-.booking-form .booking-inputs .booking-submit{margin:30px auto 0;text-align:center}
+.booking-form .booking-inputs .booking-submit{margin:30px auto 0}
 #icon-block{padding:60px 0 10px}
 #icon-block .elementor-inner-column{width:auto;min-width:200px}
 #icon-block .elementor-inner-column .elementor-widget-wrap{margin-bottom:50px}
