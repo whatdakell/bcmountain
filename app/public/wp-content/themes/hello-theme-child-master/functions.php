@@ -15,7 +15,8 @@ function hello_elementor_child_enqueue_scripts() {
 	wp_register_style('jqueryUI', 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css');
 	wp_enqueue_style( 'jqueryUI' );
 	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600&display=swap', false );
-
+	wp_register_style( 'adobe-font', 'https://use.typekit.net/awb6uki.css' ); 
+	wp_enqueue_style( 'adobe-font' );
 	wp_enqueue_style(
 		'hello-elementor-child-style', get_stylesheet_directory_uri() . '/style.css', false,'1.2'
 	);
@@ -92,6 +93,20 @@ function wpc_elementor_shortcode(  ) {
 	return ob_get_clean(); // SOLUTION
 }
 
+// function header_elementor_shortcode(  ) {
+// 	// echo "This is my custom PHP output in Elementor!";
+// 	ob_start(); // SOLUTION
+// 	include('header-shortcode.php');
+// 	return ob_get_clean(); // SOLUTION
+// }
+
+function footer_elementor_shortcode(  ) {
+	// echo "This is my custom PHP output in Elementor!";
+	ob_start(); // SOLUTION
+	include('footer-shortcode.php');
+	return ob_get_clean(); // SOLUTION
+}
+
 // function daily_profit() {
 //   ob_start(); // SOLUTION
 //   include( locate_template( './daily_profit-layout.php', false, false ) );
@@ -99,4 +114,32 @@ function wpc_elementor_shortcode(  ) {
 // }
 // add_shortcode('daily_profit', 'daily_profit');
 
+// add_shortcode( 'header_php_output', 'header_elementor_shortcode');
+
+add_shortcode( 'footer_php_output', 'footer_elementor_shortcode');
+
+function breadcrumb_shortcode(  ) {
+	// echo "This is my custom PHP output in Elementor!";
+	ob_start(); // SOLUTION
+	include('bread-crumb.php');
+	return ob_get_clean(); // SOLUTION
+}
+
+add_shortcode( 'breadcrumb_output', 'breadcrumb_shortcode');
+
 add_shortcode( 'my_elementor_php_output', 'wpc_elementor_shortcode');
+
+// function wpmm_setup() {
+// 	register_nav_menus( array(
+// 			'mega_menu' => 'Mega Menu'
+// 	) );
+// }
+// add_action( 'after_setup_theme', 'wpmm_setup' );
+
+
+
+// $slug = $post_type->rewrite;
+// if ( is_string($post_type->has_archive) ){ //If the post type has a custom archive slug
+// 	$slug['slug'] = $post_type->has_archive; //Replace slug with the custom archive slug string
+// }
+// //...

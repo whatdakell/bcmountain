@@ -1,6 +1,9 @@
 body {
 	margin: 0px;
 }
+
+#not-visible {
+}
 .site-branding .show-title {
 	display: none;
 }
@@ -108,5 +111,18 @@ $divheight: rem(130px);
 			width: 150.8px;
 			height: 45.6px;
 		}
+	}
+}
+
+#break-out-hero {
+	height: 220px;
+}
+
+#FAQ-Toggle {
+	.elementor-toggle-title {
+		@extend .subhead-1;
+	}
+	i {
+		color: $navy;
 	}
 }

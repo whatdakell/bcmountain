@@ -4,11 +4,11 @@ html{font-size:1rem}
 body{font-family:proxima-nova,sans-serif;font-size:1rem;font-weight:normal;font-stretch:normal;font-style:normal;line-height:1.44;letter-spacing:-0.08px;color:#3b434e}
 .large-headline .elementor-heading-title{font-family:"Bitter",serif;font-size:3.25rem;font-weight:600;font-stretch:normal;font-style:normal;line-height:1.25;letter-spacing:3.12px;color:#3b434e;text-transform:uppercase}
 .header{font-family:"Bitter",serif;font-size:2.25rem;font-weight:bold;font-stretch:normal;font-style:normal;line-height:1.25;letter-spacing:2.16px;color:#3b434e;text-transform:uppercase}
-.subhead-1{font-family:"Bitter",serif;font-size:1.375rem;font-weight:500;font-stretch:normal;font-style:normal;line-height:1.27;letter-spacing:1.32px;color:#3b434e;text-transform:uppercase}
+.subhead-1,#FAQ-Toggle .elementor-toggle-title{font-family:"Bitter",serif;font-size:1.375rem;font-weight:500;font-stretch:normal;font-style:normal;line-height:1.27;letter-spacing:1.32px;color:#3b434e;text-transform:uppercase}
 .subhead-2{font-family:"Bitter",serif;font-size:22px;font-weight:normal;font-stretch:normal;font-style:normal;line-height:1.27;letter-spacing:.07px;color:#3b434e}
 .overline{font-family:proxima-nova,sans-serif;font-size:.75rem;font-weight:500;font-stretch:normal;font-style:normal;line-height:2.5;letter-spacing:1.2px;color:#83afba}
 .white,.white .elementor-heading-title{color:white}
-.nav-font,#bc-nav .elementor-nav-menu--dropdown a,#bc-nav nav a{font-family:proxima-nova,sans-serif;font-size:12px;font-weight:bold;font-stretch:normal;font-style:normal;line-height:1;letter-spacing:1.8px;text-align:left;color:white;text-transform:uppercase}
+.nav-font,#bc-footer .higher-link>a,#bc-footer #contact-form .elementor-heading-title,#bc-nav .main-item.first-link>a{font-family:proxima-nova,sans-serif;font-size:12px;font-weight:bold;font-stretch:normal;font-style:normal;line-height:1;letter-spacing:1.8px;text-align:left;color:white;text-transform:uppercase}
 .booking-font{font-family:"Bitter",serif;font-size:14px;font-weight:500;font-stretch:normal;font-style:normal;line-height:2.86;letter-spacing:.7px;text-align:left;color:#7f7f7f;text-transform:uppercase}
 .body-copy-small,#icon-block p{font-size:14px;font-family:proxima-nova,sans-serif;font-weight:normal;font-stretch:normal;font-style:normal;line-height:1.29;letter-spacing:-0.07px}
 .static-cta,#static-cta .elementor-button{font-family:proxima-nova,sans-serif;font-size:.875rem;font-weight:bold;font-stretch:normal;font-style:normal;line-height:.86;letter-spacing:2.1px;text-align:left;color:#9f3926;text-align:left;text-transform:uppercase;background-color:transparent;overflow:hidden;display:inline-block}
@@ -19,12 +19,43 @@ body{font-family:proxima-nova,sans-serif;font-size:1rem;font-weight:normal;font-
 .static-cta.teal:after,#static-cta .elementor-button.teal:after{border-bottom:1px solid #83afba}
 .button-style,#button-style .elementor-button{width:100%;height:50px;-webkit-border-radius:25px;-moz-border-radius:25px;border-radius:25px;-webkit-box-shadow:0 3px 6px 0 rgba(0,0,0,0.16);-moz-box-shadow:0 3px 6px 0 rgba(0,0,0,0.16);box-shadow:0 3px 6px 0 rgba(0,0,0,0.16);background-color:#9f3926;border:0;font-family:proxima-nova,sans-serif;font-size:.875rem;font-stretch:normal;font-style:normal;line-height:1.2;letter-spacing:2.1px;color:#fff;text-transform:uppercase;position:relative;-webkit-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
 .button-style:hover,#button-style .elementor-button:hover{background-color:white;border:solid 1px #9f3926;color:#9f3926;cursor:pointer}
-.arrow-right,#button-style .elementor-button .elementor-button-text{display:inline-block;margin-left:4px}
-.arrow-right:after,#button-style .elementor-button .elementor-button-text:after{font-family:'Font Awesome 5 Free';font-weight:100;content:'\f061'}
+.arrow-right,#button-style .elementor-button .elementor-button-text{display:inline-block}
+.arrow-right:after,#button-style .elementor-button .elementor-button-text:after{padding-left:5px;font-family:'Font Awesome 5 Free';font-weight:900;content:'\f061'}
 #button-style{width:auto !important}
 #button-style .elementor-button{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center}
+#bc-footer{padding:0}
+#bc-footer #menu-footer{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;width:100%;height:440px;margin:0}
+#bc-footer #menu-footer .higher-link{width:50%}
+#bc-footer p{font-family:proxima-nova,sans-serif;font-size:14px;font-weight:normal;font-stretch:normal;font-style:normal;line-height:1.57;color:#fff}
+#bc-footer ul{list-style-type:none;padding:0}
+#bc-footer .footer-headline p{font-family:"Bitter",serif;font-size:14px;font-weight:normal;font-stretch:normal;font-style:normal;line-height:1.29;letter-spacing:.84px;text-transform:uppercase;margin-top:11px;margin-bottom:19px}
+#bc-footer .elementor-widget-theme-site-logo{max-width:165px}
+#bc-footer .location{opacity:.75}
+#bc-footer #upper-footer{background-color:#3b434e}
+#bc-footer #upper-footer>.elementor-container{min-height:464px;padding-top:82px}
+#bc-footer #upper-footer .sp-logo{margin-top:50px}
+#bc-footer #lower-footer{background-color:#83afba;height:60px;color:white;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}
+#bc-footer #lower-footer>.elementor-container{width:96%;max-width:1200px;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center}
+#bc-footer #lower-footer>.elementor-container .elementor-widget-heading .elementor-heading-title{color:white;font-family:proxima-nova,sans-serif;font-size:14px;font-weight:normal;font-stretch:normal;font-style:normal;line-height:1.64;letter-spacing:-0.07px}
+#bc-footer #lower-footer>.elementor-container .elementor-social-icon{margin-left:20px}
+#bc-footer #lower-footer>.elementor-container .elementor-social-icon i{color:white;font-size:20px}
+#bc-footer .higher-link{margin-bottom:40px}
+#bc-footer .higher-link>a{color:#83afba}
+#bc-footer .footer-links{max-width:430px;margin:auto;margin-right:0;margin-left:5rem}
+#bc-footer .sub-menu a{opacity:.75;font-family:proxima-nova,sans-serif;font-size:12px;font-weight:normal;font-stretch:normal;font-style:normal;line-height:1.67;letter-spacing:normal;text-align:left;color:#fff}
+#bc-footer #contact-form .elementor-heading-title{color:#83afba}
+#bc-footer #contact-form .elementor-col-50{width:49%}
+#bc-footer #contact-form .elementor-col-50:first-of-type{margin-right:auto}
+#bc-footer #contact-form .mf-input{border:solid .8px #f4f2ee;background:transparent;margin-top:10px;font-family:proxima-nova,sans-serif}
+#bc-footer #contact-form .mf-input::-webkit-input-placeholder{font-style:italic;font-family:proxima-nova,sans-serif;font-size:12px;letter-spacing:1.8px}
+#bc-footer #contact-form .mf-input:-moz-placeholder{font-style:italic;font-family:proxima-nova,sans-serif;font-size:12px;letter-spacing:1.8px}
+#bc-footer #contact-form .mf-input::-moz-placeholder{font-style:italic;font-family:proxima-nova,sans-serif;font-size:12px;letter-spacing:1.8px}
+#bc-footer #contact-form .mf-input:-ms-input-placeholder{font-style:italic;font-family:proxima-nova,sans-serif;font-size:12px;letter-spacing:1.8px}
+#bc-footer #contact-form .mf-input::placeholder{font-style:italic;font-family:proxima-nova,sans-serif;font-size:12px;letter-spacing:1.8px}
+#bc-footer #contact-form .mf-btn-wraper{text-align:left}
+#bc-footer #contact-form .metform-submit-btn{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;font-family:proxima-nova,sans-serif;font-size:12px;margin-top:25px;font-weight:bold;font-stretch:normal;font-style:normal;line-height:1;letter-spacing:1.8px;text-align:left;color:#fff;text-transform:uppercase;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;background-color:transparent;display:inline-block;border-bottom:1px solid white;padding-bottom:5px}
 #bc-nav{background-color:transparent;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;position:absolute;top:0;left:50%;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);width:100%;z-index:10}
-#bc-nav .elementor-container{overflow:hidden;width:94%;max-width:1440px}
+#bc-nav .elementor-container{width:94%;max-width:1440px}
 #bc-nav .elementor-widget-nav-menu{margin-left:auto}
 #bc-nav .elementor-container{padding-top:30px;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}
 #bc-nav .elementor-widget-theme-site-logo{text-align:left}
@@ -33,11 +64,21 @@ body{font-family:proxima-nova,sans-serif;font-size:1rem;font-weight:normal;font-
 #bc-nav i{color:white}
 #bc-nav .elementor-nav-menu--dropdown,#bc-nav nav{margin-left:auto}
 #bc-nav .elementor-nav-menu--dropdown a:hover,#bc-nav nav a:hover{-webkit-transform:all 300ms ease-in;-moz-transform:all 300ms ease-in;-ms-transform:all 300ms ease-in;-o-transform:all 300ms ease-in;transform:all 300ms ease-in}
+#bc-nav .main-item.first-link>a{padding:25px 2vw}
+#bc-nav .wp-megamenu-sub-menu{opacity:.9;background-color:#fff;font-family:proxima-nova,sans-serif;font-size:6px;font-stretch:normal;font-style:normal;text-align:left}
+#bc-nav .wp-megamenu-sub-menu li a{padding:0}
+#bc-nav .wp-megamenu-wrap .wpmm-nav-wrap>ul.wp-megamenu>li.wpmm_mega_menu ul.wp-megamenu-sub-menu li.wpmm-type-widget>a{color:#83afba;line-height:2;letter-spacing:.9px;font-weight:bold;margin-bottom:9px}
+#bc-nav ul.wp-megamenu li ul.wp-megamenu-sub-menu .menu-widget-class ul li a{line-height:2.17;color:#3b434e}
+#bc-nav #menu-main{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:end;-moz-box-pack:end;-ms-flex-pack:end;justify-content:end;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}
+#bc-nav .wpmm-strees-row-and-content-container{bottom:0}
+#bc-nav .wpmm_mobile_menu_btn{background-color:transparent}
+#bc-nav .fa-angle-down:before,#bc-nav .fa-bars:before{font-size:20px}
+#bc-nav a:hover{opacity:.5}
 .hero{height:659px;position:relative}
 .hero .elementor-inner-section{max-width:1440px;margin:auto}
 .hero .elementor-container{position:absolute;bottom:-1px;width:100%;right:0}
 .hero .elementor-column.elementor-col-50:first-child .elementor-element{max-width:21rem;min-height:105px;opacity:.9;background-color:#83afba;margin-left:5%;bottom:0;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;position:absolute;z-index:2}
-.hero .elementor-column.elementor-col-50:last-child{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;opacity:.85;background-color:#3b434e;min-height:182px;padding:1.875rem;text-align:center;min-width:43.75rem}
+.hero .elementor-column.elementor-col-50:last-child{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;opacity:.85;background-color:#3b434e;min-height:182px;padding:1.875rem;min-width:43.75rem;text-align:left}
 .hero .elementor-column.elementor-col-50:last-child h2{max-width:639px;margin-left:auto}
 .hero .current-weather{color:white}
 .hero .current-weather .current-weather-wrapper{font-family:proxima-nova,sans-serif;font-size:12px;font-weight:bold;font-stretch:normal;font-style:normal;letter-spacing:.75px}
@@ -91,7 +132,7 @@ body{font-family:proxima-nova,sans-serif;font-size:1rem;font-weight:normal;font-
 #vertical-tile-grid{margin:6.25rem auto;max-width:1440px;width:97%}
 #vertical-tile-grid .elementor-container{-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
 #vertical-tile-grid .elementor-column{-webkit-border-radius:28px;-moz-border-radius:28px;border-radius:28px;-webkit-box-shadow:0 3px 6px 0 rgba(0,0,0,0.16);-moz-box-shadow:0 3px 6px 0 rgba(0,0,0,0.16);box-shadow:0 3px 6px 0 rgba(0,0,0,0.16);border:solid 2px #83afba;background-color:#fff;overflow:hidden;text-align:center;border-top:0}
-#vertical-tile-grid .elementor-column .subhead-1{font-size:22px}
+#vertical-tile-grid .elementor-column .subhead-1,#vertical-tile-grid .elementor-column #FAQ-Toggle .elementor-toggle-title,#FAQ-Toggle #vertical-tile-grid .elementor-column .elementor-toggle-title{font-size:22px}
 #vertical-tile-grid .elementor-column.elementor-col-25{width:23%}
 #vertical-tile-grid .elementor-column .elementor-widget-html{padding:30px 22px}
 #vertical-tile-grid .elementor-column .elementor-widget-html p{margin:10px auto 25px}
@@ -99,6 +140,7 @@ body{font-family:proxima-nova,sans-serif;font-size:1rem;font-weight:normal;font-
 #cta-screen .elementor-widget-wrap{-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}
 #cta-screen .elementor-widget-wrap p{max-width:523px;margin:1.875rem auto}
 #cta-screen .logo{width:88.8px;margin-bottom:32px}
+.landing-page-hero{height:440px}
 body{margin:0}
 .site-branding .show-title{display:none}
 input:hover{cursor:pointer}
@@ -107,34 +149,53 @@ input:hover{cursor:pointer}
 .elementor-column-gap-default>.elementor-column>.elementor-element-populated{padding:0}
 p{margin:0}
 .navy{background-color:#3b434e}
-.inner-max{max-width:1180px !important;width:95% !important;margin:auto}
+.inner-max,#bc-footer #upper-footer>.elementor-container{max-width:1180px !important;width:95% !important;margin:auto}
 .logo-divider{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;position:relative;height:8.125rem;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;max-width:1180px;width:95%;margin:auto}
 .logo-divider:before,.logo-divider:after{content:'';width:50%;height:4px;background-color:#3d434d;position:absolute;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);z-index:-2}
 .logo-divider:before{left:0}
 .logo-divider:after{right:0}
 .logo-divider .logo{width:170px;display:inline-block;height:51px;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;background-color:white;background-position:center center;background-repeat:no-repeat;padding:0 4rem;-moz-background-size:contain;-o-background-size:contain;background-size:contain;position:relative;background-image:url("/wp-content/uploads/2022/09/BearCreek-Icon-darkblue-1.png")}
 .logo-divider .logo:after{-webkit-border-radius:100%;-moz-border-radius:100%;border-radius:100%;content:'';width:100%;height:100%;width:8.125rem;height:8.125rem;display:block;position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%);z-index:-1;border:solid 4px #3d434d}
+#break-out-hero{height:220px}
+#FAQ-Toggle i{color:#3b434e}
 @media(max-width:1170px){html{font-size:.9rem}
 }@media(max-width:1024px){html{font-size:.8rem}
-#bc-nav .elementor-container:after{display:none}
-#bc-nav .elementor-container{padding-top:0;padding-bottom:0;height:10vh}
-#bc-nav .elementor-nav-menu--dropdown,#bc-nav nav{position:fixed;left:0;right:0;width:100%;height:90vh;margin-top:0 !important;z-index:10;bottom:0;top:10vh !important;background:-webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(50%,white));background:-webkit-linear-gradient(transparent 0,white 50%);background:-moz-linear-gradient(transparent 0,white 50%);background:-o-linear-gradient(transparent 0,white 50%);background:linear-gradient(transparent 0,white 50%)}
-#bc-nav .elementor-nav-menu--dropdown a,#bc-nav nav a{margin-top:5vh;color:#3b434e;background-color:transparent}
+#bc-footer #menu-footer{height:407px}
+#bc-footer #lower-footer>.elementor-container{width:80%}
+#bc-footer .footer-links{margin-left:3.75rem}
+#bc-nav .elementor-container{padding-top:0;padding-bottom:0}
 .hero .elementor-column.elementor-col-50{width:100%}
 .hero .elementor-column.elementor-col-50:first-child .elementor-element{left:50%;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);margin:auto}
-.hero .elementor-column.elementor-col-50:last-child{position:absolute;bottom:0;padding-bottom:128px}
+.hero .elementor-column.elementor-col-50:last-child{position:absolute;bottom:0;text-align:center;padding-bottom:128px}
 .hero .elementor-column.elementor-col-50:last-child h2{margin-right:auto}
 #card-section #card .elementor-inner-column{width:50%}
 #vertical-tile-grid .elementor-column.elementor-col-25{width:49%;margin-bottom:80px}
-.inner-max{width:90% !important}
+.inner-max,#bc-footer #upper-footer>.elementor-container{width:90% !important}
 .logo-divider{width:90%}
 }@media(max-width:767px){html{font-size:.7rem}
 body{font-size:12px;line-height:1.33;letter-spacing:-0.06px}
 .large-headline .elementor-heading-title{font-size:24px;font-weight:600;font-stretch:normal;font-style:normal;line-height:1.46;letter-spacing:1.44px}
-.subhead-1{font-size:18px;letter-spacing:.9px}
+.subhead-1,#FAQ-Toggle .elementor-toggle-title{font-size:18px;letter-spacing:.9px}
 .body-copy-small,#icon-block p{font-size:12px;line-height:1.33;letter-spacing:-0.06px}
 .static-cta,#static-cta .elementor-button{font-size:10px;line-height:1.2;letter-spacing:1.5px}
 .button-style,#button-style .elementor-button{height:39px;font-size:10px;line-height:1.2;letter-spacing:1.5px}
+#bc-footer #menu-footer{height:380px}
+#bc-footer #first-column .elementor-widget-wrap{margin-bottom:38px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+#bc-footer #first-column .elementor-widget-wrap .elementor-element{width:50%;max-width:50%;text-align:left}
+#bc-footer #first-column .elementor-widget-wrap .elementor-element img{max-width:50%}
+#bc-footer p{font-size:10px;line-height:1.6}
+#bc-footer .footer-headline p{font-size:11px;line-height:1.45;margin-top:0;margin-bottom:0;letter-spacing:.66px}
+#bc-footer .elementor-widget-theme-site-logo{margin-bottom:20px}
+#bc-footer #upper-footer>.elementor-container{padding-top:52px;padding-bottom:60px}
+#bc-footer #upper-footer .sp-logo{margin-top:auto}
+#bc-footer #lower-footer{height:auto;padding-top:25px;padding-bottom:20px}
+#bc-footer #lower-footer>.elementor-container{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
+#bc-footer #lower-footer>.elementor-container .elementor-widget-heading .elementor-heading-title{margin-top:20px}
+#bc-footer .footer-links{margin:auto;max-width:100%}
+#bc-footer .sub-menu a{font-size:10px;line-height:1.8}
+#bc-nav .main-item.first-link>a{color:#3b434e;background-color:transparent}
+#bc-nav .wp-megamenu-sub-menu{background-color:transparent}
+#bc-nav #menu-main{display:none;position:fixed;left:0;right:0;width:100%;height:90vh;overflow:scroll;margin-top:0 !important;z-index:10;bottom:0;top:10vh !important;background:-webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(30%,white));background:-webkit-linear-gradient(transparent 0,white 30%);background:-moz-linear-gradient(transparent 0,white 30%);background:-o-linear-gradient(transparent 0,white 30%);background:linear-gradient(transparent 0,white 30%);-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .hero{height:100vh}
 .hero .elementor-column.elementor-col-50:first-child .elementor-element{max-width:90%}
 .hero .elementor-column.elementor-col-50:last-child{min-width:auto;padding-top:27px}
@@ -168,7 +229,7 @@ body{font-size:12px;line-height:1.33;letter-spacing:-0.06px}
 #vertical-tile-grid .elementor-column .elementor-widget-html p{margin:4px auto 20px}
 #cta-screen .elementor-widget-wrap p{max-width:100%;margin:15px auto 24px}
 #cta-screen .logo{margin-bottom:16px;width:45.8px}
-.inner-max{width:85% !important}
+.inner-max,#bc-footer #upper-footer>.elementor-container{width:85% !important}
 .logo-divider{width:100%}
 .logo-divider .logo{padding:0 22px;width:150.8px;height:45.6px}
 }

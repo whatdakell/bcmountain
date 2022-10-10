@@ -1,0 +1,248 @@
+#bc-footer {
+	padding: 0px;
+	#menu-footer {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 440px;
+		margin: 0px;
+		@include bp(M) {
+			height: 407px;
+		}
+
+		@include bp(S) {
+			height: 380px;
+		}
+
+		.menu-item {
+			// width: 200px;
+		}
+		.higher-link {
+			width: 50%;
+		}
+	}
+	#first-column .elementor-widget-wrap {
+		@include bp(S) {
+			margin-bottom: 38px;
+			display: flex;
+			// flex-direction: column;
+			flex-wrap: wrap;
+			.elementor-element {
+				width: 50%;
+				max-width: 50%;
+				text-align: left;
+				img {
+					max-width: 50%;
+					// margin-right: auto;
+				}
+			}
+		}
+	}
+	p {
+		font-family: $prox;
+		font-size: 14px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.57;
+		color: #fff;
+		@include bp(S) {
+			font-size: 10px;
+			line-height: 1.6;
+		}
+	}
+	ul {
+		list-style-type: none;
+		padding: 0px;
+	}
+	.footer-headline p {
+		font-family: $bitter;
+		font-size: 14px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.29;
+		letter-spacing: 0.84px;
+		text-transform: uppercase;
+		margin-top: 11px;
+		margin-bottom: 19px;
+		@include bp(S) {
+			font-size: 11px;
+			line-height: 1.45;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			letter-spacing: 0.66px;
+		}
+	}
+	.elementor-widget-theme-site-logo {
+		max-width: 165px;
+		// height: 165px;
+		@include bp(S) {
+			margin-bottom: 20px;
+		}
+	}
+	.location {
+		opacity: 0.75;
+	}
+	#upper-footer {
+		background-color: #3b434e;
+
+		> .elementor-container {
+			@extend .inner-max;
+			min-height: 464px;
+			padding-top: 82px;
+			@include bp(S) {
+				padding-top: 52px;
+				padding-bottom: 60px;
+			}
+		}
+		.sp-logo {
+			margin-top: 50px;
+			@include bp(S) {
+				margin-top: auto;
+			}
+		}
+	}
+	#lower-footer {
+		background-color: #83afba;
+		height: 60px;
+		color: white;
+		display: flex;
+		align-items: center;
+		@include bp(S) {
+			height: auto;
+			padding-top: 25px;
+			padding-bottom: 20px;
+		}
+		> .elementor-container {
+			width: 96%;
+			max-width: 1200px;
+			align-items: center;
+			justify-content: center;
+			@include bp(M) {
+				width: 80%;
+			}
+			@include bp(S) {
+				flex-direction: column-reverse;
+			}
+			.elementor-widget-heading .elementor-heading-title {
+				color: white;
+				font-family: $prox;
+				font-size: 14px;
+				font-weight: normal;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 1.64;
+				letter-spacing: -0.07px;
+				@include bp(S) {
+					margin-top: 20px;
+				}
+			}
+			.elementor-social-icon {
+				margin-left: 20px;
+				i {
+					color: white;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	.higher-link {
+		margin-bottom: 40px;
+		> a {
+			// font-family: $prox;
+			// font-size: 12px;
+			// font-weight: bold;
+			// font-stretch: normal;
+			// font-style: normal;
+			// line-height: 1;
+			// letter-spacing: 1.8px;
+			// text-align: left;
+
+			@extend .nav-font;
+			color: #83afba;
+			// text-transform: uppercase;
+		}
+	}
+	.footer-links {
+		max-width: 430px;
+		margin: auto;
+		margin-right: 0px;
+		margin-left: rem(80px);
+		@include bp(M) {
+			margin-left: rem(60px);
+		}
+		@include bp(S) {
+			margin: auto;
+			max-width: 100%;
+		}
+	}
+	.sub-menu {
+		a {
+			opacity: 0.75;
+			font-family: $prox;
+			font-size: 12px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.67;
+			letter-spacing: normal;
+			text-align: left;
+			color: #fff;
+			@include bp(S) {
+				font-size: 10px;
+				line-height: 1.8;
+			}
+		}
+	}
+
+	#contact-form {
+		.elementor-heading-title {
+			@extend .nav-font;
+			color: #83afba;
+		}
+		.elementor-col-50 {
+			width: 49%;
+			&:first-of-type {
+				margin-right: auto;
+			}
+		}
+		.mf-input {
+			border: solid 0.8px #f4f2ee;
+			background: transparent;
+			margin-top: 10px;
+			font-family: $prox;
+			&::placeholder {
+				font-style: italic;
+				font-family: $prox;
+				font-size: 12px;
+				letter-spacing: 1.8px;
+			}
+		}
+		.mf-btn-wraper {
+			text-align: left;
+		}
+		.metform-submit-btn {
+			// @extend .static-cta;
+
+			border-radius: 0px;
+			font-family: $prox;
+			font-size: 12px;
+			margin-top: 25px;
+			font-weight: bold;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1;
+			letter-spacing: 1.8px;
+			text-align: left;
+			color: #fff;
+			text-transform: uppercase;
+			box-shadow: none;
+			background-color: transparent;
+			display: inline-block;
+			border-bottom: 1px solid white;
+			padding-bottom: 5px;
+		}
+	}
+}

@@ -236,10 +236,11 @@ body {
 	display: inline-block;
 	// content: '';
 	// background-image: url('/wp-content/uploads/2022/09/Arrow-Right.svg');
-	margin-left: 4px;
 	&:after {
+		padding-left: 5px;
 		font-family: 'Font Awesome 5 Free';
-		font-weight: 100;
+		// font-weight: 100;
+		font-weight: 900;
 		content: '\f061';
 	}
 }
