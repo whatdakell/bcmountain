@@ -43,7 +43,14 @@ p {
 		width: 85% !important;
 	}
 }
-
+.smaller-inner {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	@include bp(S) {
+		width: 85% !important;
+	}
+}
 $divheight: rem(130px);
 .logo-divider {
 	display: flex;
@@ -119,10 +126,28 @@ $divheight: rem(130px);
 }
 
 #FAQ-Toggle {
+	.elementor-tab-title {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+		padding: rem(20px);
+		// border-color: #8caeb8;
+		border: none;
+	}
+	.elementor-toggle-item {
+		border-bottom: #8caeb8 1px solid;
+	}
+	.elementor-tab-content {
+		padding: 0px rem(20px) rem(20px);
+		font-family: $prox;
+		color: #3b434e;
+		border: none;
+	}
 	.elementor-toggle-title {
 		@extend .subhead-1;
 	}
 	i {
-		color: $navy;
+		color: #83afba;
 	}
 }

@@ -1,6 +1,6 @@
 $offset: rem(25px);
 #card-section {
-	margin: rem(200px) auto rem(300px);
+	margin: rem(200px) auto;
 	> .elementor-widget-wrap {
 		flex-direction: column;
 		// justify-content: center;
@@ -91,32 +91,6 @@ $offset: rem(25px);
 	}
 	.elementor-widget-html {
 		.eyebrow {
-			margin-bottom: 20px;
-			font-family: $prox;
-			font-size: 12px;
-			font-weight: 500;
-			font-stretch: normal;
-			font-style: normal;
-			line-height: 2.5;
-			letter-spacing: 1.2px;
-			text-align: left;
-			color: #83afba;
-			text-transform: uppercase;
-			display: block;
-			position: relative;
-			span {
-				background-color: white;
-			}
-			&:after {
-				content: '';
-				background-color: #83afba;
-				height: 1px;
-				width: 100%;
-				position: absolute;
-				top: 50%;
-				left: 0;
-				z-index: -1;
-			}
 			@include bp(S) {
 				display: none;
 			}

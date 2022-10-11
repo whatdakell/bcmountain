@@ -99,6 +99,17 @@ jQuery(function ($) {
 // });
 
 jQuery(function ($) {
+	$('.elementor-swiper-button').each(function () {
+		// var main_image = $(this).clone();
+		// var bloc = $(this).closest('.item-content .bloc_image');
+		// bloc.append(main_image);
+
+		// var bloc = $(this).closest('.elementor-widget-media-carousel').find('.elementor-widget-container').first();
+		// console.log(bloc);
+		// bloc.append(main_image);
+		$(this).closest('.elementor-widget-container').append(this);
+	});
+
 	$(function () {
 		var isMenuAlreadyOpen = false;
 		$('.hh-header .elementor-menu-toggle').on('click', function () {

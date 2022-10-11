@@ -20,7 +20,8 @@ html {
 		font-size: 0.7rem;
 	}
 }
-
+.p1,
+p,
 body {
 	font-family: $prox;
 	font-size: rem(16px);
@@ -55,6 +56,8 @@ body {
 		letter-spacing: 1.44px;
 	}
 }
+
+.header .elementor-heading-title,
 .header {
 	font-family: $bitter;
 	font-size: rem(36px);
@@ -67,6 +70,7 @@ body {
 	text-transform: uppercase;
 }
 
+.subhead-1 .elementor-heading-title,
 .subhead-1 {
 	font-family: $bitter;
 	font-size: rem(22px);
@@ -133,7 +137,7 @@ body {
 	color: #7f7f7f;
 	text-transform: uppercase;
 }
-
+.body-copy-small p,
 .body-copy-small {
 	font-size: 14px;
 	font-family: $prox;
@@ -147,6 +151,51 @@ body {
 		line-height: 1.33;
 		letter-spacing: -0.06px;
 	}
+}
+
+.fine-print {
+	font-family: $prox;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: italic;
+	line-height: 1.58;
+	letter-spacing: -0.06px;
+	text-align: left;
+	color: #3b434e;
+}
+
+.eyebrow {
+	margin-bottom: 20px;
+	font-family: $prox;
+	font-size: 12px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 2.5;
+	letter-spacing: 1.2px;
+	text-align: left;
+	color: #83afba;
+	text-transform: uppercase;
+	display: block;
+	position: relative;
+	span {
+		padding-right: 10px;
+		background-color: white;
+	}
+	&:after {
+		content: '';
+		background-color: #83afba;
+		height: 1px;
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		z-index: -1;
+	}
+	// @include bp(S) {
+	// 	display: none;
+	// }
 }
 
 .static-cta,
@@ -167,7 +216,8 @@ body {
 	overflow: hidden;
 	display: inline-block;
 	.elementor-button-icon {
-		margin-left: 0px;
+		// margin-left: 0px; .
+		padding-left: 5px;
 	}
 	&:after {
 		content: '';
@@ -213,12 +263,14 @@ body {
 	color: #fff;
 	text-transform: uppercase;
 	position: relative;
+	padding: rem(18px) rem(25px);
 	@include bp(S) {
 		height: 39px;
 		font-size: 10px;
 		line-height: 1.2;
 		letter-spacing: 1.5px;
 	}
+	// padding-left: 5px;
 	transition: all 0.5s ease-in-out;
 	&:hover {
 		background-color: white;
@@ -256,4 +308,46 @@ body {
 			@extend .arrow-right;
 		}
 	}
+}
+
+.red {
+	color: $red;
+}
+#breadcrumbs {
+	a {
+	}
+	margin-left: 0px;
+	.trail-item {
+		font-family: $prox;
+		font-size: 12px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1;
+		letter-spacing: normal;
+		text-align: left;
+		color: #83afba !important;
+		&:after {
+			color: #3b434e !important;
+		}
+		span {
+			text-decoration: underline;
+		}
+		a:visited {
+			color: #83afba !important;
+			// text-decoration: underline;
+		}
+		&.trail-end span {
+			text-decoration: none;
+			color: #3b434e !important;
+		}
+	}
+	margin-top: rem(32px);
+	margin-bottom: rem(32px);
+}
+
+.price {
+	@extend .overline;
+	margin-bottom: 5px;
+	text-transform: uppercase;
 }

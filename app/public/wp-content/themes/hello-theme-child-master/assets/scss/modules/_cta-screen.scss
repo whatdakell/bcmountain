@@ -2,9 +2,15 @@
 	display: flex;
 	padding-bottom: 48%;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	background-position: center bottom;
 	margin-top: 12px;
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+	&.img-only {
+		padding-bottom: 60%;
+	}
 	.elementor-widget-wrap {
 		align-items: center;
 		justify-content: center;

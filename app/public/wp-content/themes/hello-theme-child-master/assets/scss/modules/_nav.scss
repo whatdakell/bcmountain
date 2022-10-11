@@ -1,32 +1,32 @@
 #bc-nav {
-	// .elementor-nav-menu--dropdown-tablet .elementor-menu-toggle,
-	// .elementor-nav-menu--dropdown-tablet .elementor-nav-menu--dropdown {
-	// 	@include bp(M) {
-	// 		display: flex !important;
-	// 	}
-	// }
-	// .elementor-nav-menu--dropdown-tablet .elementor-nav-menu--main {
-	// 	@include bp(M) {
-	// 		display: none;
-	// 	}
-	// }
 	background-color: transparent;
 	display: flex;
-	// height: $desktop;
-	// .home & {
-	// 	@include bp(MD) {
-	// 		position: absolute;
-	// 		top: 0;
-	// 		left: 50%;
-	// 		transform: translateX(-50%);
-	// 	}
-	// }
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 100%;
-	z-index: 10;
+	.home & {
+		background-color: transparent;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		z-index: 10;
+		// @include bp(MD) {
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 50%;
+		// 	transform: translateX(-50%);
+		// }
+		.elementor-widget-theme-site-logo a {
+			background: url('/wp-content/uploads/2022/09/BCMR-Logo-White.png');
+			background-size: contain;
+			img {
+				opacity: 0;
+			}
+		}
+		i,
+		.main-item.first-link > a {
+			color: white;
+		}
+	}
 
 	@include bp(M) {
 		// height: $mobile;
@@ -74,60 +74,26 @@
 		text-align: left;
 	}
 	img {
-		// width: rem(219px);
 		width: 121px;
 		height: 45px;
-		// height: auto;
-		// @include bp(M) {
-		// 	width: 122px;
-		// }
 	}
 	.elementor-324 .elementor-element.elementor-element-36b1d9f {
 		margin-left: auto;
 	}
-	.elementor-menu-toggle {
-		// width: 19px;
-		// height: 11px;
-		// background: transparent;
-		// margin-top: rem(10px);
-		i {
-			// color: $black;
-		}
-	}
 	i {
-		color: white;
+		color: $navy;
+		background-color: transparent;
 	}
-	// .elementor-column {
-	// 	@include bp(M) {
-	// 		width: 50%;
-	// 	}
-	// }
-	// .elementor-column:last-child {
-	// 	@include bp(M) {
-	// 		display: none;
-	// 	}
-	// }
 	.elementor-nav-menu--dropdown,
 	nav {
-		// opacity: 0;
-		// transition: 300ms ease;
 		&[aria-hidden='false'] {
 			// color: red;
 			// opacity: 1;
 		}
 		margin-left: auto;
 		a {
-			// padding-left: rem(50px);
-			// padding-right: 0px;
-			// padding-top: rem(10px);
-			// padding-bottom: 0;
-			// // color: $black;
-			// font-size: rem(14px);
-
 			&:hover {
 				transform: $hover;
-				// color: $cta-accent;
-				// font-weight: $med;
 			}
 		}
 		@include bp(M) {
@@ -151,6 +117,7 @@
 	.main-item.first-link > a {
 		@extend .nav-font;
 		padding: 25px 2vw;
+		color: #3b434e;
 		@include bp(S) {
 			color: $navy;
 			background-color: transparent;
@@ -201,13 +168,7 @@
 			background: linear-gradient(transparent 0%, white 30%);
 			flex-direction: column;
 			justify-content: center;
-			// a {
-			// 	// margin-top: 5vh;
-			// 	color: $navy;
-			// 	background-color: transparent;
-			// }
 		}
-		// height: 50px;
 	}
 	.wpmm-strees-row-and-content-container {
 		bottom: 0px;
@@ -224,7 +185,6 @@
 	}
 	.wp-megamenu-wrap.wpmm-mobile-menu ul.wp-megamenu li {
 		@include bp(S) {
-			// width: auto;
 		}
 	}
 }

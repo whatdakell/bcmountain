@@ -18,7 +18,7 @@ function hello_elementor_child_enqueue_scripts() {
 	wp_register_style( 'adobe-font', 'https://use.typekit.net/awb6uki.css' ); 
 	wp_enqueue_style( 'adobe-font' );
 	wp_enqueue_style(
-		'hello-elementor-child-style', get_stylesheet_directory_uri() . '/style.css', false,'1.2'
+		'hello-elementor-child-style', get_stylesheet_directory_uri() . '/style.css', false,'1.3'
 	);
 }
 function unhook_parent_style() {
