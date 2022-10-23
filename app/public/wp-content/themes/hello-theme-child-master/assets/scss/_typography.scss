@@ -333,6 +333,7 @@ body {
 		span {
 			text-decoration: underline;
 		}
+		a:-webkit-any-link,
 		a:visited {
 			color: #83afba !important;
 			// text-decoration: underline;

@@ -11,6 +11,10 @@
 		width: 100%;
 		flex-wrap: wrap;
 		justify-content: space-around;
+		@include bp(S) {
+			flex-direction: column;
+			align-content: center;
+		}
 	}
 	// .elementor-inner-column {
 	// 	padding-right: 20px;

@@ -10,6 +10,10 @@ $introTotalTime: $introDelay + $introDuration;
 	transform: translateY(40%);
 	opacity: 0;
 	transition: all 1s cubic-bezier(0.25, 0, 0.25, 1.01);
+	&.in-viewport {
+		transform: translateY(0%);
+		opacity: 1;
+	}
 }
 .moveUpViewport {
 	transform: translateY(40%);
@@ -22,6 +26,7 @@ $introTotalTime: $introDelay + $introDuration;
 }
 .moveUpGrow {
 	overflow: hidden;
+
 	position: relative;
 	@extend .moveUp;
 	&:after {
@@ -36,16 +41,16 @@ $introTotalTime: $introDelay + $introDuration;
 		transition: transform 1s cubic-bezier(0.6, 0.19, 0.07, 1);
 	}
 }
-.opacity {
-	opacity: 0;
-	transition: opacity 0.7s cubic-bezier(0.42, 0, 0.58, 1);
-}
+// .opacity {
+// 	opacity: 0;
+// 	transition: opacity 0.7s cubic-bezier(0.42, 0, 0.58, 1);
+// }
 
 .opacityUp {
 	opacity: 0;
 	transform: translate3d(0, 20px, 0);
 	transition: transform 1s cubic-bezier(0, 0.68, 0.41, 0.98), opacity 0.8s ease-in;
-	.animate-in & {
+	.in-viewport & {
 		opacity: 1;
 		transform: translate3d(0, 0, 0) scale(1);
 	}
@@ -55,9 +60,13 @@ $introTotalTime: $introDelay + $introDuration;
 	overflow: hidden;
 	&:after {
 		transform: translateX(-100%);
-		transition: transform 400ms ease-in-out;
+		// transition: transform 400ms ease-out;
+		transition-duration: 600ms;
+		transition-timing-function: cubic-bezier(0, 0.68, 0.41, 0.98);
+		transition-property: transform;
 		left: 0;
-		.animate-in & {
+		transition-delay: 700ms;
+		.in-viewport & {
 			transform: translateX(0%);
 		}
 	}
@@ -119,84 +128,84 @@ $introTotalTime: $introDelay + $introDuration;
 		}
 	}
 }
-.eyebrow {
-	overflow: hidden;
-	position: relative;
-	.elementor-widget-container {
-		@extend .moveUp;
-		transition-delay: 0.4s;
-	}
-	@extend .borderDraw;
-	// transition-delay: 0.4s;
-}
+// .eyebrow {
+// 	overflow: hidden;
+// 	position: relative;
+// 	span {
+// 		@extend .moveUp;
+// 		// transition-delay: 0.4s;
+// 	}
+// 	@extend .borderDraw;
+// 	transition-delay: 1s;
+// }
 
-.hh-hero {
-	&.opt-2 {
-		img {
-			@extend .slideLeft;
-		}
-	}
-	.eyebrow {
-		.elementor-widget-container {
-			transition-delay: 0.5s;
-		}
-		&:after {
-			transition-delay: 0.3s;
-		}
-	}
-	#hh-background-image {
-		@extend .slideLeft;
-	}
-	.hero-block-quote,
-	.headline {
-		@extend .opacity;
-	}
+// .hh-hero {
+// 	&.opt-2 {
+// 		img {
+// 			@extend .slideLeft;
+// 		}
+// 	}
+// 	.eyebrow {
+// 		.elementor-widget-container {
+// 			transition-delay: 0.5s;
+// 		}
+// 		&:after {
+// 			transition-delay: 0.3s;
+// 		}
+// 	}
+// 	#hh-background-image {
+// 		@extend .slideLeft;
+// 	}
+// 	.hero-block-quote,
+// 	.headline {
+// 		@extend .opacity;
+// 	}
 
-	.elementor-widget-wrap > .elementor-element:not(:first-child) {
-		@include staggerAnimation(10, 600, 100);
-		@extend .opacityUp;
-	}
-}
+// 	.elementor-widget-wrap > .elementor-element:not(:first-child) {
+// 		@include staggerAnimation(10, 600, 100);
+// 		@extend .opacityUp;
+// 	}
+// }
 // UserGrid
-.hh-in-view.user-grid {
-	.user {
-		@include staggerAnimation(10, 300, 150);
-		opacity: 0;
-		transform: translate3d(0, 45px, 0);
-		transition: transform 1s cubic-bezier(0, 0.68, 0.41, 0.98), opacity 0.8s ease-in;
-	}
-	&.in-viewport .user {
-		opacity: 1;
-		transform: translate3d(0, 0, 0) scale(1);
-	}
-}
+// .hh-in-view.user-grid {
+// 	.user {
+// 		@include staggerAnimation(10, 300, 150);
+// 		opacity: 0;
+// 		transform: translate3d(0, 45px, 0);
+// 		transition: transform 1s cubic-bezier(0, 0.68, 0.41, 0.98), opacity 0.8s ease-in;
+// 	}
+// 	&.in-viewport .user {
+// 		opacity: 1;
+// 		transform: translate3d(0, 0, 0) scale(1);
+// 	}
+// }
 
-.hh-in-view.copy-card {
-	opacity: 0;
-	transition: opacity 0.8s ease-in;
-	.elementor-widget-wrap > .elementor-element {
-		opacity: 0;
-		transition: opacity 0.8s ease-in;
-		@include staggerAnimation(10, 300, 100);
-	}
-	&.in-viewport {
-		opacity: 1;
-		.elementor-widget-wrap > .elementor-element {
-			opacity: 1;
-		}
-	}
-}
-// InnerPages
-#inner-page-template {
-	.elementor-column:first-child .elementor-widget-wrap > .elementor-element:not(:first-child) {
-		@include staggerAnimation(10, 500, 100);
-		@extend .opacityUp;
-	}
-	.elementor-column:last-child .elementor-widget-wrap > .elementor-element {
-		@extend .opacityUp;
-		@include staggerAnimation(10, 750, 100);
-	}
-}
+// .hh-in-view.copy-card {
+// 	opacity: 0;
+// 	transition: opacity 0.8s ease-in;
+// 	.elementor-widget-wrap > .elementor-element {
+// 		opacity: 0;
+// 		transition: opacity 0.8s ease-in;
+// 		@include staggerAnimation(10, 300, 100);
+// 	}
+// 	&.in-viewport {
+// 		opacity: 1;
+// 		.elementor-widget-wrap > .elementor-element {
+// 			opacity: 1;
+// 		}
+// 	}
+// }
+// // InnerPages
+// #inner-page-template {
+// 	.elementor-column:first-child .elementor-widget-wrap > .elementor-element:not(:first-child) {
+// 		@include staggerAnimation(10, 500, 100);
+// 		@extend .opacityUp;
+// 	}
+// 	.elementor-column:last-child .elementor-widget-wrap > .elementor-element {
+// 		@extend .opacityUp;
+// 		@include staggerAnimation(10, 750, 100);
+// 	}
+// }
 
 .faq-section {
 	opacity: 0;
@@ -390,3 +399,196 @@ $introTotalTime: $introDelay + $introDuration;
 // 	transform: translateY(-100%);
 // 	transition: all 0.3s 1s ease-out;
 // }
+
+.animate-ready {
+}
+.animate-in {
+}
+@keyframes kenBurns {
+	from {
+		opacity: 1;
+		transform: scale3d(1.07, 1.07, 1.07);
+	}
+	to {
+		opacity: 1;
+		transform: scale3d(1, 1, 1);
+	}
+}
+.landing-page-hero,
+#break-out-hero {
+	overflow: hidden;
+	// opacity: 0;
+	// transform: scale3d(1.07, 1.07, 1.07);
+	// transition: opacity 0.5s ease, transform 1s ease-in-out;
+	.elementor-widget-wrap {
+		opacity: 0;
+		transform: scale3d(1.07, 1.07, 1.07);
+		transform-origin: center center;
+		transition: opacity 1s ease-in, transform 1s ease;
+	}
+	.animate-in & {
+		// // animation: kenBurns 2s ease forwards;
+		// opacity: 1;
+		// transform: scale3d(1.02, 1.02, 1.02);
+		.elementor-widget-wrap {
+			opacity: 1;
+			transform: scale3d(1, 1, 1);
+		}
+		// animation: kenBurns 2s ease forwards;
+	}
+}
+
+.trail-items {
+	> li {
+		@include staggerAnimation(10, 100, 80);
+		@extend .slideLeft;
+	}
+}
+
+// .eyebrowDraw {
+// 	overflow: hidden;
+// 	&:after {
+// 		transform: translateX(-100%);
+// 		transition: transform 400ms ease-out; // left: 0;
+// 		.in-viewport & {
+// 			transform: translateX(0%);
+// 		}
+// 	}
+// }
+// .eyebrow {
+// 	@extend .eyebrowDraw;
+// }
+
+.eyebrow {
+	// overflow: hidden;
+	// position: relative;
+	span {
+		opacity: 0;
+		// @extend .opacityUp;
+		// transition-delay: 0.4s;
+		transition: opacity 0.7s ease 100ms;
+		.in-viewport & {
+			opacity: 1;
+			// transform: translate3d(0, 0, 0) scale(1);
+		}
+	}
+	@extend .borderDraw;
+	&:after {
+		// transition-delay: 1s;
+	}
+}
+
+.opacity {
+	opacity: 0;
+	transition: opacity 1s cubic-bezier(0.42, 0, 0.58, 1);
+
+	opacity: 0;
+	// transform: scale3d(1.07, 1.07, 1.07);
+	// transform-origin: center center;
+	transition: opacity 1s cubic-bezier(0.42, 0, 0.58, 1);
+
+	.in-viewport & {
+		opacity: 1;
+	}
+}
+
+#break-out-template {
+	#breakout-gallery {
+		// @extend .opacity;
+		// transition-delay: 400ms;
+		opacity: 0;
+		transition: opacity 1s cubic-bezier(0.42, 0, 0.58, 1) 400ms;
+		.animate-in & {
+			opacity: 1;
+		}
+		&.in-viewport {
+			opacity: 1;
+		}
+	}
+	.copy-side {
+		.elementor-widget-wrap > .elementor-element:not(:first-child) {
+			@include staggerAnimation(10, 500, 80);
+			opacity: 0;
+			transform: translate3d(0, 20px, 0);
+			transition: transform 1s cubic-bezier(0, 0.68, 0.41, 0.98), opacity 0.8s ease-in;
+		}
+		&.in-viewport .elementor-widget-wrap > .elementor-element:not(:first-child) {
+			opacity: 1;
+			transform: translate3d(0, 0, 0) scale(1);
+		}
+	}
+}
+#card {
+	#shadow-pic {
+		img {
+			opacity: 0;
+			transition: opacity 0.4s ease-in 400ms;
+		}
+		.elementor-widget-container:after,
+		img {
+		}
+		.elementor-widget-container:after {
+			transition: transform 0.8s cubic-bezier(0, 0.68, 0.41, 0.98) 800ms, opacity 0.8s ease-out 800ms;
+			opacity: 0;
+			transform: translate(rem(25px), rem(-25px));
+		}
+	}
+	#copy {
+		#button-style {
+			opacity: 0;
+			transform: translate3d(0, 20px, 0);
+			transition: transform 1s cubic-bezier(0, 0.68, 0.41, 0.98) 1.4s, opacity 0.8s ease-in 1.4s;
+			// transition-delay: 1.4s;
+		}
+		.elementor-widget-container > *:not(.eyebrow) {
+			@include staggerAnimation(5, 500, 150);
+			opacity: 0;
+			transform: translate3d(0, 20px, 0);
+			transition: transform 1s cubic-bezier(0, 0.68, 0.41, 0.98), opacity 0.8s ease-in;
+		}
+	}
+	&.in-viewport {
+		#shadow-pic img,
+		#shadow-pic .elementor-widget-container:after {
+			// $offset: rem(25px);
+			opacity: 1;
+			transform: translate(0, 0);
+		}
+		#copy #button-style,
+		#copy .elementor-widget-container > *:not(.eyebrow) {
+			opacity: 1;
+			transform: translate3d(0, 0, 0) scale(1);
+		}
+	}
+}
+.intro-copy-block {
+	.elementor-element {
+		@include staggerAnimation(10, 500, 200);
+		opacity: 0;
+		transform: translate3d(0, 20px, 0);
+		transition: transform 1s cubic-bezier(0, 0.68, 0.41, 0.98), opacity 0.8s ease-in;
+	}
+	&.in-viewport .elementor-element {
+		opacity: 1;
+		transform: translate3d(0, 0, 0) scale(1);
+	}
+}
+
+$color: white;
+@keyframes border {
+	0% {
+		box-shadow: 60px -60px 0 4px $color, -60px -60px 0 4px $color, -60px 60px 0 4px $color, 60px 60px 0 4px $color, 0 0 0 4px #e94e3d;
+	}
+	25% {
+		box-shadow: 0 -125px 0 4px $color, -60px -60px 0 4px $color, -60px 60px 0 4px $color, 60px 60px 0 4px $color, 0 0 0 4px #fff;
+	}
+	50% {
+		box-shadow: 0 -125px 0 4px $color, -125px 0px 0 4px $color, -60px 60px 0 4px $color, 60px 60px 0 4px $color, 0 0 0 4px #fff;
+	}
+	75% {
+		box-shadow: 0 -125px 0 4px $color, -125px 0px 0 4px $color, 0px 125px 0 4px $color, 60px 60px 0 4px $color, 0 0 0 4px #fff;
+	}
+	100% {
+		box-shadow: 0 -125px 0 4px $color, -125px 0px 0 4px $color, 0px 125px 0 4px $color, 120px 40px 0 4px $color, 0 0 0 4px #fff;
+	}
+}

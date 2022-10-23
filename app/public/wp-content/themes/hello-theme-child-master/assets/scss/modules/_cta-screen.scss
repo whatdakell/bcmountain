@@ -5,7 +5,7 @@
 	background-size: cover;
 	background-position: center bottom;
 	margin-top: 12px;
-	max-width: 1440px;
+	max-width: 2000px;
 	margin-left: auto;
 	margin-right: auto;
 	&.img-only {
@@ -30,6 +30,44 @@
 		@include bp(S) {
 			margin-bottom: 16px;
 			width: 45.8px;
+		}
+	}
+}
+
+#cta-screen-block {
+	display: flex;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	margin-top: 12px;
+	// max-width: 2000px;
+	margin-left: auto;
+	margin-right: auto;
+	.elementor-widget-wrap {
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		border-top: solid 1px #83afba;
+		padding: rem(60px) 0;
+		p {
+			max-width: 760px;
+			width: 80%;
+			margin: rem(30px) auto;
+			@include bp(S) {
+				max-width: 100%;
+				margin: 15px auto 24px;
+			}
+		}
+	}
+	.s1 {
+		color: $accent;
+		font-weight: bold;
+	}
+	.logo {
+		width: 45px;
+		margin-bottom: 32px;
+		@include bp(S) {
+			margin-bottom: 16px;
 		}
 	}
 }

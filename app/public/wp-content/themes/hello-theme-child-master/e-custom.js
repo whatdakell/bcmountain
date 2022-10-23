@@ -33,6 +33,11 @@ function weatherBalloon(cityID) {
 		});
 }
 
+// document.querySelector('.wpmm_mobile_menu_btn').addEventListener('click', (e) => {
+// 	$("body").toggleClass("hidden"); 
+// }, false);
+
+
 const getTime = (timezone) => {
 	d = new Date();
 	localTime = d.getTime();
@@ -57,6 +62,14 @@ window.onload = function () {
 weatherBalloon(18062);
 
 jQuery(function ($) {
+	$('.custom-toggle > a:first-of-type').append( "<span class='custom-click'><b class='fa fa-angle-down'></b></span>" );
+
+
+  $('.wpmm_mobile_menu_btn').click(function(e) {
+	e.preventDefault();
+		$('body').toggleClass('stop-scroll');
+	  });
+
 	$('#datein').datepicker({
 		dateFormat: 'mm/dd/yy',
 	});
@@ -65,7 +78,7 @@ jQuery(function ($) {
 	});
 
 	$.fn.isInViewport = function () {
-		var elementTop = $(this).offset().top + 150;
+		var elementTop = $(this).offset().top + 50;
 		var elementBottom = elementTop + $(this).outerHeight();
 
 		var viewportTop = $(window).scrollTop();
@@ -74,7 +87,7 @@ jQuery(function ($) {
 		return elementBottom > viewportTop && elementTop < viewportBottom;
 	};
 
-	$(window).on('resize scroll', function () {
+	$(window).on('resize scroll load', function () {
 		$('.el-in-view').each(function () {
 			if ($(this).isInViewport()) {
 				$(this).addClass('in-viewport');
@@ -86,7 +99,7 @@ jQuery(function ($) {
 		$('body').addClass('animate-ready');
 		setTimeout(function () {
 			$('body').addClass('animate-in');
-		}, 500);
+		}, 0);
 	});
 });
 

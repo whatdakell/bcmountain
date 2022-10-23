@@ -25,6 +25,12 @@
 		i,
 		.main-item.first-link > a {
 			color: white;
+			@include bp(S) {
+				color: #3b434e;
+			}
+		}
+		i {
+			color: white;
 		}
 	}
 
@@ -119,13 +125,29 @@
 		padding: 25px 2vw;
 		color: #3b434e;
 		@include bp(S) {
+			display: flex;
 			color: $navy;
+			justify-content: space-between;
+			align-items: center;
+			background-color: transparent;
+		}
+		.fa-angle-down {
+			display: none;
+			@include bp(S) {
+				width: 100px;
+				text-align: right;
+				display: block;
+			}
+		}
+	}
+	.main-item.first-link .wp-megamenu-sub-menu:first-child {
+		opacity: 0.9;
+		background-color: #fff;
+		@include bp(S) {
 			background-color: transparent;
 		}
 	}
 	.wp-megamenu-sub-menu {
-		opacity: 0.9;
-		background-color: #fff;
 		font-family: $prox;
 		font-size: 6px;
 		font-stretch: normal;
@@ -136,6 +158,22 @@
 		}
 		li a {
 			padding: 0px;
+		}
+	}
+	.custom-toggle .fa.fa-angle-down {
+		transform: rotate(0deg);
+	}
+	.custom-toggle > .wp-megamenu-sub-menu {
+		visibility: visible;
+		position: relative;
+		opacity: 1;
+		left: 5px;
+		background: transparent;
+		border: none;
+		box-shadow: none;
+		padding: 0;
+		@include bp(S) {
+			display: none;
 		}
 	}
 	.wp-megamenu-wrap .wpmm-nav-wrap > ul.wp-megamenu > li.wpmm_mega_menu ul.wp-megamenu-sub-menu li.wpmm-type-widget > a {
@@ -165,7 +203,11 @@
 			z-index: 10;
 			bottom: 0;
 			top: 10vh !important;
-			background: linear-gradient(transparent 0%, white 30%);
+			background-color: white;
+			.home & {
+				background: linear-gradient(transparent 0%, white 30%);
+			}
+
 			flex-direction: column;
 			justify-content: center;
 		}
