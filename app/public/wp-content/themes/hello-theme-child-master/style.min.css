@@ -35,6 +35,9 @@ html{font-size:1rem}
 #breadcrumbs .trail-item a:-webkit-any-link,#breadcrumbs .trail-item a:visited{color:#83afba !important}
 #breadcrumbs .trail-item.trail-end span{text-decoration:none;color:#3b434e !important}
 .price{margin-bottom:5px;text-transform:uppercase}
+.border-top{border-top:solid 1px #8caeb8}
+.elementor-widget-text-editor{color:#3b434e;font-family:proxima-nova,sans-serif}
+.custom-stick{position:sticky;position:-webkit-sticky;top:50px}
 #bc-footer{padding:0}
 #bc-footer #menu-footer{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;width:100%;height:440px;margin:0}
 #bc-footer #menu-footer .higher-link{width:50%}
@@ -161,6 +164,7 @@ html{font-size:1rem}
 #cta-screen .logo{width:88.8px;margin-bottom:32px}
 #cta-screen-block{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;background-repeat:no-repeat;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-position:center bottom;margin-top:12px;margin-left:auto;margin-right:auto}
 #cta-screen-block .elementor-widget-wrap{-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center;border-top:solid 1px #83afba;padding:3.75rem 0}
+#cta-screen-block .elementor-widget-wrap .no-border{border-top:0}
 #cta-screen-block .elementor-widget-wrap p,#cta-screen-block .elementor-widget-wrap #break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt .elementor-widget-container,#break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt #cta-screen-block .elementor-widget-wrap .elementor-widget-container{max-width:760px;width:80%;margin:1.875rem auto}
 #cta-screen-block .s1{color:#83afba;font-weight:bold}
 #cta-screen-block .logo{width:45px;margin-bottom:32px}
@@ -168,6 +172,8 @@ html{font-size:1rem}
 .intro-copy-block{text-align:center}
 .intro-copy-block .elementor-widget-wrap{-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .intro-copy-block .logo{width:3.125rem;margin:0 auto}
+.intro-copy-block.bottom{margin:10rem auto}
+.intro-copy-block.bottom .logo{max-width:80px;width:100%}
 .intro-copy-block .elementor-heading-title{margin:.9375rem auto 2.5rem;max-width:58.375rem}
 .intro-copy-block p,.intro-copy-block #break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt .elementor-widget-container,#break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt .intro-copy-block .elementor-widget-container{max-width:48rem;margin:0 auto}
 .intro-copy-block.basic{border-top:solid 1px #8caeb8;padding:6.25rem 0}
@@ -360,7 +366,31 @@ p,#break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt .ele
 #calender-override .mec-event-title{font-family:"Bitter",serif;font-size:1.0625rem;font-weight:500;font-stretch:normal;font-style:normal;line-height:1.27;letter-spacing:1.32px;color:#3b434e;text-transform:uppercase}
 #calender-override .mec-event-data-field-value{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}
 #calender-override .mec-event-data-field-value a{margin-top:20px}
-@media(max-width:1170px){html{font-size:.9rem}
+.accordion{background:#f9f9f9}
+.accordion-tabs{display:none}
+.accordion-tabs :focus{outline:0}
+.accordion-item{border-bottom:1px solid #eaeaea}
+.accordion-item:last-child{border:0}
+.accordion-item__label{margin:0;padding:1.25rem;cursor:pointer;-webkit-transition:padding .2s ease;-o-transition:padding .2s ease;-moz-transition:padding .2s ease;transition:padding .2s ease;position:relative}
+.accordion-item__label:after{content:'';height:4px;width:4px;position:absolute;top:-4px;right:1.25rem;bottom:0;margin:auto;border:3px solid transparent;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);border-color:transparent #447fff #447fff transparent;opacity:1;-webkit-transition:opacity .1s ease;-o-transition:opacity .1s ease;-moz-transition:opacity .1s ease;transition:opacity .1s ease}
+.accordion-item__label:hover{background:#d3e1ff}
+.accordion-item__container{padding:0 1.25em;height:0;overflow:hidden;opacity:0;-webkit-transition:padding .2s ease,opacity .5s .15s ease;-o-transition:padding .2s ease,opacity .5s .15s ease;-moz-transition:padding .2s ease,opacity .5s .15s ease;transition:padding .2s ease,opacity .5s .15s ease}
+.accordion-active{background:rgba(68,127,255,0.1)}
+.accordion-active .accordion-item__label{padding-bottom:0;cursor:inherit}
+.accordion-active .accordion-item__label:hover{background:0}
+.accordion-active .accordion-item__label:after{opacity:0}
+.accordion-active .accordion-item__container{padding:1.25em;height:auto;opacity:1}
+@media(min-width:600px){.accordion-tabs{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;background:rgba(68,127,255,0.1)}
+.accordion-tabs .accordion-tab{background:rgba(68,127,255,0.1);padding:1rem 2rem;font:inherit;-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;border:0;cursor:pointer;-webkit-transition:background .1s ease;-o-transition:background .1s ease;-moz-transition:background .1s ease;transition:background .1s ease}
+.accordion-tabs .accordion-tab:hover{background:rgba(249,249,249,0.01)}
+.accordion-tabs .accordion-tab:last-child{border-right:0}
+.accordion-tabs .accordion-tab.accordion-active{background:#f9f9f9}
+.accordion-item{padding:2.4rem;display:none;border:0;background:#f9f9f9;min-height:260px}
+.accordion-item__label,.accordion-item__container{padding:0;-webkit-transition:inherit;-o-transition:inherit;-moz-transition:inherit;transition:inherit}
+.accordion-item__label{margin-bottom:1.5rem}
+.accordion-item.accordion-active{display:block}
+.accordion-item.accordion-active .accordion-item__container{padding:0}
+}@media(max-width:1170px){html{font-size:.9rem}
 }@media(max-width:1024px){html{font-size:.8rem}
 #bc-footer #menu-footer{height:407px}
 #bc-footer #lower-footer>.elementor-container{width:80%}
@@ -384,6 +414,7 @@ p,#break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt .ele
 .body-copy-small p,#icon-block p p,#icon-block #break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt .elementor-widget-container p,#break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt #icon-block .elementor-widget-container p,#calender-override .mec-field-item-textarea p,.body-copy-small #break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt .elementor-widget-container,#break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt .body-copy-small .elementor-widget-container,#icon-block p #break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt .elementor-widget-container,#break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt #icon-block p .elementor-widget-container,#icon-block #break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt .elementor-widget-container .elementor-widget-container,#break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt #icon-block .elementor-widget-container .elementor-widget-container,#calender-override .mec-field-item-textarea #break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt .elementor-widget-container,#break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt #calender-override .mec-field-item-textarea .elementor-widget-container,.body-copy-small,#icon-block p,#icon-block #break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt .elementor-widget-container,#break-out-grid #break-out-loop-card .elementor-widget-theme-post-excerpt #icon-block .elementor-widget-container,#calender-override .mec-field-item-textarea{font-size:12px;line-height:1.33;letter-spacing:-0.06px}
 .static-cta,#calender-override .mec-event-data-field-item a,#static-cta .elementor-button{font-size:10px;line-height:1.2;letter-spacing:1.5px}
 .button-style,#button-style .elementor-button{height:39px;font-size:10px;line-height:1.2;letter-spacing:1.5px}
+.custom-stick{position:relative;top:0}
 #bc-footer #menu-footer{height:380px}
 #bc-footer #first-column .elementor-widget-wrap{margin-bottom:38px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
 #bc-footer #first-column .elementor-widget-wrap .elementor-element{width:50%;max-width:50%;text-align:left}

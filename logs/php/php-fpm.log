@@ -309,3 +309,8 @@
 [23-Oct-2022 19:23:19] NOTICE: exiting, bye-bye!
 [23-Oct-2022 19:23:21] NOTICE: fpm is running, pid 5949
 [23-Oct-2022 19:23:21] NOTICE: ready to handle connections
+[23-Oct-2022 23:45:52] NOTICE: Terminating ...
+[23-Oct-2022 23:45:52] NOTICE: Terminating ...
+[23-Oct-2022 23:45:52] NOTICE: exiting, bye-bye!
+[23-Oct-2022 23:46:30] NOTICE: fpm is running, pid 22158
+[23-Oct-2022 23:46:30] NOTICE: ready to handle connections

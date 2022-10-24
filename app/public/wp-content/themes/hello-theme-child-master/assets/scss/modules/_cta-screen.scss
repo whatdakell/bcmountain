@@ -49,6 +49,9 @@
 		text-align: center;
 		border-top: solid 1px #83afba;
 		padding: rem(60px) 0;
+		.no-border {
+			border-top: none;
+		}
 		p {
 			max-width: 760px;
 			width: 80%;

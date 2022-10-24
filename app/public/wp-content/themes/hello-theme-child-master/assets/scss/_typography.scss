@@ -352,3 +352,22 @@ body {
 	margin-bottom: 5px;
 	text-transform: uppercase;
 }
+
+.border-top {
+	border-top: solid 1px #8caeb8;
+}
+
+.elementor-widget-text-editor {
+	color: $navy;
+	font-family: $prox;
+}
+
+.custom-stick {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 50px;
+	@include bp(S) {
+		position: relative;
+		top: 0;
+	}
+}

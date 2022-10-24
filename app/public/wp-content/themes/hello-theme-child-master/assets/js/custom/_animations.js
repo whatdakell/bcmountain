@@ -34,9 +34,8 @@ function weatherBalloon(cityID) {
 }
 
 // document.querySelector('.wpmm_mobile_menu_btn').addEventListener('click', (e) => {
-// 	$("body").toggleClass("hidden"); 
+// 	$("body").toggleClass("hidden");
 // }, false);
-
 
 const getTime = (timezone) => {
 	d = new Date();
@@ -53,7 +52,7 @@ console.log(data, ' this data');
 // const sunrise = new Date((data.sys.sunrise + data.timezone) * 1000);
 // console.log(sunrise);
 console.log(getTime());
-console.log('eekkk');
+console.log('meow');
 
 window.onload = function () {
 	console.log('hi');
@@ -62,13 +61,55 @@ window.onload = function () {
 weatherBalloon(18062);
 
 jQuery(function ($) {
-	$('.custom-toggle > a:first-of-type').append( "<span class='custom-click'><b class='fa fa-angle-down'></b></span>" );
+	const labels = document.querySelectorAll('.accordion-item__label');
+	const tabs = document.querySelectorAll('.accordion-tab');
 
+	function toggleShow() {
+		const target = this;
+		const item = target.classList.contains('accordion-tab') ? target : target.parentElement;
+		const group = item.dataset.actabGroup;
+		const id = item.dataset.actabId;
+		console.log('222');
 
-  $('.wpmm_mobile_menu_btn').click(function(e) {
-	e.preventDefault();
+		tabs.forEach(function (tab) {
+			if (tab.dataset.actabGroup === group) {
+				if (tab.dataset.actabId === id) {
+					tab.classList.add('accordion-active');
+				} else {
+					tab.classList.remove('accordion-active');
+				}
+			}
+		});
+
+		labels.forEach(function (label) {
+			const tabItem = label.parentElement;
+
+			if (tabItem.dataset.actabGroup === group) {
+				if (tabItem.dataset.actabId === id) {
+					tabItem.classList.add('accordion-active');
+				} else {
+					tabItem.classList.remove('accordion-active');
+				}
+			}
+		});
+	}
+
+	labels.forEach(function (label) {
+		console.log('333');
+		label.addEventListener('click', toggleShow);
+	});
+
+	tabs.forEach(function (tab) {
+		console.log(tab);
+		tab.addEventListener('click', toggleShow);
+	});
+
+	$('.custom-toggle > a:first-of-type').append("<span class='custom-click'><b class='fa fa-angle-down'></b></span>");
+
+	$('.wpmm_mobile_menu_btn').click(function (e) {
+		e.preventDefault();
 		$('body').toggleClass('stop-scroll');
-	  });
+	});
 
 	$('#datein').datepicker({
 		dateFormat: 'mm/dd/yy',
@@ -93,6 +134,27 @@ jQuery(function ($) {
 				$(this).addClass('in-viewport');
 			}
 		});
+	});
+
+	$('.embed-tab').each(function () {
+		// console.log(this);
+		// .appendTo("." + key);
+		var test = $(this);
+		$('.accordion-item').each(function () {
+			console.log(this, test);
+			$(test).wrapAll("<div class='item' />");
+			// $(this).append(test);
+		});
+	});
+
+	$('.owl-carousel').owlCarousel({
+		items: 4,
+		loop: false,
+		center: true,
+		margin: 10,
+		URLhashListener: true,
+		autoplayHoverPause: true,
+		startPosition: 'URLHash',
 	});
 
 	$(function () {

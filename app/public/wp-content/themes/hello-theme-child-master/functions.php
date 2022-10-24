@@ -55,6 +55,8 @@ function scripts_and_styles()
     wp_enqueue_script('jquery');
     wp_register_script('jqueryUI', 'https://code.jquery.com/ui/1.13.2/jquery-ui.min.js');
     wp_enqueue_script('jqueryUI');
+		wp_register_script('owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js');
+    wp_enqueue_script('owl-carousel');
 		wp_enqueue_style( 'style', get_stylesheet_uri() );
     wp_register_script('e-custom', get_stylesheet_directory_uri() . '/e-custom.js', false,'1.301');
     wp_enqueue_script('e-custom');
