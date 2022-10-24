@@ -291,3 +291,81 @@ $divheight: rem(130px);
 .phone {
 	color: $accent;
 }
+
+#calender-override {
+	margin-bottom: rem(50px);
+	.mec-table-side-title,
+	.mec-calendar-header {
+		@extend .subhead-1;
+	}
+	.mec-box-calendar.mec-calendar .mec-calendar-table-head dt {
+		background-color: $accent;
+		color: white;
+	}
+	.mec-calendar-side.mec-clear {
+		// padding: 0px;
+	}
+	.mec-previous-month {
+		left: 0;
+	}
+	.mec-next-month {
+		right: 0;
+	}
+	.mec-previous-month,
+	.mec-next-month {
+		box-shadow: none;
+		border: none;
+		i {
+			color: $accent;
+		}
+	}
+	.mec-calendar {
+		border: $accent 1px solid;
+		border-radius: 20px;
+		.mec-calendar-topsec {
+			background-color: transparent;
+		}
+		.mec-calendar-row dt.mec-has-event:hover {
+			background-color: $accent;
+		}
+		.mec-has-event:after,
+		.mec-selected-day {
+			background-color: $accent;
+		}
+	}
+	.mec-event-footer {
+		display: none;
+	}
+	.mec-color,
+	.mec-color.mec-table-side-day {
+		color: $accent;
+		font-family: $bitter;
+		border-color: $accent;
+	}
+	.mec-event-title {
+		font-family: $bitter;
+		font-size: rem(17px);
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.27;
+		letter-spacing: 1.32px;
+		color: $navy;
+		text-transform: uppercase;
+	}
+	.mec-field-item-textarea {
+		@extend .body-copy-small;
+	}
+	.mec-event-data-field-item a {
+		@extend .static-cta;
+	}
+	.mec-event-data-field-value {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		a {
+			margin-top: 20px;
+		}
+	}
+}
