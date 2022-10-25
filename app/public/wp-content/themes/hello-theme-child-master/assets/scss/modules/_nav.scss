@@ -140,7 +140,14 @@
 			}
 		}
 	}
-	.main-item.first-link .wp-megamenu-sub-menu:first-child {
+	.main-item.first-link > .wp-megamenu-sub-menu {
+		opacity: 0.9;
+		background-color: #fff;
+		@include bp(S) {
+			background-color: transparent;
+		}
+	}
+	.wpmm-row-content-strees-extra + .wp-megamenu-sub-menu {
 		opacity: 0.9;
 		background-color: #fff;
 		@include bp(S) {
@@ -229,4 +236,13 @@
 		@include bp(S) {
 		}
 	}
+}
+.wp-megamenu-wrap .wpmm-nav-wrap > ul.wp-megamenu li.wpmm_mega_menu .wpmm-strees-row-and-content-container > .wp-megamenu-sub-menu > li {
+	padding: 0;
+}
+.wp-megamenu-wrap .wpmm-nav-wrap > ul.wp-megamenu > li.wpmm_mega_menu > .wpmm-strees-row-and-content-container ul.wp-megamenu-sub-menu > li.wpmm-row > ul.wp-megamenu-sub-menu {
+	max-width: 800px;
+	width: 80%;
+	justify-self: center;
+	margin: auto;
 }

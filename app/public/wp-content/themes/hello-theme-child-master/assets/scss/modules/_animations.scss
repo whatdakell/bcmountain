@@ -462,6 +462,7 @@ $introTotalTime: $introDelay + $introDuration;
 .eyebrow {
 	// overflow: hidden;
 	// position: relative;
+	.elementor-widget-container,
 	span {
 		opacity: 0;
 		// @extend .opacityUp;
@@ -496,8 +497,10 @@ $introTotalTime: $introDelay + $introDuration;
 	#breakout-gallery {
 		// @extend .opacity;
 		// transition-delay: 400ms;
-		opacity: 0;
-		transition: opacity 1s cubic-bezier(0.42, 0, 0.58, 1) 400ms;
+		&.el-in-view {
+			opacity: 0;
+			transition: opacity 1s cubic-bezier(0.42, 0, 0.58, 1) 400ms;
+		}
 		.animate-in & {
 			opacity: 1;
 		}
@@ -505,7 +508,7 @@ $introTotalTime: $introDelay + $introDuration;
 			opacity: 1;
 		}
 	}
-	.copy-side {
+	.copy-side.el-in-view {
 		.elementor-widget-wrap > .elementor-element:not(:first-child) {
 			@include staggerAnimation(10, 500, 80);
 			opacity: 0;

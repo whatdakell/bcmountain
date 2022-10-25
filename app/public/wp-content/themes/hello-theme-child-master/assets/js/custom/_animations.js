@@ -61,7 +61,17 @@ window.onload = function () {
 weatherBalloon(18062);
 
 jQuery(function ($) {
-	const labels = document.querySelectorAll('.accordion-item__label');
+	$('.embed-tab').map(function (index) {
+		const element = $(this);
+		element.appendTo('.accordion-content');
+		element.wrapAll(`<div class='accordion-item ${index === 0 ? ' accordion-active' : ''}' data-actab-group="0" data-actab-id=${index}>`);
+		const title = element.find('.elementor-heading-title').html();
+		const updatedTitle = $(`<button class="accordion-tab booking-font ${index === 0 ? ' accordion-active' : ''}" data-actab-group="0" data-actab-id=${index}>${title}</button>`);
+		updatedTitle.appendTo('.accordion-tabs');
+		// console.log(updatedTitle);
+	});
+
+	const labels = document.querySelectorAll('.accordion-item');
 	const tabs = document.querySelectorAll('.accordion-tab');
 
 	function toggleShow() {
@@ -69,7 +79,6 @@ jQuery(function ($) {
 		const item = target.classList.contains('accordion-tab') ? target : target.parentElement;
 		const group = item.dataset.actabGroup;
 		const id = item.dataset.actabId;
-		console.log('222');
 
 		tabs.forEach(function (tab) {
 			if (tab.dataset.actabGroup === group) {
@@ -82,8 +91,8 @@ jQuery(function ($) {
 		});
 
 		labels.forEach(function (label) {
-			const tabItem = label.parentElement;
-
+			const tabItem = label;
+			console.log(tabItem, 'tab');
 			if (tabItem.dataset.actabGroup === group) {
 				if (tabItem.dataset.actabId === id) {
 					tabItem.classList.add('accordion-active');
@@ -92,17 +101,34 @@ jQuery(function ($) {
 				}
 			}
 		});
+		window.dispatchEvent(new Event('resize'));
 	}
 
 	labels.forEach(function (label) {
-		console.log('333');
 		label.addEventListener('click', toggleShow);
 	});
 
 	tabs.forEach(function (tab) {
-		console.log(tab);
 		tab.addEventListener('click', toggleShow);
 	});
+
+	$('.swiper-container').each(function () {
+		// console.log(this);
+		// swiperInstance = $(this).data('swiper');
+		// console.log(swiperInstance);
+		// swiperInstance.params.observer = true;
+		// swiperInstance.params.observeParents = true;
+		// swiperInstance.update();
+	});
+
+	// document.querySelectorAll('.elementor-tab-title').forEach((item) => {
+	// 	const interval = setInterval(function () {
+	// 		window.dispatchEvent(new Event('resize'));
+	// 	}, 1000);
+	// 	setTimeout(function () {
+	// 		clearInterval(setInterval);
+	// 	}, 5000);
+	// });
 
 	$('.custom-toggle > a:first-of-type').append("<span class='custom-click'><b class='fa fa-angle-down'></b></span>");
 
@@ -136,26 +162,15 @@ jQuery(function ($) {
 		});
 	});
 
-	$('.embed-tab').each(function () {
-		// console.log(this);
-		// .appendTo("." + key);
-		var test = $(this);
-		$('.accordion-item').each(function () {
-			console.log(this, test);
-			$(test).wrapAll("<div class='item' />");
-			// $(this).append(test);
-		});
-	});
-
-	$('.owl-carousel').owlCarousel({
-		items: 4,
-		loop: false,
-		center: true,
-		margin: 10,
-		URLhashListener: true,
-		autoplayHoverPause: true,
-		startPosition: 'URLHash',
-	});
+	// $('.owl-carousel').owlCarousel({
+	// 	items: 4,
+	// 	loop: false,
+	// 	center: true,
+	// 	margin: 10,
+	// 	URLhashListener: true,
+	// 	autoplayHoverPause: true,
+	// 	startPosition: 'URLHash',
+	// });
 
 	$(function () {
 		$('body').addClass('animate-ready');
@@ -172,3 +187,9 @@ jQuery(function ($) {
 // 		}, 910);
 // 	});
 // });
+
+// elementor-element elementor-element-5901bb21 elementor-skin-slideshow elementor-aspect-ratio-43 elementor-arrows-yes elementor-widget elementor-widget-media-carousel e-widget-swiper
+
+// elementor-element elementor-element-5901bb21 elementor-skin-slideshow elementor-aspect-ratio-43 elementor-arrows-yes elementor-widget elementor-widget-media-carousel e-widget-swiper
+
+// swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev

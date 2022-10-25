@@ -179,8 +179,11 @@ body {
 	text-transform: uppercase;
 	display: block;
 	position: relative;
+	.elementor-widget-container,
 	span {
 		padding-right: 10px;
+		display: inline-block;
+		color: #83afba;
 		background-color: white;
 	}
 	&:after {
@@ -370,4 +373,33 @@ body {
 		position: relative;
 		top: 0;
 	}
+}
+
+.animated-border {
+	display: block;
+	position: relative;
+
+	&:after {
+		content: '';
+		background-color: #83afba;
+		height: 1px;
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		z-index: -1;
+	}
+	&:before {
+		content: '';
+		background-color: #83afba;
+		height: 1px;
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		z-index: -1;
+	}
+	// @include bp(S) {
+	// 	display: none;
+	// }
 }

@@ -11,7 +11,7 @@ jQuery(function ($) {
 		}
 
 		function initCardOwl() {
-			$('.copy-card-caro-init .caro').each(function () {
+			$('.accordion-item').each(function () {
 				$(this)
 					.find('.caro-next')
 					.on('click', function () {
