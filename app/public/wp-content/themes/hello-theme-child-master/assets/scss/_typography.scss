@@ -127,7 +127,7 @@ body {
 
 .booking-font {
 	font-family: $bitter;
-	font-size: 14px;
+	font-size: rem(14px);
 	font-weight: 500;
 	font-stretch: normal;
 	font-style: normal;
@@ -402,4 +402,13 @@ body {
 	// @include bp(S) {
 	// 	display: none;
 	// }
+}
+a:-webkit-any-link {
+	color: $accent;
+}
+a.static-cta:-webkit-any-link {
+	color: $red;
+}
+.teal {
+	color: $accent;
 }

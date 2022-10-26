@@ -3,7 +3,7 @@
  * Plugin Name: WP Engine Cache Plugin
  * Plugin URI:  https://www.wpengine.com
  * Description: WP Engine Cache Plugin
- * Version:     1.0.11
+ * Version:     1.1.0
  * Author:      WP Engine
  *
  * @package wpengine\cache_plugin

@@ -49,14 +49,11 @@ const getTime = (timezone) => {
 const data = weatherBalloon(18062);
 
 console.log(data, ' this data');
-// const sunrise = new Date((data.sys.sunrise + data.timezone) * 1000);
-// console.log(sunrise);
 console.log(getTime());
 console.log('meow');
 
 window.onload = function () {
 	console.log('hi');
-	// weatherBalloon(94949);
 };
 weatherBalloon(18062);
 
@@ -68,7 +65,6 @@ jQuery(function ($) {
 		const title = element.find('.elementor-heading-title').html();
 		const updatedTitle = $(`<button class="accordion-tab booking-font ${index === 0 ? ' accordion-active' : ''}" data-actab-group="0" data-actab-id=${index}>${title}</button>`);
 		updatedTitle.appendTo('.accordion-tabs');
-		// console.log(updatedTitle);
 	});
 
 	const labels = document.querySelectorAll('.accordion-item');
@@ -111,24 +107,6 @@ jQuery(function ($) {
 	tabs.forEach(function (tab) {
 		tab.addEventListener('click', toggleShow);
 	});
-
-	$('.swiper-container').each(function () {
-		// console.log(this);
-		// swiperInstance = $(this).data('swiper');
-		// console.log(swiperInstance);
-		// swiperInstance.params.observer = true;
-		// swiperInstance.params.observeParents = true;
-		// swiperInstance.update();
-	});
-
-	// document.querySelectorAll('.elementor-tab-title').forEach((item) => {
-	// 	const interval = setInterval(function () {
-	// 		window.dispatchEvent(new Event('resize'));
-	// 	}, 1000);
-	// 	setTimeout(function () {
-	// 		clearInterval(setInterval);
-	// 	}, 5000);
-	// });
 
 	$('.custom-toggle > a:first-of-type').append("<span class='custom-click'><b class='fa fa-angle-down'></b></span>");
 

@@ -3775,3 +3775,103 @@ Stack trace:
 [24-Oct-2022 21:27:19 UTC] PHP   4. WP_Hook->apply_filters() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:331
 [24-Oct-2022 21:27:19 UTC] PHP   5. wp_megamenu_base->wpmm_item_settings_load() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:307
 [24-Oct-2022 21:27:19 UTC] PHP   6. include() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/classes/class.wp-megamenu-base.php:305
+[26-Oct-2022 01:12:01 UTC] WordPress database error Duplicate entry '121-271' for key 'PRIMARY' for query INSERT INTO `wp_yoast_indexable_hierarchy` (`indexable_id`, `ancestor_id`, `depth`, `blog_id`) VALUES ('121', '271', '1', '1') made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/hello-elementor/index.php'), get_header, locate_template, load_template, require_once('/themes/hello-elementor/header.php'), wp_head, do_action('wp_head'), WP_Hook->do_action, WP_Hook->apply_filters, Yoast\WP\SEO\Integrations\Front_End_Integration->call_wpseo_head, do_action('wpseo_head'), WP_Hook->do_action, WP_Hook->apply_filters, Yoast\WP\SEO\Integrations\Front_End_Integration->present_head, Yoast\WP\SEO\Presenters\Schema_Presenter->present, Yoast\WP\SEO\Presenters\Schema_Presenter->get, Yoast\WP\SEO\Presentations\Abstract_Presentation->__get, Yoast\WP\SEO\Presentations\Indexable_Presentation->generate_schema, Yoast\WP\SEO\Generators\Schema_Generator->generate, Yoast\WP\SEO\Generators\Schema_Generator->generate_graph, Yoast\WP\SEO\Generators\Schema\Breadcrumb->generate, Yoast\WP\SEO\Presentations\Abstract_Presentation->__get, Yoast\WP\SEO\Presentations\Indexable_Presentation->generate_breadcrumbs, Yoast\WP\SEO\Generators\Breadcrumbs_Generator->generate, Yoast\WP\SEO\Repositories\Indexable_Repository->get_ancestors, array_map, Yoast\WP\SEO\Repositories\Indexable_Repository->upgrade_indexable, Yoast\WP\SEO\Builders\Indexable_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->save_ancestors, Yoast\WP\SEO\Repositories\Indexable_Hierarchy_Repository->add_ancestor, Yoast\WP\Lib\Model->save, Yoast\WP\Lib\ORM->save, Yoast\WP\Lib\ORM::execute
+[26-Oct-2022 01:27:10 UTC] WordPress database error Duplicate entry '155-0' for key 'PRIMARY' for query INSERT INTO `wp_yoast_indexable_hierarchy` (`indexable_id`, `ancestor_id`, `depth`, `blog_id`) VALUES ('155', '0', '0', '1') made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/hello-elementor/index.php'), get_header, locate_template, load_template, require_once('/themes/hello-elementor/header.php'), wp_head, do_action('wp_head'), WP_Hook->do_action, WP_Hook->apply_filters, wp_robots, apply_filters('wp_robots'), WP_Hook->apply_filters, Yoast\WP\SEO\Integrations\Front_End\WP_Robots_Integration->add_robots, Yoast\WP\SEO\Integrations\Front_End\WP_Robots_Integration->get_robots_value, Yoast\WP\SEO\Memoizers\Meta_Tags_Context_Memoizer->for_current_page, Yoast\WP\SEO\Repositories\Indexable_Repository->for_current_page, Yoast\WP\SEO\Repositories\Indexable_Repository->find_by_id_and_type, Yoast\WP\SEO\Repositories\Indexable_Repository->upgrade_indexable, Yoast\WP\SEO\Builders\Indexable_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->add_ancestors_for_post, Yoast\WP\SEO\Repositories\Indexable_Repository->find_by_id_and_type, Yoast\WP\SEO\Repositories\Indexable_Repository->upgrade_indexable, Yoast\WP\SEO\Builders\Indexable_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->add_ancestors_for_post, Yoast\WP\SEO\Repositories\Indexable_Repository->find_by_id_and_type, Yoast\WP\SEO\Repositories\Indexable_Repository->upgrade_indexable, Yoast\WP\SEO\Builders\Indexable_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->save_ancestors, Yoast\WP\SEO\Repositories\Indexable_Hierarchy_Repository->add_ancestor, Yoast\WP\Lib\Model->save, Yoast\WP\Lib\ORM->save, Yoast\WP\Lib\ORM::execute
+[26-Oct-2022 01:27:10 UTC] WordPress database error Duplicate entry '29-155' for key 'PRIMARY' for query INSERT INTO `wp_yoast_indexable_hierarchy` (`indexable_id`, `ancestor_id`, `depth`, `blog_id`) VALUES ('29', '155', '1', '1') made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/hello-elementor/index.php'), get_header, locate_template, load_template, require_once('/themes/hello-elementor/header.php'), wp_head, do_action('wp_head'), WP_Hook->do_action, WP_Hook->apply_filters, wp_robots, apply_filters('wp_robots'), WP_Hook->apply_filters, Yoast\WP\SEO\Integrations\Front_End\WP_Robots_Integration->add_robots, Yoast\WP\SEO\Integrations\Front_End\WP_Robots_Integration->get_robots_value, Yoast\WP\SEO\Memoizers\Meta_Tags_Context_Memoizer->for_current_page, Yoast\WP\SEO\Repositories\Indexable_Repository->for_current_page, Yoast\WP\SEO\Repositories\Indexable_Repository->find_by_id_and_type, Yoast\WP\SEO\Repositories\Indexable_Repository->upgrade_indexable, Yoast\WP\SEO\Builders\Indexable_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->add_ancestors_for_post, Yoast\WP\SEO\Repositories\Indexable_Repository->find_by_id_and_type, Yoast\WP\SEO\Repositories\Indexable_Repository->upgrade_indexable, Yoast\WP\SEO\Builders\Indexable_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->save_ancestors, Yoast\WP\SEO\Repositories\Indexable_Hierarchy_Repository->add_ancestor, Yoast\WP\Lib\Model->save, Yoast\WP\Lib\ORM->save, Yoast\WP\Lib\ORM::execute
+[26-Oct-2022 01:54:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/classes/class.wp-megamenu-base.php on line 267
+[26-Oct-2022 01:54:07 UTC] PHP Stack trace:
+[26-Oct-2022 01:54:07 UTC] PHP   1. {main}() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:0
+[26-Oct-2022 01:54:07 UTC] PHP   2. do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:187
+[26-Oct-2022 01:54:07 UTC] PHP   3. WP_Hook->do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/plugin.php:476
+[26-Oct-2022 01:54:07 UTC] PHP   4. WP_Hook->apply_filters() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:331
+[26-Oct-2022 01:54:07 UTC] PHP   5. wp_megamenu_base->wpmm_item_settings_load() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:307
+[26-Oct-2022 01:54:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/views/admin/item_settings.php on line 142
+[26-Oct-2022 01:54:07 UTC] PHP Stack trace:
+[26-Oct-2022 01:54:07 UTC] PHP   1. {main}() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:0
+[26-Oct-2022 01:54:07 UTC] PHP   2. do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:187
+[26-Oct-2022 01:54:07 UTC] PHP   3. WP_Hook->do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/plugin.php:476
+[26-Oct-2022 01:54:07 UTC] PHP   4. WP_Hook->apply_filters() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:331
+[26-Oct-2022 01:54:07 UTC] PHP   5. wp_megamenu_base->wpmm_item_settings_load() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:307
+[26-Oct-2022 01:54:07 UTC] PHP   6. include() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/classes/class.wp-megamenu-base.php:305
+[26-Oct-2022 01:55:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/classes/class.wp-megamenu-base.php on line 267
+[26-Oct-2022 01:55:47 UTC] PHP Stack trace:
+[26-Oct-2022 01:55:47 UTC] PHP   1. {main}() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:0
+[26-Oct-2022 01:55:47 UTC] PHP   2. do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:187
+[26-Oct-2022 01:55:47 UTC] PHP   3. WP_Hook->do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/plugin.php:476
+[26-Oct-2022 01:55:47 UTC] PHP   4. WP_Hook->apply_filters() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:331
+[26-Oct-2022 01:55:47 UTC] PHP   5. wp_megamenu_base->wpmm_item_settings_load() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:307
+[26-Oct-2022 01:55:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/views/admin/item_settings.php on line 142
+[26-Oct-2022 01:55:47 UTC] PHP Stack trace:
+[26-Oct-2022 01:55:47 UTC] PHP   1. {main}() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:0
+[26-Oct-2022 01:55:47 UTC] PHP   2. do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:187
+[26-Oct-2022 01:55:47 UTC] PHP   3. WP_Hook->do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/plugin.php:476
+[26-Oct-2022 01:55:47 UTC] PHP   4. WP_Hook->apply_filters() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:331
+[26-Oct-2022 01:55:47 UTC] PHP   5. wp_megamenu_base->wpmm_item_settings_load() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:307
+[26-Oct-2022 01:55:47 UTC] PHP   6. include() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/classes/class.wp-megamenu-base.php:305
+[26-Oct-2022 01:56:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/classes/class.wp-megamenu-base.php on line 267
+[26-Oct-2022 01:56:04 UTC] PHP Stack trace:
+[26-Oct-2022 01:56:04 UTC] PHP   1. {main}() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:0
+[26-Oct-2022 01:56:04 UTC] PHP   2. do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:187
+[26-Oct-2022 01:56:04 UTC] PHP   3. WP_Hook->do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/plugin.php:476
+[26-Oct-2022 01:56:04 UTC] PHP   4. WP_Hook->apply_filters() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:331
+[26-Oct-2022 01:56:04 UTC] PHP   5. wp_megamenu_base->wpmm_item_settings_load() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:307
+[26-Oct-2022 01:56:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/views/admin/item_settings.php on line 142
+[26-Oct-2022 01:56:04 UTC] PHP Stack trace:
+[26-Oct-2022 01:56:04 UTC] PHP   1. {main}() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:0
+[26-Oct-2022 01:56:04 UTC] PHP   2. do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:187
+[26-Oct-2022 01:56:04 UTC] PHP   3. WP_Hook->do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/plugin.php:476
+[26-Oct-2022 01:56:04 UTC] PHP   4. WP_Hook->apply_filters() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:331
+[26-Oct-2022 01:56:04 UTC] PHP   5. wp_megamenu_base->wpmm_item_settings_load() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:307
+[26-Oct-2022 01:56:04 UTC] PHP   6. include() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/classes/class.wp-megamenu-base.php:305
+[26-Oct-2022 01:56:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/classes/class.wp-megamenu-base.php on line 267
+[26-Oct-2022 01:56:34 UTC] PHP Stack trace:
+[26-Oct-2022 01:56:34 UTC] PHP   1. {main}() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:0
+[26-Oct-2022 01:56:34 UTC] PHP   2. do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:187
+[26-Oct-2022 01:56:34 UTC] PHP   3. WP_Hook->do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/plugin.php:476
+[26-Oct-2022 01:56:34 UTC] PHP   4. WP_Hook->apply_filters() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:331
+[26-Oct-2022 01:56:34 UTC] PHP   5. wp_megamenu_base->wpmm_item_settings_load() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:307
+[26-Oct-2022 01:56:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/views/admin/item_settings.php on line 142
+[26-Oct-2022 01:56:34 UTC] PHP Stack trace:
+[26-Oct-2022 01:56:34 UTC] PHP   1. {main}() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:0
+[26-Oct-2022 01:56:34 UTC] PHP   2. do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:187
+[26-Oct-2022 01:56:34 UTC] PHP   3. WP_Hook->do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/plugin.php:476
+[26-Oct-2022 01:56:34 UTC] PHP   4. WP_Hook->apply_filters() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:331
+[26-Oct-2022 01:56:35 UTC] PHP   5. wp_megamenu_base->wpmm_item_settings_load() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:307
+[26-Oct-2022 01:56:35 UTC] PHP   6. include() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/classes/class.wp-megamenu-base.php:305
+[26-Oct-2022 01:57:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/classes/class.wp-megamenu-base.php on line 267
+[26-Oct-2022 01:57:03 UTC] PHP Stack trace:
+[26-Oct-2022 01:57:03 UTC] PHP   1. {main}() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:0
+[26-Oct-2022 01:57:03 UTC] PHP   2. do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:187
+[26-Oct-2022 01:57:03 UTC] PHP   3. WP_Hook->do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/plugin.php:476
+[26-Oct-2022 01:57:03 UTC] PHP   4. WP_Hook->apply_filters() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:331
+[26-Oct-2022 01:57:03 UTC] PHP   5. wp_megamenu_base->wpmm_item_settings_load() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:307
+[26-Oct-2022 01:57:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/classes/class.wp-megamenu-base.php on line 267
+[26-Oct-2022 01:57:16 UTC] PHP Stack trace:
+[26-Oct-2022 01:57:16 UTC] PHP   1. {main}() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:0
+[26-Oct-2022 01:57:16 UTC] PHP   2. do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:187
+[26-Oct-2022 01:57:16 UTC] PHP   3. WP_Hook->do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/plugin.php:476
+[26-Oct-2022 01:57:16 UTC] PHP   4. WP_Hook->apply_filters() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:331
+[26-Oct-2022 01:57:16 UTC] PHP   5. wp_megamenu_base->wpmm_item_settings_load() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:307
+[26-Oct-2022 01:57:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/views/admin/item_settings.php on line 142
+[26-Oct-2022 01:57:16 UTC] PHP Stack trace:
+[26-Oct-2022 01:57:16 UTC] PHP   1. {main}() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:0
+[26-Oct-2022 01:57:16 UTC] PHP   2. do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:187
+[26-Oct-2022 01:57:16 UTC] PHP   3. WP_Hook->do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/plugin.php:476
+[26-Oct-2022 01:57:16 UTC] PHP   4. WP_Hook->apply_filters() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:331
+[26-Oct-2022 01:57:16 UTC] PHP   5. wp_megamenu_base->wpmm_item_settings_load() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:307
+[26-Oct-2022 01:57:16 UTC] PHP   6. include() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/classes/class.wp-megamenu-base.php:305
+[26-Oct-2022 01:57:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/classes/class.wp-megamenu-base.php on line 267
+[26-Oct-2022 01:57:33 UTC] PHP Stack trace:
+[26-Oct-2022 01:57:33 UTC] PHP   1. {main}() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:0
+[26-Oct-2022 01:57:33 UTC] PHP   2. do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:187
+[26-Oct-2022 01:57:33 UTC] PHP   3. WP_Hook->do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/plugin.php:476
+[26-Oct-2022 01:57:33 UTC] PHP   4. WP_Hook->apply_filters() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:331
+[26-Oct-2022 01:57:33 UTC] PHP   5. wp_megamenu_base->wpmm_item_settings_load() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:307
+[26-Oct-2022 01:57:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/views/admin/item_settings.php on line 142
+[26-Oct-2022 01:57:33 UTC] PHP Stack trace:
+[26-Oct-2022 01:57:33 UTC] PHP   1. {main}() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:0
+[26-Oct-2022 01:57:33 UTC] PHP   2. do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-admin/admin-ajax.php:187
+[26-Oct-2022 01:57:33 UTC] PHP   3. WP_Hook->do_action() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/plugin.php:476
+[26-Oct-2022 01:57:33 UTC] PHP   4. WP_Hook->apply_filters() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:331
+[26-Oct-2022 01:57:33 UTC] PHP   5. wp_megamenu_base->wpmm_item_settings_load() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-includes/class-wp-hook.php:307
+[26-Oct-2022 01:57:33 UTC] PHP   6. include() /Users/kelly.linehan/Local Sites/bcmountain/app/public/wp-content/plugins/wp-megamenu/classes/class.wp-megamenu-base.php:305
