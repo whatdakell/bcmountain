@@ -20,7 +20,7 @@ const useData = (myData) => {
 };
 function weatherBalloon(cityID) {
 	var key = '2839f99fdb95e9a02d74e736787ba268';
-	fetch('https://api.openweathermap.org/data/2.5/weather?zip=' + cityID + ',us&appid=' + key + '&units=imperial')
+	fetch('https://api.openweathermap.org/data/2.5/forecast?zip=' + cityID + ',us&appid=' + key + '&units=imperial')
 		.then(function (resp) {
 			return resp.json();
 		}) // Convert data to json
@@ -58,6 +58,62 @@ window.onload = function () {
 weatherBalloon(18062);
 
 jQuery(function ($) {
+	$('.owmw-today .owmw-highlight').appendTo('owmw-now');
+	const temp = $('.owmw-today');
+	console.log(temp, 'test');
+	$('.ski-table').map(function (index) {
+		const element = $(this);
+		console.log(this);
+		element.appendTo('.accordion-content');
+		element.wrapAll(`<div class='accordion-item ${index === 0 ? ' accordion-active' : ''}' data-actab-group="0" data-actab-id=${index}>`);
+		// const title = element.find('.elementor-heading-title').html();
+		// const updatedTitle = $(`<button class="accordion-tab booking-font ${index === 0 ? ' accordion-active' : ''}" data-actab-group="0" data-actab-id=${index}>${title}</button>`);
+		// updatedTitle.appendTo('.accordion-tabs');
+	});
+
+	const skilabels = document.querySelectorAll('.accordion-item');
+	const skitabs = document.querySelectorAll('.accordion-tab');
+
+	function toggleShow() {
+		const target = this;
+		const item = target.classList.contains('accordion-tab') ? target : target.parentElement;
+		const group = item.dataset.actabGroup;
+		const id = item.dataset.actabId;
+
+		skitabs.forEach(function (tab) {
+			if (tab.dataset.actabGroup === group) {
+				if (tab.dataset.actabId === id) {
+					tab.classList.add('accordion-active');
+				} else {
+					tab.classList.remove('accordion-active');
+				}
+			}
+		});
+
+		skilabels.forEach(function (label) {
+			const tabItem = label;
+			console.log(tabItem, 'tab');
+			if (tabItem.dataset.actabGroup === group) {
+				if (tabItem.dataset.actabId === id) {
+					tabItem.classList.add('accordion-active');
+				} else {
+					tabItem.classList.remove('accordion-active');
+				}
+			}
+		});
+		window.dispatchEvent(new Event('resize'));
+	}
+
+	skilabels.forEach(function (label) {
+		label.addEventListener('click', toggleShow);
+	});
+
+	skitabs.forEach(function (tab) {
+		tab.addEventListener('click', toggleShow);
+	});
+
+	// OTHER
+
 	$('.embed-tab').map(function (index) {
 		const element = $(this);
 		element.appendTo('.accordion-content');

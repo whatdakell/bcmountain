@@ -213,6 +213,7 @@
 			background: transparent;
 			margin-top: 10px;
 			font-family: $prox;
+			color: #f4f2ee !important;
 			&::placeholder {
 				font-style: italic;
 				font-family: $prox;
@@ -245,4 +246,122 @@
 			padding-bottom: 5px;
 		}
 	}
+}
+
+.metform-form-content {
+	font-family: $prox;
+	font-size: rem(16px);
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.44;
+	letter-spacing: -0.08px;
+	.mf-checkbox-option {
+		margin-top: rem(10px);
+		margin-bottom: rem(10px);
+	}
+	.mf-input-label,
+	.elementor-widget-mf-checkbox .mf-checkbox-option input[type='checkbox'] + span,
+	span,
+	.mf-input.mf-checkbox-input,
+	label {
+		@extend p;
+	}
+	.elementor-col-50 {
+		width: 49%;
+		&:first-of-type {
+			margin-right: auto;
+		}
+		@include bp(S) {
+			width: 100%;
+		}
+	}
+	.elementor-col-33 {
+		width: 32%;
+		&:not(:last-child) {
+			margin-right: auto;
+		}
+		@include bp(S) {
+			width: 100%;
+		}
+	}
+	.subhead-1 {
+		margin-top: rem(50px);
+		padding-top: rem(50px);
+		border-top: 1px solid $accent;
+	}
+	.main-box {
+		margin: rem(30px) auto;
+	}
+	.mf-input-help {
+		font-style: italic;
+		font-family: $prox;
+		font-size: 12px;
+		font-weight: 200px;
+		letter-spacing: 1.8px;
+	}
+	.mf-input {
+		border: solid 0.8px $navy;
+		background: transparent;
+		margin-top: 20px;
+		font-family: $prox;
+		color: #f4f2ee;
+		// margin: rem(10px);
+		font-weight: 200px;
+		font-family: $prox;
+		font-size: rem(16px);
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.44;
+		letter-spacing: -0.08px;
+		&::placeholder {
+			font-style: italic;
+			font-family: $prox;
+			color: $navy;
+			font-size: 12px;
+			font-weight: 200px;
+			letter-spacing: 1.8px;
+		}
+	}
+	.button-style {
+		margin-left: auto;
+		button {
+		}
+	}
+
+	.elementor-widget-mf-checkbox {
+		margin: rem(20px);
+		// @extend .button-style;
+	}
+	.metform-btn.metform-submit-btn {
+		@extend .button-style;
+		width: 200px;
+		margin: rem(30px) auto;
+		span {
+			color: white;
+		}
+		&:hover {
+			span {
+				color: $red;
+			}
+		}
+	}
+
+	// .mf-input-wrapper {
+	// 	background-color: white;
+	// 	border: 1px solid $navy;
+	// 	font-family: $prox;
+	// 	// width: 95%;
+	// 	margin: rem(20px);
+	// 	// margin-top: rem(20px);
+	// 	input {
+	// 		background-color: white;
+	// 		font-family: $prox;
+	// 		font-size: 10px;
+	// 	}
+	// }
+	// .elementor-col-50 {
+	// 	// width: ;
+	// }
 }

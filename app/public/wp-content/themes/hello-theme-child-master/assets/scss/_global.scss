@@ -373,6 +373,9 @@ $divheight: rem(130px);
 		}
 	}
 }
+.accordion {
+	background-color: white;
+}
 
 .accordion-tabs {
 	margin: rem(50px) auto;
@@ -388,7 +391,7 @@ $divheight: rem(130px);
 		border: none;
 		cursor: pointer;
 		text-align: center;
-		max-width: 175px;
+		max-width: 200px;
 		padding: rem(30px) 0;
 		min-height: rem(100px);
 		background-color: white;
@@ -432,6 +435,26 @@ $divheight: rem(130px);
 	}
 }
 $border: solid 1px #83afba;
+
+.accordion.ski {
+	.accordion-tabs {
+		justify-content: flex-start;
+		border: none;
+		.accordian-tab {
+			padding: 20px 0;
+			margin: 0 rem(20px);
+		}
+	}
+	.accordion-content {
+		padding: rem(30px);
+		border-radius: 28px;
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+		border: solid 2px #83afba;
+		margin-bottom: rem(100px);
+	}
+	.subhead-1 {
+	}
+}
 #pricing-table {
 	margin: rem(100px) auto;
 	.header {
@@ -457,12 +480,14 @@ $border: solid 1px #83afba;
 		.booking-font {
 			@extend .subhead-1;
 			color: #3b434e;
+			font-family: $prox;
 			@include bp(S) {
 				font-size: 10px;
 			}
 		}
 		.table-header {
 			border-bottom: $border;
+			// font-family: $prox;
 			.data-table-header-text {
 				@extend .subhead-1;
 			}
@@ -491,6 +516,7 @@ $border: solid 1px #83afba;
 		th,
 		.td-content {
 			@extend .booking-font;
+			font-family: $prox;
 			@include bp(S) {
 				font-size: 10px;
 			}
@@ -519,10 +545,262 @@ $border: solid 1px #83afba;
 		align-items: center;
 	}
 	img {
-		max-width: 50px;
+		max-width: rem(30px);
 		width: 100%;
 	}
-	p {
+	.elementor-widget-container {
 		padding: 10px;
+	}
+}
+
+.small-space {
+	margin-bottom: rem(20px) !important;
+	margin-top: rem(20px);
+}
+.med-space {
+	margin-bottom: rem(100px) !important;
+	// margin-top: rem(20px);
+}
+
+#pricing-table {
+	.med-space:last-child {
+		margin-bottom: 0px !important;
+	}
+	#ski-conditions {
+		#legend {
+			.elementor-container {
+				margin-bottom: rem(30px);
+			}
+			img {
+				max-width: 30px;
+				max-height: 30px;
+				@include bp(S) {
+					img {
+						max-width: 20px;
+						max-height: 20px;
+					}
+				}
+				.ski-icon img {
+					margin-top: 0px;
+
+					max-height: 40px;
+					max-width: 40px;
+					margin-right: 20px;
+					@include bp(S) {
+						max-width: 30px;
+						max-height: 30px;
+						// margin-bottom: 10px;
+					}
+					@include bp(S) {
+						margin-bottom: 20px;
+					}
+				}
+				.legend-list {
+					width: auto;
+					margin-right: auto;
+					margin-left: 5px;
+				}
+			}
+			.teal-uppercase:not(:first-of-type) {
+				margin-top: rem(60px);
+				margin-bottom: rem(20px);
+			}
+			.legend-list {
+				width: auto;
+				margin-right: auto;
+				margin-left: 5px;
+			}
+			im {
+				max-width: rem(40px);
+			}
+			.teal-uppercase:first-of-type {
+				// margin-top: rem(60px);
+				margin-bottom: rem(20px);
+			}
+			.elementor-widget-wrap.elementor-element-populated {
+				align-items: center;
+			}
+			.ski-icon img {
+				max-height: rem(40px);
+				max-width: rem(40px);
+				margin-right: 20px;
+				@include bp(S) {
+					max-width: 30px;
+					max-height: 30px;
+					margin-bottom: 10px;
+				}
+			}
+			.border-radi {
+				padding: rem(40px);
+			}
+		}
+		.elementor-widget-text-editor {
+			// margin: 0 auto;
+		}
+		.condition .elementor-widget-wrap {
+			padding: rem(20px);
+			border-right: 1px solid $accent;
+			margin-bottom: 20px;
+			@include bp(S) {
+				border-right: none;
+				border-bottom: 1px solid $accent;
+				padding-bottom: 30px;
+			}
+		}
+		.no-border {
+			border: none !important;
+		}
+		.elementor:not(.elementor-bc-flex-widget) .elementor-widget-wrap,
+		.elementor-widget-wrap:not(.elementor-element-populated) {
+			@include bp(S) {
+				display: none;
+				padding: 0px;
+			}
+		}
+		.border-right {
+			border-right: 1px solid $accent;
+			@include bp(S) {
+				border-right: none;
+				border-bottom: 1px solid $accent;
+				padding-bottom: 30px;
+			}
+		}
+	}
+	.accordion #pricing-table {
+		margin: auto;
+	}
+	.elementor-widget-text-editor,
+	.legend-list .elementor-widget-text-editor {
+		img {
+			max-height: rem(30px);
+			max-width: rem(30px);
+		}
+	}
+	.legend-list {
+		.elementor-widget-container {
+			display: flex;
+			p {
+				align-items: center;
+				font-family: $prox;
+				font-size: rem(16px);
+				font-weight: 600;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 1.88;
+				letter-spacing: 1.6px;
+				text-align: left;
+				color: #3b434e;
+				text-transform: uppercase;
+			}
+		}
+	}
+	.weather-wrap {
+		.elementor-column {
+			&:not(.weather-widget) {
+				width: auto !important;
+				.elementor-widget-wrap > .elementor-element {
+					width: auto;
+					margin: 0px rem(15px);
+					@include bp(S) {
+						margin-top: 30px;
+					}
+				}
+			}
+		}
+	}
+	.ski-icon {
+		max-height: rem(40px);
+		max-width: rem(40px);
+		margin-right: 20px;
+		@include bp(S) {
+			max-width: 30px;
+			max-height: 30px;
+			margin-bottom: 10px;
+		}
+	}
+
+	.custom-padding {
+		padding: 0 20px;
+		@include bp(S) {
+			padding-top: 20px;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	}
+	.border-right {
+		&.custom-padding {
+			padding-left: 0;
+		}
+	}
+	.no-border .elementor-widget-wrap {
+		border: none !important;
+	}
+	.red {
+		color: $red;
+		&:-webkit-any-link {
+			color: $red;
+		}
+	}
+}
+.owm-weather-id,
+.weather-widget {
+	background-color: #83afba;
+	color: white;
+	width: 336px !important;
+	height: 105px;
+	.col {
+		position: relative;
+		padding: 28px;
+	}
+	.owmw-location-name {
+		color: white;
+		@extend .subhead-1;
+		color: white;
+		width: 100%;
+		padding: 0;
+		text-align: left;
+		&:before {
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
+			content: '\f3c5';
+			padding-right: 5px;
+		}
+	}
+	.owmw-now {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.owmw-highlight,
+	.owmw-main-temperature {
+		font-family: $prox;
+		font-size: 12px !important;
+		// font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 2.83;
+		letter-spacing: 0.75px;
+		text-align: left;
+		color: #fff;
+		padding: 0px 10px;
+		&:after {
+			margin-left: 10px;
+			// content: '|' !important;
+		}
+	}
+	.owmw-today {
+		position: absolute;
+		right: 20px;
+		bottom: 0;
+		.owmw-highlight {
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+	}
+	.owmw-main-symbol {
+		padding: 0;
+		.owmw-symbol i {
+			font-size: 20px !important;
+		}
 	}
 }

@@ -86,8 +86,15 @@ body {
 		letter-spacing: 0.9px;
 	}
 }
+.white a,
+.white p,
+.white {
+	color: white !important;
+}
+.subhead-2 p,
+.subhead-2 .elementor-heading-title,
 .subhead-2 {
-	font-family: $bitter;
+	font-family: $bitter !important;
 	font-size: 22px;
 	font-weight: normal;
 	font-stretch: normal;
@@ -350,10 +357,12 @@ body {
 	margin-bottom: rem(32px);
 }
 
+.price .elementor-widget-text-editor,
 .price {
 	@extend .overline;
 	margin-bottom: 5px;
 	text-transform: uppercase;
+	color: $accent !important;
 }
 
 .border-top {
@@ -409,6 +418,39 @@ a:-webkit-any-link {
 a.static-cta:-webkit-any-link {
 	color: $red;
 }
+a.static-cta.teal:-webkit-any-link {
+	color: $accent;
+}
+a.static-cta.white:-webkit-any-link {
+	color: white;
+}
+a.static-cta.white:after {
+	color: white;
+	border-color: white;
+}
 .teal {
 	color: $accent;
+}
+.search.search-results {
+	.page-content {
+		@extend .inner-max;
+		h2 {
+			@extend .subhead-1;
+			margin-top: rem(20px);
+			margin-bottom: rem(20px);
+		}
+	}
+}
+.teal-uppercase p,
+.teal-uppercase {
+	font-family: $prox;
+	font-size: rem(16px);
+	// font-weight: 600;
+	text-transform: uppercase;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.88;
+	letter-spacing: 1.6px;
+	text-align: left;
+	color: #83afba;
 }
