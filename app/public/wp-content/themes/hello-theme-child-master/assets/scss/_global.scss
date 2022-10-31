@@ -804,3 +804,72 @@ $border: solid 1px #83afba;
 		}
 	}
 }
+
+.pressroom {
+	.elementor-widget-text-editor h3 {
+		@extend .subhead-1;
+		margin-bottom: 10px;
+	}
+}
+.pressrom-grid {
+	time {
+		display: none !important;
+	}
+	.eael-timeline-post-title h3 {
+		font-family: $prox;
+		font-size: 16px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.44;
+		letter-spacing: -0.08px;
+		text-align: center;
+		margin-bottom: rem(20px);
+	}
+	.subhead-1 {
+		margin-bottom: rem(30px);
+		margin-top: rem(30px);
+	}
+	.eael-load-more-button {
+		margin-top: rem(50px);
+		margin-bottom: rem(100px);
+		background-color: white !important;
+		color: $red !important;
+		border: none !important;
+		@extend .static-cta;
+	}
+}
+.blog-grid {
+	border-top: 1px solid $accent;
+	padding-top: rem(100px);
+}
+.blog-grid,
+.blog-grid-masonary {
+	.elementor-post__card {
+		box-shadow: none !important;
+	}
+	.elementor-post__text {
+		margin: 0px !important;
+		padding: 0px !important;
+		.elementor-post__title {
+			@extend .subhead-2;
+			margin: 0px !important;
+			a {
+				font-family: inherit;
+				font-weight: inherit;
+			}
+		}
+	}
+	.elementor-pagination {
+		margin-top: 30px;
+		margin-left: auto;
+		text-align: right !important;
+	}
+	.elementor-post__meta-data {
+		padding: 0px !important;
+		border-top: none !important;
+		.elementor-post-date {
+			@extend .price;
+		}
+	}
+}

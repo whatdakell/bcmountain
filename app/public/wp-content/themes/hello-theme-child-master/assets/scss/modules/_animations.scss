@@ -566,14 +566,17 @@ $introTotalTime: $introDelay + $introDuration;
 }
 .intro-copy-block {
 	.elementor-element {
-		@include staggerAnimation(10, 500, 200);
+		@include staggerAnimation(10, 200, 200);
 		opacity: 0;
 		transform: translate3d(0, 20px, 0);
 		transition: transform 1s cubic-bezier(0, 0.68, 0.41, 0.98), opacity 0.8s ease-in;
 	}
-	&.in-viewport .elementor-element {
-		opacity: 1;
-		transform: translate3d(0, 0, 0) scale(1);
+
+	.animate-in & {
+		.elementor-element {
+			opacity: 1;
+			transform: translate3d(0, 0, 0) scale(1);
+		}
 	}
 }
 

@@ -20,7 +20,7 @@ const useData = (myData) => {
 };
 function weatherBalloon(cityID) {
 	var key = '2839f99fdb95e9a02d74e736787ba268';
-	fetch('https://api.openweathermap.org/data/2.5/forecast?zip=' + cityID + ',us&appid=' + key + '&units=imperial')
+	fetch('https://api.openweathermap.org/data/2.5/weather?zip=' + cityID + ',us&appid=' + key + '&units=imperial')
 		.then(function (resp) {
 			return resp.json();
 		}) // Convert data to json

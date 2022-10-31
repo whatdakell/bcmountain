@@ -1,78 +1,30 @@
-#bc-nav {
-	background-color: transparent;
-	display: flex;
-	.home & {
-		background-color: transparent;
-		position: absolute;
-		top: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 100%;
-		z-index: 10;
-		// @include bp(MD) {
-		// 	position: absolute;
-		// 	top: 0;
-		// 	left: 50%;
-		// 	transform: translateX(-50%);
-		// }
-		.elementor-widget-theme-site-logo a {
-			background: url('/wp-content/uploads/2022/09/BCMR-Logo-White.png');
-			background-size: contain;
-			img {
-				opacity: 0;
-			}
-		}
-		i,
-		.main-item.first-link > a {
-			color: white;
-			@include bp(S) {
-				color: #3b434e;
-			}
-		}
-		i {
-			color: white;
-		}
-	}
+$height: 112px;
 
-	@include bp(M) {
-		// height: $mobile;
-		// position: relative;
-	}
+#bc-nav {
+	background-color: white;
+	display: flex;
+	z-index: 1;
+	// position: fixed;
+	top: 0;
+	width: 100%;
 	.elementor-container {
-		// overflow: hidden;
-		width: 94%;
+		width: 97%;
 		max-width: 1440px;
-		// padding-left: 2vw;
-		// padding-right: 2vw;
-		// position: relative;
-		// &:after {
-		// 	content: '';
-		// 	position: absolute;
-		// 	width: 100%;
-		// 	height: 1px;
-		// 	// background: $black;
-		// 	bottom: 0;
-		// }
-		@include bp(M) {
-			&:after {
-				// display: none;
-			}
-		}
 	}
 	.elementor-widget-nav-menu {
 		margin-left: auto;
 	}
+	.elementor-column {
+		height: 100%;
+	}
 	.elementor-container {
-		// padding-bottom: rem(37.5px);
-		// padding-top: rem(109px);
-		padding-top: 30px;
+		// padding-top: 30px;
+		height: $height;
 		align-items: center;
 		// align-items: start;
 		@include bp(M) {
 			padding-top: 0px;
 			padding-bottom: 0px;
-			// height: 10vh;
-			// align-items: center;
 		}
 	}
 	//   logo
@@ -80,8 +32,8 @@
 		text-align: left;
 	}
 	img {
-		width: 121px;
-		height: 45px;
+		width: 150px;
+		height: 100%;
 	}
 	.elementor-324 .elementor-element.elementor-element-36b1d9f {
 		margin-left: auto;
@@ -102,38 +54,26 @@
 				transform: $hover;
 			}
 		}
-		@include bp(M) {
-			// position: fixed;
-			// left: 0;
-			// right: 0;
-			// width: 100%;
-			// height: 90vh;
-			// margin-top: 0px !important;
-			// z-index: 10;
-			// bottom: 0;
-			// top: 10vh !important;
-			// background: linear-gradient(transparent 0%, white 50%);
-			// a {
-			// 	// margin-top: 5vh;
-			// 	color: $navy;
-			// 	background-color: transparent;
-			// }
-		}
+	}
+	.main-item.first-link {
+		margin: auto;
 	}
 	.main-item.first-link > a {
 		@extend .nav-font;
-		padding: 25px 2vw;
+		padding: 50px 10px;
+		margin: 0 auto;
 		color: #3b434e;
-		@include bp(S) {
+		@include bp(phone-tablet) {
 			display: flex;
 			color: $navy;
+			padding: 20px 10px;
 			justify-content: space-between;
 			align-items: center;
 			background-color: transparent;
 		}
 		.fa-angle-down {
 			display: none;
-			@include bp(S) {
+			@include bp(phone-tablet) {
 				width: 100px;
 				text-align: right;
 				display: block;
@@ -143,14 +83,14 @@
 	.main-item.first-link > .wp-megamenu-sub-menu {
 		opacity: 0.9;
 		background-color: #fff;
-		@include bp(S) {
+		@include bp(phone-tablet) {
 			background-color: transparent;
 		}
 	}
 	.wpmm-row-content-strees-extra + .wp-megamenu-sub-menu {
 		opacity: 0.9;
 		background-color: #fff;
-		@include bp(S) {
+		@include bp(phone-tablet) {
 			background-color: transparent;
 		}
 	}
@@ -160,7 +100,7 @@
 		font-stretch: normal;
 		font-style: normal;
 		text-align: left;
-		@include bp(S) {
+		@include bp(phone-tablet) {
 			background-color: transparent;
 		}
 		li a {
@@ -171,16 +111,19 @@
 		transform: rotate(0deg);
 		opacity: 0;
 	}
+	.custom-toggle > a {
+		font-weight: 600;
+	}
 	.custom-toggle > .wp-megamenu-sub-menu {
 		visibility: visible;
 		position: relative;
 		opacity: 1;
-		left: 15px;
+		left: rem(30px);
 		background: transparent;
 		border: none;
 		box-shadow: none;
 		padding: 0;
-		@include bp(S) {
+		@include bp(phone-tablet) {
 			display: none;
 		}
 	}
@@ -197,9 +140,11 @@
 	}
 	#menu-main {
 		display: flex;
-		justify-content: end;
+		justify-content: flex-end;
+		margin-left: auto;
 		align-items: center;
-		@include bp(S) {
+		max-width: 1000px;
+		@include bp(phone-tablet) {
 			display: none;
 			position: fixed;
 			left: 0;
@@ -210,17 +155,15 @@
 			margin-top: 0px !important;
 			z-index: 10;
 			bottom: 0;
-			top: 10vh !important;
+			top: $height !important;
 			background-color: white;
-			.home & {
-				background: linear-gradient(transparent 0%, white 30%);
-			}
-
 			flex-direction: column;
 			justify-content: center;
 		}
 	}
 	.wpmm-strees-row-and-content-container {
+		// top: 50px;b
+		// border-top: 1px solid $accent;
 		bottom: 0px;
 	}
 	.wpmm_mobile_menu_btn {
@@ -234,7 +177,7 @@
 		opacity: 0.5;
 	}
 	.wp-megamenu-wrap.wpmm-mobile-menu ul.wp-megamenu li {
-		@include bp(S) {
+		@include bp(phone-tablet) {
 		}
 	}
 }
@@ -246,4 +189,7 @@
 	width: 80%;
 	justify-self: center;
 	margin: auto;
+}
+
+.header.inntopia-fragment {
 }

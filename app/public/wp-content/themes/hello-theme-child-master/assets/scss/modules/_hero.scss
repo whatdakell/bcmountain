@@ -46,8 +46,9 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			opacity: 0.85;
-			background-color: #3b434e;
+			// opacity: 0.85;
+			background-color: rgba(59, 67, 78, 0.85);
+			// background: rgba(51, 170, 51, .1)
 			min-height: 182px;
 			padding: rem(30px);
 			min-width: rem(700px);
@@ -61,9 +62,13 @@
 				}
 			}
 			.elementor-widget-text-editor:last-child {
-				max-width: 350px;
+				max-width: 70%;
+				margin-top: rem(20px);
+				@include bp(M) {
+					max-width: 320px;
+				}
 				.static-cta {
-					margin-right: 20px;
+					font-weight: 400;
 					// @extend .arrow-right;
 				}
 			}
