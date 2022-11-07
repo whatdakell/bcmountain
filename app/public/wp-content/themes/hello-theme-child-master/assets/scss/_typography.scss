@@ -429,7 +429,7 @@ a.static-cta.white:after {
 	border-color: white;
 }
 .teal {
-	color: $accent;
+	color: $accent !important;
 }
 .search-results {
 	z-index: 0 !important;

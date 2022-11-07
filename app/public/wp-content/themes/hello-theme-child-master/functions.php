@@ -18,34 +18,15 @@ function hello_elementor_child_enqueue_scripts() {
 	wp_register_style( 'adobe-font', 'https://use.typekit.net/awb6uki.css' ); 
 	wp_enqueue_style( 'adobe-font' );
 	wp_enqueue_style(
-		'hello-elementor-child-style', get_stylesheet_directory_uri() . '/style.css', false,'10.3'
+		'hello-elementor-child-style', get_stylesheet_directory_uri() . '/style.css', false,'10.8'
 	);
 }
 function unhook_parent_style() {
-
-	// wp_dequeue_style( 'hello-elementor-theme-style' );
-	// wp_deregister_style( 'hello-elementor-theme-style' );
-
-	// wp_register_style( 'hello-elementor-child-style', get_stylesheet_directory_uri() . '/style.css', false, '1.0.0' ); 
-	// wp_enqueue_style( 'hello-elementor-child-style' );
-
-	// wp_enqueue_style( 'hello-elementor', get_parent_theme_file_uri( '/style.css' ) );
 
 	wp_dequeue_style( 'hello-elementor-theme-style' );
 	wp_deregister_style( 'hello-elementor-theme-style' );
 	wp_dequeue_style( 'hello-elementor' );
 	wp_deregister_style( 'hello-elementor' );
-	// wp_dequeue_style( 'elementor' );
-	// wp_deregister_style( 'elementor' );
-
-  // wp_dequeue_style('elementor-global');
-  // wp_deregister_style('elementor-global');
-
-
-	// wp_enqueue_style('hello-elementor', get_template_directory_uri() . '/style.css');
-	// wp_enqueue_style('hello-elementor', get_stylesheet_directory_uri() . '/style.css', array( 'hello-elementor' ));
-	
-	// hello-elementor
 }
 add_action( 'wp_enqueue_scripts', 'unhook_parent_style', 20 );
 
@@ -57,14 +38,14 @@ function scripts_and_styles()
     wp_enqueue_script('jqueryUI');
 		wp_register_script('owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js');
     wp_enqueue_script('owl-carousel');
-		wp_enqueue_style( 'style', get_stylesheet_uri() );
-    wp_register_script('e-custom', get_stylesheet_directory_uri() . '/e-custom.js', false,'10.3');
+		wp_enqueue_style( 'inntopia',  get_stylesheet_directory_uri() . '/inntopia.css', false, '1.1');
+    wp_register_script('e-custom', get_stylesheet_directory_uri() . '/e-custom.js', false,'10.5');
     wp_enqueue_script('e-custom');
 }
 
 add_action('wp_enqueue_scripts', 'scripts_and_styles');
 
-add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_scripts', 113 );
+add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_scripts', 123 );
 
 add_filter('use_block_editor_for_post_type', 'prefix_disable_gutenberg', 10, 2);
 function prefix_disable_gutenberg($current_status, $post_type)
@@ -95,12 +76,6 @@ function wpc_elementor_shortcode(  ) {
 	return ob_get_clean(); // SOLUTION
 }
 
-// function header_elementor_shortcode(  ) {
-// 	// echo "This is my custom PHP output in Elementor!";
-// 	ob_start(); // SOLUTION
-// 	include('header-shortcode.php');
-// 	return ob_get_clean(); // SOLUTION
-// }
 
 function footer_elementor_shortcode(  ) {
 	// echo "This is my custom PHP output in Elementor!";
@@ -108,15 +83,6 @@ function footer_elementor_shortcode(  ) {
 	include('footer-shortcode.php');
 	return ob_get_clean(); // SOLUTION
 }
-
-// function daily_profit() {
-//   ob_start(); // SOLUTION
-//   include( locate_template( './daily_profit-layout.php', false, false ) );
-//   return ob_get_clean(); // SOLUTION
-// }
-// add_shortcode('daily_profit', 'daily_profit');
-
-// add_shortcode( 'header_php_output', 'header_elementor_shortcode');
 
 add_shortcode( 'footer_php_output', 'footer_elementor_shortcode');
 
@@ -131,17 +97,6 @@ add_shortcode( 'breadcrumb_output', 'breadcrumb_shortcode');
 
 add_shortcode( 'my_elementor_php_output', 'wpc_elementor_shortcode');
 
-// function wpmm_setup() {
-// 	register_nav_menus( array(
-// 			'mega_menu' => 'Mega Menu'
-// 	) );
-// }
-// add_action( 'after_setup_theme', 'wpmm_setup' );
 
 
 
-// $slug = $post_type->rewrite;
-// if ( is_string($post_type->has_archive) ){ //If the post type has a custom archive slug
-// 	$slug['slug'] = $post_type->has_archive; //Replace slug with the custom archive slug string
-// }
-// //...

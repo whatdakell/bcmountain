@@ -457,6 +457,18 @@ $border: solid 1px #83afba;
 }
 #pricing-table {
 	margin: rem(100px) auto;
+	&.inner-table {
+		margin: rem(20px) auto;
+		.border-radi {
+			padding: 1rem;
+			.td-content {
+				margin-top: 0 !important;
+				p {
+					margin-top: 0 !important;
+				}
+			}
+		}
+	}
 	.header {
 		margin-bottom: rem(30px);
 	}
@@ -505,6 +517,7 @@ $border: solid 1px #83afba;
 			background-color: white !important;
 			padding-top: rem(20px);
 			padding-bottom: rem(20px);
+			width: 50%;
 			&:not(:last-child) {
 				border-right: $border;
 			}
@@ -519,6 +532,17 @@ $border: solid 1px #83afba;
 			font-family: $prox;
 			@include bp(S) {
 				font-size: 10px;
+			}
+			strong {
+				text-transform: uppercase;
+			}
+			p {
+				text-transform: initial;
+			}
+		}
+		.th-content {
+			p {
+				text-transform: initial;
 			}
 		}
 	}
@@ -870,6 +894,14 @@ $border: solid 1px #83afba;
 		border-top: none !important;
 		.elementor-post-date {
 			@extend .price;
+		}
+	}
+}
+
+.events-and-festivals {
+	.price {
+		.elementor-heading-title {
+			line-height: 2;
 		}
 	}
 }
