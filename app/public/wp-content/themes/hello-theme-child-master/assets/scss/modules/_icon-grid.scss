@@ -1,5 +1,4 @@
 #icon-block {
-	// padding: 100px 0px;
 	padding: rem(100px) 0px 0px;
 	@include bp(S) {
 		padding: 60px 0px 10px;
@@ -16,13 +15,8 @@
 			align-content: center;
 		}
 	}
-	// .elementor-inner-column {
-	// 	padding-right: 20px;
-	// 	width: 30%;
-	// }
 
 	.elementor-inner-column {
-		// padding-right: 20px;
 		width: 30%;
 		min-width: 320px;
 		@include bp(S) {
@@ -58,7 +52,6 @@
 			justify-content: center;
 			img {
 				width: 60%;
-				// height: 100%;
 			}
 			@include bp(S) {
 				width: 45px;

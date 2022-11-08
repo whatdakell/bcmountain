@@ -1,14 +1,6 @@
 html {
-	// font-family: $prox;
-	// font-family: $bitter;
 	font-size: 1rem;
 
-	// @media (max-width: 1380px) {
-	// 	font-size: 0.88rem;
-	// }
-	// @include bp(desktop) {
-	// 	font-size: 0.8rem;
-	// }
 	@include bp(test1) {
 		font-size: 0.9rem;
 	}
@@ -16,7 +8,6 @@ html {
 		font-size: 0.8rem;
 	}
 	@include bp(S) {
-		// font-size: 0.55rem;
 		font-size: 0.7rem;
 	}
 }
@@ -203,14 +194,10 @@ body {
 		left: 0;
 		z-index: -1;
 	}
-	// @include bp(S) {
-	// 	display: none;
-	// }
 }
 
 .static-cta,
 #static-cta .elementor-button {
-	// font-family: $lEX;
 	font-family: $prox;
 	font-size: rem(14px);
 	font-weight: bold;
@@ -226,7 +213,6 @@ body {
 	overflow: hidden;
 	display: inline-block;
 	.elementor-button-icon {
-		// margin-left: 0px; .
 		padding-left: 5px;
 	}
 	&:after {
@@ -234,7 +220,6 @@ body {
 		border-bottom: 1px solid #9f3926;
 		width: 100%;
 		display: block;
-		// border-bottom: 1px solid $cta-accent;
 		transition: $hover;
 		margin-top: 5px;
 	}
@@ -264,12 +249,12 @@ body {
 	border: none;
 	font-family: $prox;
 	font-size: rem(14px);
-	// font-weight: 600;
+
 	font-stretch: normal;
 	font-style: normal;
 	line-height: 1.2;
 	letter-spacing: 2.1px;
-	// text-align: left;
+
 	color: #fff;
 	text-transform: uppercase;
 	position: relative;
@@ -280,28 +265,22 @@ body {
 		line-height: 1.2;
 		letter-spacing: 1.5px;
 	}
-	// padding-left: 5px;
+
 	transition: all 0.5s ease-in-out;
 	&:hover {
 		background-color: white;
-		// transition: all 0.5s ease-in-out;
-		// box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
 		border: solid 1px #9f3926;
 		color: #9f3926;
 		cursor: pointer;
 	}
 }
 .arrow-right {
-	// width: 12px;
-	// height: 12px;
-	// background-size: contain;
 	display: inline-block;
-	// content: '';
-	// background-image: url('/wp-content/uploads/2022/09/Arrow-Right.svg');
+
 	&:after {
 		padding-left: 5px;
 		font-family: 'Font Awesome 5 Free';
-		// font-weight: 100;
 		font-weight: 900;
 		content: '\f061';
 	}
@@ -346,7 +325,6 @@ body {
 		a:-webkit-any-link,
 		a:visited {
 			color: #83afba !important;
-			// text-decoration: underline;
 		}
 		&.trail-end span {
 			text-decoration: none;
@@ -408,9 +386,6 @@ body {
 		left: 0;
 		z-index: -1;
 	}
-	// @include bp(S) {
-	// 	display: none;
-	// }
 }
 a:-webkit-any-link {
 	color: $accent;
@@ -455,17 +430,10 @@ a.static-cta.white:after {
 		font-size: 2.25rem !important;
 	}
 	article {
-		// overflow: hidden;
-		// border-radius: 28px;
-		// box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-		// border: solid 2px #83afba;
 		.elementor-post__text {
-			// padding: rem(20px) rem(20px);
-			// margin-right: ;
 			display: flex;
 			margin-bottom: rem(40px);
 			.elementor-post__excerpt {
-				// margin-bottom: r
 				margin-top: rem(20px);
 				margin-bottom: rem(30px);
 			}
@@ -505,7 +473,6 @@ a.static-cta.white:after {
 .teal-uppercase {
 	font-family: $prox;
 	font-size: rem(16px);
-	// font-weight: 600;
 	text-transform: uppercase;
 	font-stretch: normal;
 	font-style: normal;

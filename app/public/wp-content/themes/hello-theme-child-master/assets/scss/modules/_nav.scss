@@ -3,8 +3,7 @@ $height: 112px;
 #bc-nav {
 	background-color: white;
 	display: flex;
-	z-index: 1;
-	// position: fixed;
+	z-index: 3;
 	top: 0;
 	width: 100%;
 	.elementor-container {
@@ -18,10 +17,8 @@ $height: 112px;
 		height: 100%;
 	}
 	.elementor-container {
-		// padding-top: 30px;
 		height: $height;
 		align-items: center;
-		// align-items: start;
 		@include bp(M) {
 			padding-top: 0px;
 			padding-bottom: 0px;
@@ -44,10 +41,6 @@ $height: 112px;
 	}
 	.elementor-nav-menu--dropdown,
 	nav {
-		&[aria-hidden='false'] {
-			// color: red;
-			// opacity: 1;
-		}
 		margin-left: auto;
 		a {
 			&:hover {
@@ -162,8 +155,6 @@ $height: 112px;
 		}
 	}
 	.wpmm-strees-row-and-content-container {
-		// top: 50px;b
-		// border-top: 1px solid $accent;
 		bottom: 0px;
 	}
 	.wpmm_mobile_menu_btn {
@@ -189,7 +180,4 @@ $height: 112px;
 	width: 80%;
 	justify-self: center;
 	margin: auto;
-}
-
-.header.inntopia-fragment {
 }

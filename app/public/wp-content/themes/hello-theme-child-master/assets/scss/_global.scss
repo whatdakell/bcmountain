@@ -68,22 +68,13 @@ $divheight: rem(130px);
 	@include bp(S) {
 		width: 100%;
 	}
-	// 	border-top-color: yellow;
-	//     border-right-color: yellow;
-	//     border-bottom-color: yellow;
-	//     transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
-	// }
-	// border-top-color: #0eb7da;
-	// border-right-color: #0eb7da;
-	// border-bottom-color: #0eb7da;
-	// transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+
 	&:before,
 	&:after {
 		content: '';
 		width: 50%;
 		height: 4px;
 		background-color: #3d434d;
-		// border-bottom: solid 4px #3d434d;
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
@@ -114,7 +105,7 @@ $divheight: rem(130px);
 		width: 170px;
 		display: inline-block;
 		height: 51px;
-		// height: 51.9px;
+
 		box-sizing: content-box;
 		background-color: white;
 		background-position: center center;
@@ -138,10 +129,7 @@ $divheight: rem(130px);
 			z-index: -1;
 			border: solid 4px transparent;
 		}
-		// &:before {
-		// 	content: '';
-		// 	border: 2px solid transparent;
-		// }
+
 		.in-viewport & {
 			&:after {
 				border-top-color: #3d434d;
@@ -161,17 +149,12 @@ $divheight: rem(130px);
 
 #FAQ-Toggle {
 	margin-bottom: rem(100px);
-	// a {
-	// 	color: $accent;
-	// 	text-decoration: underline;
-	// }
 	.elementor-tab-title {
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: space-between;
 		align-items: center;
 		padding: rem(20px);
-		// border-color: #8caeb8;
 		border: none;
 	}
 	h3 {
@@ -244,7 +227,7 @@ $divheight: rem(130px);
 		&:after {
 			position: absolute;
 			content: '';
-			// background-color: blue;
+
 			height: 100%;
 			width: 100%;
 			z-index: -1;
@@ -305,9 +288,6 @@ $divheight: rem(130px);
 	.mec-box-calendar.mec-calendar .mec-calendar-table-head dt {
 		background-color: $accent;
 		color: white;
-	}
-	.mec-calendar-side.mec-clear {
-		// padding: 0px;
 	}
 	.mec-previous-month {
 		left: 0;
@@ -398,10 +378,6 @@ $divheight: rem(130px);
 		&.booking-font {
 			line-height: 1.43;
 			letter-spacing: 0.7px;
-		}
-		// transition: background 0.1s ease;
-		&:hover {
-			// background: rgba($color_white, 0.01);
 		}
 
 		&:last-child {
@@ -499,7 +475,7 @@ $border: solid 1px #83afba;
 		}
 		.table-header {
 			border-bottom: $border;
-			// font-family: $prox;
+
 			.data-table-header-text {
 				@extend .subhead-1;
 			}
@@ -583,7 +559,6 @@ $border: solid 1px #83afba;
 }
 .med-space {
 	margin-bottom: rem(100px) !important;
-	// margin-top: rem(20px);
 }
 
 #pricing-table {
@@ -613,7 +588,7 @@ $border: solid 1px #83afba;
 					@include bp(S) {
 						max-width: 30px;
 						max-height: 30px;
-						// margin-bottom: 10px;
+
 					}
 					@include bp(S) {
 						margin-bottom: 20px;
@@ -638,7 +613,6 @@ $border: solid 1px #83afba;
 				max-width: rem(40px);
 			}
 			.teal-uppercase:first-of-type {
-				// margin-top: rem(60px);
 				margin-bottom: rem(20px);
 			}
 			.elementor-widget-wrap.elementor-element-populated {
@@ -657,9 +631,6 @@ $border: solid 1px #83afba;
 			.border-radi {
 				padding: rem(40px);
 			}
-		}
-		.elementor-widget-text-editor {
-			// margin: 0 auto;
 		}
 		.condition .elementor-widget-wrap {
 			padding: rem(20px);
@@ -799,7 +770,6 @@ $border: solid 1px #83afba;
 	.owmw-main-temperature {
 		font-family: $prox;
 		font-size: 12px !important;
-		// font-weight: bold;
 		font-stretch: normal;
 		font-style: normal;
 		line-height: 2.83;
@@ -809,7 +779,6 @@ $border: solid 1px #83afba;
 		padding: 0px 10px;
 		&:after {
 			margin-left: 10px;
-			// content: '|' !important;
 		}
 	}
 	.owmw-today {
@@ -903,5 +872,27 @@ $border: solid 1px #83afba;
 		.elementor-heading-title {
 			line-height: 2;
 		}
+	}
+}
+
+.category-blog {
+	.eyebrow {
+		margin-top: 20px;
+	}
+	.elementor-widget-text-editor {
+		h2,
+		h3,
+		h4 {
+			@extend .subhead-1;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+	}
+	.bog-section {
+		margin-top: rem(40px);
+	}
+	.post-tags {
+		display: none;
+		visibility: hidden;
 	}
 }

@@ -454,3 +454,8 @@
 [03-Nov-2022 20:21:24] NOTICE: exiting, bye-bye!
 [06-Nov-2022 23:38:36] NOTICE: fpm is running, pid 26673
 [06-Nov-2022 23:38:36] NOTICE: ready to handle connections
+[07-Nov-2022 00:02:38] NOTICE: Terminating ...
+[07-Nov-2022 00:02:38] NOTICE: Terminating ...
+[07-Nov-2022 00:02:38] NOTICE: exiting, bye-bye!
+[07-Nov-2022 20:32:16] NOTICE: fpm is running, pid 98514
+[07-Nov-2022 20:32:16] NOTICE: ready to handle connections

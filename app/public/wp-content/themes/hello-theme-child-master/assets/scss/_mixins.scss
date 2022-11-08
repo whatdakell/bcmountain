@@ -1,16 +1,6 @@
 * {
 	box-sizing: border-box;
 }
-// @import url(http://allfont.net/allfont.css?fonts=alphamack-aoe);
-//
-// @font-face{
-// 	font-family: Chartwell Pies;
-// 	src: url('fonts/Chartwell-Pies.otf');
-// }
-// @font-face{
-// 	font-family: "GothamRounded-Book";
-// 	src: url('fonts/GothamRounded-Book.otf');
-// }
 
 // If set Delay is true then $interval Delay must be 0
 @mixin staggerAnimation($numOfItems, $intervalDelay, $setStagger: false, $animation: false) {
@@ -79,30 +69,6 @@
 	top: $top;
 	transform: translate(-$left, -$top);
 }
-// @mixin bp($class) {
-//   @if $class == xs {
-//     @media (max-width: 630px) { @content; }
-//   }
-//
-//   @else if $class == s {
-//     @media (min-width: 630px) { @content; }
-//   }
-//
-//   @else if $class == m {
-//     @media (min-width: 992px) { @content; }
-//   }
-//
-//   @else if $class == l {
-//     @media (min-width: 1024px) { @content; }
-//   }
-// 	@else if $class == xl {
-// 		@media (min-width: 1324px) { @content; }
-// 	}
-//
-//   @else {
-//     @warn "Breakpoint mixin supports: xs, sm, md, lg";
-//   }
-// }
 
 // Media Queries
 @mixin bp($point, $min: false, $max: false) {

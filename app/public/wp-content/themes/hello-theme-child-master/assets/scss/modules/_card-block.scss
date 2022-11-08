@@ -3,7 +3,6 @@ $offset: rem(25px);
 	margin: rem(200px) auto;
 	> .elementor-widget-wrap {
 		flex-direction: column;
-		// justify-content: center;
 		align-content: center;
 	}
 
@@ -11,7 +10,6 @@ $offset: rem(25px);
 		margin: 100px auto;
 	}
 	#card {
-		// margin-bottom: rem(225px);
 		&:not(:last-child) {
 			margin-bottom: rem(225px);
 			@include bp(S) {
@@ -53,7 +51,6 @@ $offset: rem(25px);
 				&:after {
 					position: absolute;
 					content: '';
-					// background-color: blue;
 					height: 100%;
 					width: 100%;
 					z-index: -1;

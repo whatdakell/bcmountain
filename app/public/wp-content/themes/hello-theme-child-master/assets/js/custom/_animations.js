@@ -4,19 +4,15 @@ function inc(element) {
 }
 
 function dec(element) {
-	console.log(element);
 	let el = document.querySelector(`[name="${element}"]`);
 	if (parseInt(el.value) > 0) {
 		el.value = parseInt(el.value) - 1;
 	}
 }
 const useData = (myData) => {
-	console.log(myData.timezone);
 	const sunrise = new Date((myData.sys.sunrise + myData.timezone) * 1000);
-	console.log(sunrise, 'subrise');
 	var d = new Date(new Date().getTime() - 25200 * 1000);
 	d.toISOString();
-	console.log(d);
 };
 
 jQuery(function ($) {
@@ -50,7 +46,6 @@ jQuery(function ($) {
 
 		skilabels.forEach(function (label) {
 			const tabItem = label;
-			console.log(tabItem, 'tab');
 			if (tabItem.dataset.actabGroup === group) {
 				if (tabItem.dataset.actabId === id) {
 					tabItem.classList.add('accordion-active');
@@ -102,7 +97,6 @@ jQuery(function ($) {
 
 		labels.forEach(function (label) {
 			const tabItem = label;
-			console.log(tabItem, 'tab');
 			if (tabItem.dataset.actabGroup === group) {
 				if (tabItem.dataset.actabId === id) {
 					tabItem.classList.add('accordion-active');
@@ -155,17 +149,7 @@ jQuery(function ($) {
 			}
 		});
 	});
-
-	// $('.owl-carousel').owlCarousel({
-	// 	items: 4,
-	// 	loop: false,
-	// 	center: true,
-	// 	margin: 10,
-	// 	URLhashListener: true,
-	// 	autoplayHoverPause: true,
-	// 	startPosition: 'URLHash',
-	// });
-
+	// body animation class
 	$(function () {
 		$('body').addClass('animate-ready');
 		setTimeout(function () {
@@ -173,17 +157,3 @@ jQuery(function ($) {
 		}, 0);
 	});
 });
-
-// document.addEventListener('DOMContentLoaded', function () {
-// 	jQuery(function ($) {
-// 		setTimeout(function () {
-// 			$('body').addClass('loaded');
-// 		}, 910);
-// 	});
-// });
-
-// elementor-element elementor-element-5901bb21 elementor-skin-slideshow elementor-aspect-ratio-43 elementor-arrows-yes elementor-widget elementor-widget-media-carousel e-widget-swiper
-
-// elementor-element elementor-element-5901bb21 elementor-skin-slideshow elementor-aspect-ratio-43 elementor-arrows-yes elementor-widget elementor-widget-media-carousel e-widget-swiper
-
-// swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev
