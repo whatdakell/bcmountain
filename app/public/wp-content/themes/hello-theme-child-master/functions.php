@@ -16,7 +16,7 @@ function hello_elementor_child_enqueue_scripts() {
 	wp_register_style( 'adobe-font', 'https://use.typekit.net/awb6uki.css' ); 
 	wp_enqueue_style( 'adobe-font' );
 	wp_enqueue_style(
-		'hello-elementor-child-style', get_stylesheet_directory_uri() . '/style.css', false,'10.85'
+		'hello-elementor-child-style', get_stylesheet_directory_uri() . '/style.css', false,'10.86'
 	);
 }
 function unhook_parent_style() {
@@ -32,8 +32,8 @@ function scripts_and_styles()
 {
     wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js');
     wp_enqueue_script('jquery');
-		wp_enqueue_style( 'inntopia',  get_stylesheet_directory_uri() . '/inntopia.css', false, '1.1');
-    wp_register_script('e-custom', get_stylesheet_directory_uri() . '/e-custom.js', false,'10.5');
+		wp_enqueue_style( 'inntopia',  get_stylesheet_directory_uri() . '/inntopia.css', false, '1.2');
+    wp_register_script('e-custom', get_stylesheet_directory_uri() . '/e-custom.js', false,'10.6');
     wp_enqueue_script('e-custom');
 }
 
@@ -53,6 +53,17 @@ function switch_to_relative_url($html, $id, $caption, $title, $align, $url, $siz
 add_filter('image_send_to_editor','switch_to_relative_url',10,8);
 
 add_filter( 'hello_elementor_page_title', '__return_false' );
+
+// disable the block UI
+
+add_filter('use_block_editor_for_post_type', 'prefix_disable_gutenberg', 10, 2);
+function prefix_disable_gutenberg($current_status, $post_type)
+{
+    // Use your post type key instead of 'product'
+    if ($post_type === 'winners') return false;
+    return $current_status;
+}
+add_filter('use_block_editor_for_post_type', '__return_false');
 
 // Shortcode to output custom PHP in Elementor
 function wpc_elementor_shortcode(  ) {
